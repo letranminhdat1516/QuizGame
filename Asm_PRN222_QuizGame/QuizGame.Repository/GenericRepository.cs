@@ -51,5 +51,10 @@ namespace QuizGame.Repository
             }
             await Task.CompletedTask;
         }
+        public IQueryable<T> AsQueryable()
+        {
+            return _dbSet.AsQueryable();
+        }
+
     }
 }
