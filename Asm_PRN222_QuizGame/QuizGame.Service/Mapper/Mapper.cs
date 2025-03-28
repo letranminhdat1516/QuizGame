@@ -12,6 +12,7 @@ namespace QuizGame.Service.Mapper
             CreateMap<Question, QuestionModel>().ReverseMap();
             CreateMap<User, UserModel>().ReverseMap();
             CreateMap<Quiz, QuizModel>().ReverseMap();
+            CreateMap<GameLog, GameLogModel>().ReverseMap();
         }
     }
 }

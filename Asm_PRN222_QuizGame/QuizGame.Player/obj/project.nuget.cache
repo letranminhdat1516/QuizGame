@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "C5c05yyOlO4=",
+  "dgSpecHash": "t7AIg+s1hti/++GgexT39YWLAOO7fNZQywM9QQ+ooH3xcggMeDejwsW5NKziwfQX1O/LHLzBITAUpIOnSDhm5A==",
   "success": true,
-  "projectFilePath": "F:\\SPRING2025\\PRN222\\Assigment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\QuizGame.Player.csproj",
+  "projectFilePath": "E:\\Spring2025\\PRN222\\asigment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\QuizGame.Player.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.19\\microsoft.windowsdesktop.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.19\\microsoft.netcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.19\\microsoft.aspnetcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.19\\microsoft.netcore.app.host.win-x64.7.0.19.nupkg.sha512"
   ],
   "logs": []
 }

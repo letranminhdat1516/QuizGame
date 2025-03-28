@@ -2700,24 +2700,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\SPRING2025\\PRN222\\Assigment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\QuizGame.Repository.csproj",
+      "projectUniqueName": "E:\\Spring2025\\PRN222\\asigment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\QuizGame.Repository.csproj",
       "projectName": "QuizGame.Repository",
-      "projectPath": "F:\\SPRING2025\\PRN222\\Assigment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\QuizGame.Repository.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "F:\\SPRING2025\\PRN222\\Assigment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\obj\\",
+      "projectPath": "E:\\Spring2025\\PRN222\\asigment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\QuizGame.Repository.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "E:\\Spring2025\\PRN222\\asigment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2725,6 +2720,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\ASUS\\.nuget\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2742,8 +2738,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net7.0": {
@@ -2768,15 +2763,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
+            "version": "[7.0.19, 7.0.19]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
+            "version": "[7.0.19, 7.0.19]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
+            "version": "[7.0.19, 7.0.19]"
           }
         ],
         "frameworkReferences": {
@@ -2784,7 +2779,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
       }
     }
   }
