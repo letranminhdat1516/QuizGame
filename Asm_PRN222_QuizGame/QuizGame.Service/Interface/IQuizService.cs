@@ -16,5 +16,6 @@ namespace QuizGame.Service.Interface
         Task RemoveQuiz(int id);
         //Task SetStatusQuiz(int id, bool status);
         //Task<bool> CheckStatus(int id);
+        Task<int> GetTotalQuizCount(string search);
     }
 }

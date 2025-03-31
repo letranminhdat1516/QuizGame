@@ -17,7 +17,7 @@ namespace QuizGame.Service.Service
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        private QuestionService(IUnitOfWork unitOfWork, IMapper mapper)
+        public QuestionService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
@@ -79,16 +79,17 @@ namespace QuizGame.Service.Service
 
                 if (!string.IsNullOrEmpty(search))
                 {
-                    query = query.Where(q => q.QuestionText.Contains(search) ||
-                                             q.CorrectAnswer.Contains(search));
+                    query = query.Where(q => q.QuestionText.Contains(search));
                 }
 
-                // Calculate pagination
+                // Sắp xếp theo ID để đảm bảo kết quả đúng thứ tự
+                query = query.OrderBy(q => q.QuestionId);
+
+                // Áp dụng phân trang
                 int skip = (pageNumber - 1) * pageSize;
                 query = query.Skip(skip).Take(pageSize);
-                var questions = await query.ToListAsync();
 
-                // Map to QuestionModel and return
+                var questions = await query.ToListAsync();
                 return _mapper.Map<IEnumerable<QuestionModel>>(questions);
             }
             catch (Exception ex)
@@ -149,6 +150,20 @@ namespace QuizGame.Service.Service
             {
                 throw new Exception($"Error updating question: {ex.Message}", ex);
             }
+        }
+
+        public async Task<int> GetTotalQuestionsCount(string search)
+        {
+            var questionRepository = _unitOfWork.GetRepository<Question>();
+            var query = questionRepository.AsQueryable();
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                query = query.Where(q => q.QuestionText.Contains(search) ||
+                                         q.CorrectAnswer.Contains(search));
+            }
+
+            return await query.CountAsync();
         }
     }
 }

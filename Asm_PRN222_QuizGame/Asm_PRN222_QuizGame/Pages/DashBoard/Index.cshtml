@@ -1,0 +1,42 @@
+﻿@page
+@model Asm_PRN222_QuizGame.Admin.Pages.DashBoard.IndexModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2 class="text-center text-primary fw-bold">Dashboard Statistics</h2>
+
+<div class="container mt-4">
+    <canvas id="quizChart"></canvas>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var ctx = document.getElementById('quizChart').getContext('2d');
+            var quizChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Quizzes', 'Questions'],
+                    datasets: [{
+                        label: 'Count',
+                        data: [@Model.QuizCount, @Model.QuestionCount],
+                        backgroundColor: ['#28a745', '#ffc107'],
+                        borderColor: ['#1e7e34', '#d39e00'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+}
