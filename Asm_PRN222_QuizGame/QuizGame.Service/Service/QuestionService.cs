@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using QuizGame.Repository.Contact;
 using QuizGame.Repository.Models;
 using QuizGame.Service.BusinessModel;
@@ -17,11 +18,12 @@ namespace QuizGame.Service.Service
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        private QuestionService(IUnitOfWork unitOfWork, IMapper mapper)
+        public QuestionService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
+
         public async Task AddQuestion(QuestionModel question)
         {
             try
@@ -97,6 +99,28 @@ namespace QuizGame.Service.Service
             }
         }
 
+        public async Task<IEnumerable<QuestionModel>> GetQuestionsWithQuizId(int? quizId)
+        {
+            try
+            {
+                if (quizId == null)
+                {
+                    return Enumerable.Empty<QuestionModel>();
+                }
+                var questionRepository = _unitOfWork.GetRepository<Question>();
+
+                var query = questionRepository.AsQueryable();
+
+                query = query.Where(q => q.QuizId == quizId);
+                var questions = await query.ToListAsync();
+                // Map to QuestionModel and return
+                return _mapper.Map<IEnumerable<QuestionModel>>(questions);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error retrieving questions: {ex.Message}", ex);
+            }
+        }
         public async Task RemoveQuestion(int id)
         {
             try
@@ -148,6 +172,52 @@ namespace QuizGame.Service.Service
             catch (Exception ex)
             {
                 throw new Exception($"Error updating question: {ex.Message}", ex);
+            }
+        }
+
+        public async Task<Game> GetGameByPinCode(string pinCode)
+        {
+            var gameRepository = _unitOfWork.GetRepository<Game>();
+            var game = await gameRepository.AsQueryable()
+                .FirstOrDefaultAsync(g => g.GamePin == pinCode && g.Status == "Waiting");
+
+            return game;
+        }
+
+        public async Task<QuestionModel> GetNextQuestionForGame(int gameId, int questionNumber)
+        {
+            var questionInGameRepository = _unitOfWork.GetRepository<QuestionInGame>();
+            var questionInGame = await questionInGameRepository.AsQueryable()
+                .FirstOrDefaultAsync(qig => qig.GameId == gameId && qig.QuestionNumber == questionNumber); // Lấy câu hỏi tiếp theo (giả sử là câu hỏi đầu tiên)
+
+            if (questionInGame == null)
+            {
+                return null;  // Nếu không còn câu hỏi, trả về null
+            }
+
+            var questionRepository = _unitOfWork.GetRepository<Question>();
+            var question = await questionRepository.GetByIdAsync(questionInGame.QuestionId.GetValueOrDefault());
+
+            return new QuestionModel
+            {
+                QuestionId = question.QuestionId,
+                QuestionText = question.QuestionText,
+                CorrectAnswer = question.CorrectAnswer
+            };
+        }
+
+        public async Task AddQuestionInGame(QuestionInGameModel questionInGameModel)
+        {
+            try
+            {
+                var question_Temp = _mapper.Map<QuestionInGame>(questionInGameModel); 
+                var questionRepository = _unitOfWork.GetRepository<QuestionInGame>();
+                await questionRepository.AddAsync(question_Temp);
+                await _unitOfWork.SaveAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error adding question: {ex.Message}", ex);
             }
         }
     }

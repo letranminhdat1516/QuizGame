@@ -3,35 +3,32 @@
 using System;
 using System.Collections.Generic;
 
-namespace QuizGame.Repository.Models;
-
-public partial class Game
+namespace QuizGame.Repository.Models
 {
-    public int GameId { get; set; }
+    public partial class Game
+    {
+        public Game()
+        {
+            GameLogs = new HashSet<GameLog>();
+            Players = new HashSet<Player>();
+            QuestionInGames = new HashSet<QuestionInGame>();
+            Teams = new HashSet<Team>();
+        }
 
-    public string GameName { get; set; }
+        public int GameId { get; set; }
+        public string GameName { get; set; }
+        public int? HostId { get; set; }
+        public string GamePin { get; set; }
+        public string Status { get; set; }
+        public DateTime? StartTime { get; set; }
+        public DateTime? EndTime { get; set; }
+        public int? QuizId { get; set; }
 
-    public int? HostId { get; set; }
-
-    public string GamePin { get; set; }
-
-    public string Status { get; set; }
-
-    public DateTime? StartTime { get; set; }
-
-    public DateTime? EndTime { get; set; }
-
-    public int? QuizId { get; set; }
-
-    public virtual ICollection<GameLog> GameLogs { get; set; } = new List<GameLog>();
-
-    public virtual User Host { get; set; }
-
-    public virtual ICollection<Player> Players { get; set; } = new List<Player>();
-
-    public virtual ICollection<QuestionInGame> QuestionInGames { get; set; } = new List<QuestionInGame>();
-
-    public virtual Quiz Quiz { get; set; }
-
-    public virtual ICollection<Team> Teams { get; set; } = new List<Team>();
+        public virtual User Host { get; set; }
+        public virtual Quiz Quiz { get; set; }
+        public virtual ICollection<GameLog> GameLogs { get; set; }
+        public virtual ICollection<Player> Players { get; set; }
+        public virtual ICollection<QuestionInGame> QuestionInGames { get; set; }
+        public virtual ICollection<Team> Teams { get; set; }
+    }
 }

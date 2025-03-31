@@ -17,11 +17,12 @@ namespace QuizGame.Service.Service
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        private QuizService(IUnitOfWork unitOfWork, IMapper mapper)
+        public QuizService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
+
         public async Task AddQuiz(QuizModel quiz)
         {
             try

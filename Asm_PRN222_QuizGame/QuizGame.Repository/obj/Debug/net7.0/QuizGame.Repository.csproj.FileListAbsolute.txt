@@ -1,0 +1,45 @@
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.deps.json
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.pdb
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.csproj.AssemblyReference.cache
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.AssemblyInfoInputs.cache
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.AssemblyInfo.cs
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.csproj.CoreCompileInputs.cache
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.sourcelink.json
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\refint\QuizGame.Repository.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.pdb
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\ref\QuizGame.Repository.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.runtimeconfig.json
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.genruntimeconfig.cache
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.deps.json
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.runtimeconfig.json
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.pdb
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.csproj.AssemblyReference.cache
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.AssemblyInfoInputs.cache
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.AssemblyInfo.cs
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.csproj.CoreCompileInputs.cache
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.sourcelink.json
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\refint\QuizGame.Repository.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.pdb
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.genruntimeconfig.cache
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\ref\QuizGame.Repository.dll
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.deps.json
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.runtimeconfig.json
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.dll
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.pdb
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.csproj.AssemblyReference.cache
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.AssemblyInfoInputs.cache
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.AssemblyInfo.cs
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.csproj.CoreCompileInputs.cache
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.sourcelink.json
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.dll
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\refint\QuizGame.Repository.dll
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.pdb
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.genruntimeconfig.cache
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\ref\QuizGame.Repository.dll
