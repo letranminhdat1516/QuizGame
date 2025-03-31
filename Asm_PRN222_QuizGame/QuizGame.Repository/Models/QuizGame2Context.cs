@@ -3,15 +3,309 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace QuizGame.Repository.Models;
-
-public partial class QuizGame2Context : DbContext
+namespace QuizGame.Repository.Models
 {
-    public QuizGame2Context(DbContextOptions<QuizGame2Context> options)
-        : base(options)
+    public partial class QuizGame2Context : DbContext
     {
+        public QuizGame2Context()
+        {
+        }
+
+        public QuizGame2Context(DbContextOptions<QuizGame2Context> options)
+            : base(options)
+        {
+        }
+
+        public virtual DbSet<Game> Games { get; set; }
+        public virtual DbSet<GameLog> GameLogs { get; set; }
+        public virtual DbSet<Player> Players { get; set; }
+        public virtual DbSet<PlayerAnswer> PlayerAnswers { get; set; }
+        public virtual DbSet<Question> Questions { get; set; }
+        public virtual DbSet<QuestionInGame> QuestionInGames { get; set; }
+        public virtual DbSet<Quiz> Quizzes { get; set; }
+        public virtual DbSet<Team> Teams { get; set; }
+        public virtual DbSet<TeamScore> TeamScores { get; set; }
+        public virtual DbSet<User> Users { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Game>(entity =>
+            {
+                entity.ToTable("Game");
+
+                entity.HasIndex(e => e.GamePin, "UQ__Game__0902D2DFCCC25017")
+                    .IsUnique();
+
+                entity.Property(e => e.GameId).HasColumnName("GameID");
+
+                entity.Property(e => e.EndTime).HasColumnType("datetime");
+
+                entity.Property(e => e.GameName)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.GamePin)
+                    .HasMaxLength(10)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.HostId).HasColumnName("HostID");
+
+                entity.Property(e => e.QuizId).HasColumnName("QuizID");
+
+                entity.Property(e => e.StartTime).HasColumnType("datetime");
+
+                entity.Property(e => e.Status)
+                    .HasMaxLength(10)
+                    .IsUnicode(false)
+                    .HasDefaultValueSql("('Waiting')");
+
+                entity.HasOne(d => d.Host)
+                    .WithMany(p => p.Games)
+                    .HasForeignKey(d => d.HostId)
+                    .HasConstraintName("FK__Game__HostID__52593CB8");
+
+                entity.HasOne(d => d.Quiz)
+                    .WithMany(p => p.Games)
+                    .HasForeignKey(d => d.QuizId)
+                    .HasConstraintName("FK__Game__QuizID__534D60F1");
+            });
+
+            modelBuilder.Entity<GameLog>(entity =>
+            {
+                entity.HasKey(e => e.LogId)
+                    .HasName("PK__GameLog__5E5499A862D652F6");
+
+                entity.ToTable("GameLog");
+
+                entity.Property(e => e.LogId).HasColumnName("LogID");
+
+                entity.Property(e => e.Action)
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ActionTime)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.GameId).HasColumnName("GameID");
+
+                entity.HasOne(d => d.Game)
+                    .WithMany(p => p.GameLogs)
+                    .HasForeignKey(d => d.GameId)
+                    .HasConstraintName("FK__GameLog__GameID__6FE99F9F");
+            });
+
+            modelBuilder.Entity<Player>(entity =>
+            {
+                entity.ToTable("Player");
+
+                entity.Property(e => e.PlayerId).HasColumnName("PlayerID");
+
+                entity.Property(e => e.GameId).HasColumnName("GameID");
+
+                entity.Property(e => e.JoinTime)
+                    .HasColumnType("datetime")
+                    .HasColumnName("JOIN_TIME")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.PinCode)
+                    .HasMaxLength(10)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.PlayerName)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.TeamId).HasColumnName("TeamID");
+
+                entity.Property(e => e.UserId).HasColumnName("UserID");
+
+                entity.HasOne(d => d.Game)
+                    .WithMany(p => p.Players)
+                    .HasForeignKey(d => d.GameId)
+                    .HasConstraintName("FK__Player__GameID__628FA481");
+
+                entity.HasOne(d => d.Team)
+                    .WithMany(p => p.Players)
+                    .HasForeignKey(d => d.TeamId)
+                    .HasConstraintName("FK__Player__TeamID__6383C8BA");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.Players)
+                    .HasForeignKey(d => d.UserId)
+                    .HasConstraintName("FK__Player__UserID__619B8048");
+            });
+
+            modelBuilder.Entity<PlayerAnswer>(entity =>
+            {
+                entity.ToTable("PlayerAnswer");
+
+                entity.Property(e => e.PlayerAnswerId).HasColumnName("PlayerAnswerID");
+
+                entity.Property(e => e.Answer)
+                    .HasMaxLength(1)
+                    .IsUnicode(false)
+                    .IsFixedLength();
+
+                entity.Property(e => e.PlayerId).HasColumnName("PlayerID");
+
+                entity.Property(e => e.QuestionInGameId).HasColumnName("QuestionInGameID");
+
+                entity.HasOne(d => d.Player)
+                    .WithMany(p => p.PlayerAnswers)
+                    .HasForeignKey(d => d.PlayerId)
+                    .HasConstraintName("FK__PlayerAns__Playe__66603565");
+
+                entity.HasOne(d => d.QuestionInGame)
+                    .WithMany(p => p.PlayerAnswers)
+                    .HasForeignKey(d => d.QuestionInGameId)
+                    .HasConstraintName("FK__PlayerAns__Quest__6754599E");
+            });
+
+            modelBuilder.Entity<Question>(entity =>
+            {
+                entity.ToTable("Question");
+
+                entity.Property(e => e.QuestionId).HasColumnName("QuestionID");
+
+                entity.Property(e => e.CorrectAnswer)
+                    .HasMaxLength(1)
+                    .IsUnicode(false)
+                    .IsFixedLength();
+
+                entity.Property(e => e.Option1).HasMaxLength(500);
+
+                entity.Property(e => e.Option2).HasMaxLength(500);
+
+                entity.Property(e => e.Option3).HasMaxLength(500);
+
+                entity.Property(e => e.Option4).HasMaxLength(500);
+
+                entity.Property(e => e.QuestionText)
+                    .IsRequired()
+                    .HasColumnType("text");
+
+                entity.Property(e => e.QuizId).HasColumnName("QuizID");
+
+                entity.HasOne(d => d.Quiz)
+                    .WithMany(p => p.Questions)
+                    .HasForeignKey(d => d.QuizId)
+                    .HasConstraintName("FK__Question__QuizID__5629CD9C");
+            });
+
+            modelBuilder.Entity<QuestionInGame>(entity =>
+            {
+                entity.ToTable("QuestionInGame");
+
+                entity.Property(e => e.QuestionInGameId).HasColumnName("QuestionInGameID");
+
+                entity.Property(e => e.GameId).HasColumnName("GameID");
+
+                entity.Property(e => e.QuestionId).HasColumnName("QuestionID");
+
+                entity.HasOne(d => d.Game)
+                    .WithMany(p => p.QuestionInGames)
+                    .HasForeignKey(d => d.GameId)
+                    .HasConstraintName("FK__QuestionI__GameI__59FA5E80");
+
+                entity.HasOne(d => d.Question)
+                    .WithMany(p => p.QuestionInGames)
+                    .HasForeignKey(d => d.QuestionId)
+                    .HasConstraintName("FK__QuestionI__Quest__59063A47");
+            });
+
+            modelBuilder.Entity<Quiz>(entity =>
+            {
+                entity.ToTable("Quiz");
+
+                entity.Property(e => e.QuizId).HasColumnName("QuizID");
+
+                entity.Property(e => e.QuizName)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<Team>(entity =>
+            {
+                entity.ToTable("Team");
+
+                entity.Property(e => e.TeamId).HasColumnName("TeamID");
+
+                entity.Property(e => e.CreatedAt)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.GameId).HasColumnName("GameID");
+
+                entity.Property(e => e.TeamName)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.Game)
+                    .WithMany(p => p.Teams)
+                    .HasForeignKey(d => d.GameId)
+                    .HasConstraintName("FK__Team__GameID__5DCAEF64");
+            });
+
+            modelBuilder.Entity<TeamScore>(entity =>
+            {
+                entity.ToTable("TeamScore");
+
+                entity.Property(e => e.TeamScoreId).HasColumnName("TeamScoreID");
+
+                entity.Property(e => e.QuestionInGameId).HasColumnName("QuestionInGameID");
+
+                entity.Property(e => e.Score).HasDefaultValueSql("((0))");
+
+                entity.Property(e => e.TeamId).HasColumnName("TeamID");
+
+                entity.HasOne(d => d.QuestionInGame)
+                    .WithMany(p => p.TeamScores)
+                    .HasForeignKey(d => d.QuestionInGameId)
+                    .HasConstraintName("FK__TeamScore__Quest__6C190EBB");
+
+                entity.HasOne(d => d.Team)
+                    .WithMany(p => p.TeamScores)
+                    .HasForeignKey(d => d.TeamId)
+                    .HasConstraintName("FK__TeamScore__TeamI__6B24EA82");
+            });
+
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.ToTable("User");
+
+                entity.HasIndex(e => e.Email, "UQ__User__A9D105340747923D")
+                    .IsUnique();
+
+                entity.Property(e => e.UserId).HasColumnName("UserID");
+
+                entity.Property(e => e.CreatedAt)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.Email)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.UserName)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false);
+            });
+
+            OnModelCreatingPartial(modelBuilder);
+        }
+
+        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
+<<<<<<< HEAD
 
     public virtual DbSet<Game> Games { get; set; }
 
@@ -265,4 +559,6 @@ public partial class QuizGame2Context : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+=======
+>>>>>>> origin/NguyenHP
 }

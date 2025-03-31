@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\appsettings.Development.json
 D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\appsettings.json
 D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Asm_PRN222_QuizGame.Admin.staticwebassets.runtime.json
@@ -258,3 +259,165 @@ D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_Qui
 D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.pdb
 D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.genruntimeconfig.cache
 D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\ref\Asm_PRN222_QuizGame.Admin.dll
+=======
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\appsettings.Development.json
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\appsettings.json
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Asm_PRN222_QuizGame.Admin.staticwebassets.runtime.json
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Asm_PRN222_QuizGame.Admin.staticwebassets.endpoints.json
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Asm_PRN222_QuizGame.Admin.exe
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Asm_PRN222_QuizGame.Admin.deps.json
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Asm_PRN222_QuizGame.Admin.runtimeconfig.json
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Asm_PRN222_QuizGame.Admin.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Asm_PRN222_QuizGame.Admin.pdb
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.GeneratedMSBuildEditorConfig.editorconfig
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.AssemblyInfoInputs.cache
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.AssemblyInfo.cs
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.csproj.CoreCompileInputs.cache
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.MvcApplicationPartsAssemblyInfo.cache
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.RazorAssemblyInfo.cache
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.RazorAssemblyInfo.cs
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.sourcelink.json
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\scopedcss\bundle\Asm_PRN222_QuizGame.Admin.styles.css
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\scopedcss\projectbundle\Asm_PRN222_QuizGame.Admin.bundle.scp.css
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets.build.json
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets.development.json
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets\msbuild.Asm_PRN222_QuizGame.Admin.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets\msbuild.Asm_PRN222_QuizGame.Admin.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets\msbuild.build.Asm_PRN222_QuizGame.Admin.props
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Asm_PRN222_QuizGame.Admin.props
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Asm_PRN222_QuizGame.Admin.props
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\refint\Asm_PRN222_QuizGame.Admin.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.pdb
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.genruntimeconfig.cache
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\ref\Asm_PRN222_QuizGame.Admin.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.csproj.AssemblyReference.cache
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\AutoMapper.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Azure.Core.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Azure.Identity.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\QuizGame.Repository.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\QuizGame.Service.dll
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\QuizGame.Service.pdb
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\QuizGame.Repository.pdb
+D:\Thinh\Thinh\FPT Term\Term8\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN2.C007A8F6.Up2Date
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\appsettings.Development.json
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\appsettings.json
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Asm_PRN222_QuizGame.Admin.staticwebassets.endpoints.json
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Asm_PRN222_QuizGame.Admin.staticwebassets.runtime.json
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Asm_PRN222_QuizGame.Admin.exe
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Asm_PRN222_QuizGame.Admin.deps.json
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Asm_PRN222_QuizGame.Admin.runtimeconfig.json
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Asm_PRN222_QuizGame.Admin.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Asm_PRN222_QuizGame.Admin.pdb
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\AutoMapper.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Azure.Core.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Azure.Identity.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\QuizGame.Repository.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\QuizGame.Service.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\QuizGame.Service.pdb
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net8.0\QuizGame.Repository.pdb
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.csproj.AssemblyReference.cache
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.GeneratedMSBuildEditorConfig.editorconfig
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.AssemblyInfoInputs.cache
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.AssemblyInfo.cs
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.csproj.CoreCompileInputs.cache
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.MvcApplicationPartsAssemblyInfo.cache
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.RazorAssemblyInfo.cache
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.RazorAssemblyInfo.cs
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.sourcelink.json
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\scopedcss\bundle\Asm_PRN222_QuizGame.Admin.styles.css
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\scopedcss\projectbundle\Asm_PRN222_QuizGame.Admin.bundle.scp.css
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets.build.json
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets.development.json
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets\msbuild.Asm_PRN222_QuizGame.Admin.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets\msbuild.Asm_PRN222_QuizGame.Admin.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets\msbuild.build.Asm_PRN222_QuizGame.Admin.props
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Asm_PRN222_QuizGame.Admin.props
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Asm_PRN222_QuizGame.Admin.props
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN2.C007A8F6.Up2Date
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\refint\Asm_PRN222_QuizGame.Admin.dll
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.pdb
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\Asm_PRN222_QuizGame.Admin.genruntimeconfig.cache
+D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net8.0\ref\Asm_PRN222_QuizGame.Admin.dll
+>>>>>>> origin/NguyenHP

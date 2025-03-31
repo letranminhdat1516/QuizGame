@@ -1,0 +1,43 @@
+﻿@page "/joingame"
+@using QuizGame.Service.BusinessModel
+@using QuizGame.Service.Interface
+@inject IPlayerService PlayerService
+@inject NavigationManager Navigation
+
+<h3>Join Game</h3>
+
+<EditForm Model="@joinGameRequest" OnValidSubmit="HandleJoinGame">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="pinCode">Enter Game Pin</label>
+        <InputText id="pinCode" class="form-control" @bind-Value="joinGameRequest.PinCode" />
+    </div>
+
+    <div class="form-group">
+        <label for="playerName">Enter Player Name</label>
+        <InputText id="playerName" class="form-control" @bind-Value="joinGameRequest.PlayerName" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Join Game</button>
+</EditForm>
+
+@code {
+    private JoinGameRequest joinGameRequest = new JoinGameRequest();
+
+    private async Task HandleJoinGame()
+    {
+        try
+        {
+            // Gọi service để player tham gia game
+            await PlayerService.JoinGame(joinGameRequest.PinCode, joinGameRequest.PlayerName);
+            Navigation.NavigateTo("/game");  // Điều hướng tới trang game
+        }
+        catch (Exception ex)
+        {
+            // Handle lỗi
+            Console.WriteLine(ex.Message);
+        }
+    }
+}

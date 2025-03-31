@@ -1,0 +1,144 @@
+﻿@page "/game"
+@using Microsoft.AspNetCore.SignalR
+@using QuizGame.Service.BusinessModel
+@using QuizGame.Service.Interface
+@inject IPlayerService PlayerService
+@inject IQuestionService QuestionService;
+@inject IPlayerAnswerService PlayerAnswerService
+@inject IHubContext<GameHub> GameHubContext
+@inject NavigationManager Navigation
+@inject IHttpContextAccessor HttpContextAccessor
+
+<h3>Game - Question</h3>
+
+@if (!string.IsNullOrEmpty(currentQuestionText))
+{
+	<p><strong>Question:</strong> @currentQuestionText</p>
+
+	<EditForm Model="@playerAnswer" OnValidSubmit="HandleAnswer">
+		<DataAnnotationsValidator />
+		<ValidationSummary />
+
+		<div class="form-group">
+			<label><strong>Choose your answer:</strong></label>
+			<div>
+				<InputRadioGroup @bind-Value="playerAnswer.Answer">
+					@for (int i = 0; i < currentOptions.Length; i++)
+					{
+						<InputRadio id="@($"option{i}")" Value="@currentOptions[i]" />
+						<label for="@($"option{i}")">@currentOptions[i]</label>
+
+						<br />
+					}
+				</InputRadioGroup>
+			</div>
+		</div>
+
+		<button type="submit" class="btn btn-primary">Submit Answer</button>
+	</EditForm>
+}
+else
+{
+	<p>Loading question...</p>
+}
+
+@code {
+	private PlayerAnswerRequest playerAnswer = new PlayerAnswerRequest();
+	private string currentQuestionText = string.Empty;
+	private int currentQuestionId;
+	private int currentGameId;
+	private int currentPlayerId;
+	private	int currentQuestionNumber = 0;
+	private string[] currentOptions = new string[4];
+
+	protected override async Task OnInitializedAsync()
+	{
+		// Lấy mã PIN từ session hoặc URL
+		string pinCode = HttpContextAccessor.HttpContext.Session.GetString("GamePin");
+
+		if (string.IsNullOrEmpty(pinCode))
+		{
+			Navigation.NavigateTo("/error");  // Điều hướng nếu không có mã PIN
+			return;
+		}
+
+		// Lấy gameId từ mã PIN
+		var game = await PlayerService.GetGameByPinCode(pinCode);
+		if (game == null)
+		{
+			Navigation.NavigateTo("/error");  // Nếu không tìm thấy game
+			return;
+		}
+
+		currentGameId = game.GameId;
+		currentPlayerId = HttpContextAccessor.HttpContext.Session.GetInt32("PlayerId") ?? 0;
+		if (game.QuizId.HasValue)
+		{
+			var listQuestion_Temp = await QuestionService.GetQuestionsWithQuizId(game.QuizId.Value);
+			int i = 0;
+			foreach (QuestionModel q in listQuestion_Temp)
+			{
+				var questionInGame = new QuestionInGameModel
+					{
+						GameId = currentGameId,
+						QuestionId = q.QuestionId,
+						QuestionNumber = i++
+					};
+				await QuestionService.AddQuestionInGame(questionInGame);
+
+			}
+		}
+		else
+		{
+			Navigation.NavigateTo("/error");
+		}
+		await LoadQuestion();
+		// Lấy câu hỏi từ database
+		// var question = await QuestionService.GetNextQuestionForGame(currentGameId, currentQuestionNumber);
+		// if (question != null)
+		// {
+		// 	currentQuestionId = question.QuestionId;
+		// 	currentQuestionText = question.QuestionText;
+		// }
+		// else
+		// {
+		// 	Navigation.NavigateTo("/game/finished");  Chuyển hướng nếu hết câu hỏi
+		// }
+
+		// Lấy ID của player từ session hoặc database
+	}
+	private async Task LoadQuestion()
+	{
+		var question = await QuestionService.GetNextQuestionForGame(currentGameId, currentQuestionNumber);
+		if (question != null)
+		{
+			currentQuestionId = question.QuestionId;
+			currentQuestionText = question.QuestionText;
+			currentOptions[0] = question.Option1;
+			currentOptions[1] = question.Option2;
+			currentOptions[2] = question.Option3;
+			currentOptions[3] = question.Option4;
+		}
+		else
+		{
+			Navigation.NavigateTo("/game/finished");
+		}
+	}
+	private async Task HandleAnswer()
+	{
+		try
+		{
+			if (!string.IsNullOrEmpty(playerAnswer.Answer))
+			{
+				await PlayerAnswerService.SubmitAnswer(currentPlayerId, currentQuestionId, playerAnswer.Answer);
+				currentQuestionNumber++;
+
+				await LoadQuestion(); // Tải câu hỏi tiếp theo mà không cần điều hướng
+			}
+		}
+		catch (Exception ex)
+		{
+			Console.WriteLine($"Error: {ex.Message}");
+		}
+	}
+}

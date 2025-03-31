@@ -1,0 +1,94 @@
+﻿@page
+@model Asm_PRN222_QuizGame.Admin.Pages.GamePage.GamePageModel
+@{
+    ViewData["Title"] = "Game Page";
+}
+
+<h3>Game Page - Join & Play</h3>
+
+<div>
+    <label>Enter your name: </label>
+    <input id="playerName" />
+    <button id="joinBtn">Join Game</button>
+</div>
+
+<hr />
+<div id="gameArea" style="display:none">
+    <h4 id="questionText">Question will appear here</h4>
+    <div id="options"></div>
+    <p>Time Left: <span id="timeLeft">10</span> seconds</p>
+</div>
+
+<div id="finalScore" style="display:none">
+    <h3>🎉 Game Over! Final Scoreboard:</h3>
+    <ul id="finalScoreboard"></ul>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+    <script>
+        let connection = new signalR.HubConnectionBuilder()
+            .withUrl("/gameHub")
+            .build();
+
+        let currentQuestionId = 0;
+        let timeLeft = 10;
+        let timer;
+        const gameId = 1;
+
+        connection.on("NextQuestion", data => {
+            document.getElementById("gameArea").style.display = "block";
+            document.getElementById("finalScore").style.display = "none";
+
+            currentQuestionId = data.questionId;
+            document.getElementById("questionText").innerText = data.questionText;
+            const optionsDiv = document.getElementById("options");
+            optionsDiv.innerHTML = "";
+
+            for (const key in data.options) {
+                const btn = document.createElement("button");
+                btn.innerText = `${key}: ${data.options[key]}`;
+                btn.onclick = () => submitAnswer(key);
+                optionsDiv.appendChild(btn);
+            }
+
+            timeLeft = 10;
+            document.getElementById("timeLeft").innerText = timeLeft;
+            clearInterval(timer);
+            timer = setInterval(() => {
+                timeLeft--;
+                document.getElementById("timeLeft").innerText = timeLeft;
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                }
+            }, 1000);
+        });
+
+        connection.on("GameEnded", () => {
+            document.getElementById("gameArea").style.display = "none";
+            document.getElementById("finalScore").style.display = "block";
+        });
+
+        connection.on("UpdateScoreboard", data => {
+            const scoreList = document.getElementById("finalScoreboard");
+            scoreList.innerHTML = "";
+            data.forEach(score => {
+                const li = document.createElement("li");
+                li.innerText = JSON.stringify(score);
+                scoreList.appendChild(li);
+            });
+        });
+
+        function submitAnswer(answer) {
+            const name = document.getElementById("playerName").value;
+            connection.invoke("SubmitAnswer", name, gameId, currentQuestionId, answer, 10 - timeLeft);
+        }
+
+        document.getElementById("joinBtn").onclick = async () => {
+            const name = document.getElementById("playerName").value;
+            await connection.start();
+            await connection.invoke("JoinGame", name, gameId);
+            document.getElementById("gameArea").style.display = "block";
+        };
+    </script>
+}

@@ -22,6 +22,7 @@ namespace QuizGame.Service.Service
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
+
         public async Task AddQuiz(QuizModel quiz)
         {
             try

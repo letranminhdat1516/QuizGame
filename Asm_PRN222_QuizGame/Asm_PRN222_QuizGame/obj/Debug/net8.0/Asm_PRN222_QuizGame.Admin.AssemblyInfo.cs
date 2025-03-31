@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Asm_PRN222_QuizGame.Admin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+767a4f338f626c4aa43c61032af7ebd6460f3046")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c8de5061c0d464763cd2601412abda6574287d8")]
+>>>>>>> origin/NguyenHP
 [assembly: System.Reflection.AssemblyProductAttribute("Asm_PRN222_QuizGame.Admin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Asm_PRN222_QuizGame.Admin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
