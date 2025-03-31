@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Asm_PRN222_QuizGame.Admin.props" />
+</Project>

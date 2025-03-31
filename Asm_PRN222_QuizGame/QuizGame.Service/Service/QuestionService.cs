@@ -17,11 +17,12 @@ namespace QuizGame.Service.Service
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        private QuestionService(IUnitOfWork unitOfWork, IMapper mapper)
+        public QuestionService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
+
         public async Task AddQuestion(QuestionModel question)
         {
             try
@@ -149,6 +150,37 @@ namespace QuizGame.Service.Service
             {
                 throw new Exception($"Error updating question: {ex.Message}", ex);
             }
+        }
+
+        public async Task<Game> GetGameByPinCode(string pinCode)
+        {
+            var gameRepository = _unitOfWork.GetRepository<Game>();
+            var game = await gameRepository.AsQueryable()
+                .FirstOrDefaultAsync(g => g.GamePin == pinCode && g.Status == "Waiting");
+
+            return game;
+        }
+
+        public async Task<QuestionModel> GetNextQuestionForGame(int gameId)
+        {
+            var questionInGameRepository = _unitOfWork.GetRepository<QuestionInGame>();
+            var questionInGame = await questionInGameRepository.AsQueryable()
+                .FirstOrDefaultAsync(qig => qig.GameId == gameId && qig.QuestionNumber == 1); // Lấy câu hỏi tiếp theo (giả sử là câu hỏi đầu tiên)
+
+            if (questionInGame == null)
+            {
+                return null;  // Nếu không còn câu hỏi, trả về null
+            }
+
+            var questionRepository = _unitOfWork.GetRepository<Question>();
+            var question = await questionRepository.GetByIdAsync(questionInGame.QuestionInGameId);
+
+            return new QuestionModel
+            {
+                QuestionId = question.QuestionId,
+                QuestionText = question.QuestionText,
+                CorrectAnswer = question.CorrectAnswer
+            };
         }
     }
 }

@@ -1,5 +1,11 @@
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.EntityFrameworkCore;
+using QuizGame.Service.Interface;
+using QuizGame.Service.Service;
+using QuizGame.Repository.Contact;
+using QuizGame.Repository;
+using QuizGame.Repository.Models;
 using QuizGame.Player.Data;
 
 namespace QuizGame.Player
@@ -10,9 +16,23 @@ namespace QuizGame.Player
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
+
+            builder.Services.AddDbContext<QuizGame2Context>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddDistributedMemoryCache();  // Lưu trữ trong bộ nhớ
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30); // Thời gian hết hạn session
+                options.Cookie.IsEssential = true; // Cấu hình cookie để sử dụng session
+            });
+            // Register the services
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>(); 
+            builder.Services.AddScoped<IPlayerService, PlayerService>(); 
+
+            builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
             builder.Services.AddSingleton<WeatherForecastService>();
 
             var app = builder.Build();
@@ -21,17 +41,15 @@ namespace QuizGame.Player
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseSession();
             app.UseHttpsRedirection();
-
             app.UseStaticFiles();
-
             app.UseRouting();
 
             app.MapBlazorHub();
+            app.MapHub<GameHub>("/gameHub");
             app.MapFallbackToPage("/_Host");
 
             app.Run();

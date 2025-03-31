@@ -1,0 +1,87 @@
+﻿@page "/game"
+@using Microsoft.AspNetCore.SignalR
+@using QuizGame.Service.BusinessModel
+@using QuizGame.Service.Interface
+@inject IPlayerService PlayerService
+@inject IPlayerAnswerService PlayerAnswerService
+@inject IHubContext<GameHub> GameHubContext
+@inject NavigationManager Navigation
+@inject IHttpContextAccessor HttpContextAccessor
+
+<h3>Game - Question</h3>
+
+<p>Question: @currentQuestionText</p>
+
+<EditForm Model="@playerAnswer" OnValidSubmit="HandleAnswer">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="answer">Answer (a, b, c, d):</label>
+        <InputText id="answer" class="form-control" @bind-Value="playerAnswer.Answer" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Answer</button>
+</EditForm>
+
+@code {
+    private PlayerAnswerRequest playerAnswer = new PlayerAnswerRequest();
+    private string currentQuestionText = string.Empty;
+    private int currentQuestionId;
+    private int currentGameId;
+    private int currentPlayerId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Lấy mã PIN từ session hoặc URL
+        string pinCode = HttpContextAccessor.HttpContext.Session.GetString("GamePin");
+
+        if (string.IsNullOrEmpty(pinCode))
+        {
+            Navigation.NavigateTo("/error");  // Điều hướng nếu không có mã PIN
+            return;
+        }
+
+        // Lấy gameId từ mã PIN
+        var game = await PlayerService.GetGameByPinCode(pinCode);
+        if (game == null)
+        {
+            Navigation.NavigateTo("/error");  // Nếu không tìm thấy game
+            return;
+        }
+
+        currentGameId = game.GameId;
+
+        // Lấy câu hỏi từ database
+        var question = await PlayerService.GetNextQuestionForGame(currentGameId);
+        if (question != null)
+        {
+            currentQuestionId = question.QuestionId;
+            currentQuestionText = question.QuestionText;
+        }
+        else
+        {
+            Navigation.NavigateTo("/game/finished");  // Chuyển hướng nếu hết câu hỏi
+        }
+
+        // Lấy ID của player từ session hoặc database
+        currentPlayerId = HttpContextAccessor.HttpContext.Session.GetInt32("PlayerId") ?? 0;
+    }
+
+    private async Task HandleAnswer()
+    {
+        try
+        {
+            // Gửi câu trả lời của player lên server
+            await PlayerAnswerService.SubmitAnswer(currentPlayerId, currentQuestionId, playerAnswer.Answer);
+
+            // Chuyển sang câu hỏi tiếp theo hoặc kết thúc game
+            Navigation.NavigateTo("/game/next"); // Điều hướng đến câu hỏi tiếp theo hoặc trang kết quả
+        }
+        catch (Exception ex)
+        {
+            // Handle lỗi
+            Console.WriteLine(ex.Message);
+        }
+    }
+}

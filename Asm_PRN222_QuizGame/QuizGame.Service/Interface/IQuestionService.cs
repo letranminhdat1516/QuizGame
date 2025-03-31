@@ -18,5 +18,7 @@ namespace QuizGame.Service.Interface
         Task RemoveQuestion(int id);
         Task SetStatusQuestion(int id, bool status);
         Task<bool> CheckStatus(int id);
+        Task<Game> GetGameByPinCode(string pinCode);  // Lấy game bằng mã PIN
+        Task<QuestionModel> GetNextQuestionForGame(int gameId);  // Lấy câu hỏi tiếp theo cho game
     }
 }
