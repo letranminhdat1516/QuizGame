@@ -154,9 +154,7 @@ public partial class QuizGame2Context : DbContext
                 .HasMaxLength(1)
                 .IsUnicode(false)
                 .IsFixedLength();
-            entity.Property(e => e.QuestionText)
-                .IsRequired()
-                .HasColumnType("text");
+            entity.Property(e => e.QuestionText).IsRequired();
             entity.Property(e => e.QuizId).HasColumnName("QuizID");
 
             entity.HasOne(d => d.Quiz).WithMany(p => p.Questions)

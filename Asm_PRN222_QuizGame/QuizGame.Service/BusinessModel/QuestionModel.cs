@@ -15,7 +15,7 @@ namespace QuizGame.Service.BusinessModel
 
         public string QuestionText { get; set; }
 
-        public string CorrectAnswer { get; set; }
+        public char CorrectAnswer { get; set; }
 
     }
 }

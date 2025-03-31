@@ -50,8 +50,44 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Question/CreateQuestion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlc3Rpb25cQ3JlYXRlUXVlc3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Question/DeleteQuestion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlc3Rpb25cRGVsZXRlUXVlc3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Question/DetailsQuestion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlc3Rpb25cRGV0YWlsc1F1ZXN0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Question/EditQuestion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlc3Rpb25cRWRpdFF1ZXN0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Question/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlc3Rpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Question/QuestionIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlc3Rpb25cUXVlc3Rpb25JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Quiz/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpelxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Quiz/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpelxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Quiz/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpelxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Quiz/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpelxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Quiz/Index.cshtml]
