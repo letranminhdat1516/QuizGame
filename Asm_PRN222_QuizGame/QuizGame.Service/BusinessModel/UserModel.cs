@@ -15,5 +15,9 @@ namespace QuizGame.Service.BusinessModel
         public string Email { get; set; }
 
         public DateTime? CreatedAt { get; set; }
+
+        public string Password { get; set; }
+
+        public int Role { get; set; }
     }
 }

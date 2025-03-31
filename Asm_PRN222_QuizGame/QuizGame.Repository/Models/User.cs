@@ -15,6 +15,10 @@ public partial class User
 
     public DateTime? CreatedAt { get; set; }
 
+    public string Password { get; set; }
+
+    public int Role { get; set; }
+
     public virtual ICollection<Game> Games { get; set; } = new List<Game>();
 
     public virtual ICollection<Player> Players { get; set; } = new List<Player>();

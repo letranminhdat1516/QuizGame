@@ -37,11 +37,11 @@ public partial class QuizGame2Context : DbContext
     {
         modelBuilder.Entity<Game>(entity =>
         {
-            entity.HasKey(e => e.GameId).HasName("PK__Game__2AB897DD9260330F");
+            entity.HasKey(e => e.GameId).HasName("PK__Game__2AB897DDEA355313");
 
             entity.ToTable("Game");
 
-            entity.HasIndex(e => e.GamePin, "UQ__Game__0902D2DFE08B40A8").IsUnique();
+            entity.HasIndex(e => e.GamePin, "UQ__Game__0902D2DF1BF11187").IsUnique();
 
             entity.Property(e => e.GameId).HasColumnName("GameID");
             entity.Property(e => e.EndTime).HasColumnType("datetime");
@@ -62,16 +62,16 @@ public partial class QuizGame2Context : DbContext
 
             entity.HasOne(d => d.Host).WithMany(p => p.Games)
                 .HasForeignKey(d => d.HostId)
-                .HasConstraintName("FK__Game__HostID__52593CB8");
+                .HasConstraintName("FK__Game__HostID__403A8C7D");
 
             entity.HasOne(d => d.Quiz).WithMany(p => p.Games)
                 .HasForeignKey(d => d.QuizId)
-                .HasConstraintName("FK__Game__QuizID__534D60F1");
+                .HasConstraintName("FK__Game__QuizID__412EB0B6");
         });
 
         modelBuilder.Entity<GameLog>(entity =>
         {
-            entity.HasKey(e => e.LogId).HasName("PK__GameLog__5E5499A81A2AF3F9");
+            entity.HasKey(e => e.LogId).HasName("PK__GameLog__5E5499A8C39AF9DB");
 
             entity.ToTable("GameLog");
 
@@ -86,12 +86,12 @@ public partial class QuizGame2Context : DbContext
 
             entity.HasOne(d => d.Game).WithMany(p => p.GameLogs)
                 .HasForeignKey(d => d.GameId)
-                .HasConstraintName("FK__GameLog__GameID__6FE99F9F");
+                .HasConstraintName("FK__GameLog__GameID__5DCAEF64");
         });
 
         modelBuilder.Entity<Player>(entity =>
         {
-            entity.HasKey(e => e.PlayerId).HasName("PK__Player__4A4E74A8DAB7EE36");
+            entity.HasKey(e => e.PlayerId).HasName("PK__Player__4A4E74A8F8304285");
 
             entity.ToTable("Player");
 
@@ -109,20 +109,20 @@ public partial class QuizGame2Context : DbContext
 
             entity.HasOne(d => d.Game).WithMany(p => p.Players)
                 .HasForeignKey(d => d.GameId)
-                .HasConstraintName("FK__Player__GameID__628FA481");
+                .HasConstraintName("FK__Player__GameID__5070F446");
 
             entity.HasOne(d => d.Team).WithMany(p => p.Players)
                 .HasForeignKey(d => d.TeamId)
-                .HasConstraintName("FK__Player__TeamID__6383C8BA");
+                .HasConstraintName("FK__Player__TeamID__5165187F");
 
             entity.HasOne(d => d.User).WithMany(p => p.Players)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Player__UserID__619B8048");
+                .HasConstraintName("FK__Player__UserID__4F7CD00D");
         });
 
         modelBuilder.Entity<PlayerAnswer>(entity =>
         {
-            entity.HasKey(e => e.PlayerAnswerId).HasName("PK__PlayerAn__B300DB8CC3EFF9A1");
+            entity.HasKey(e => e.PlayerAnswerId).HasName("PK__PlayerAn__B300DB8CD4A0F0EE");
 
             entity.ToTable("PlayerAnswer");
 
@@ -136,16 +136,16 @@ public partial class QuizGame2Context : DbContext
 
             entity.HasOne(d => d.Player).WithMany(p => p.PlayerAnswers)
                 .HasForeignKey(d => d.PlayerId)
-                .HasConstraintName("FK__PlayerAns__Playe__66603565");
+                .HasConstraintName("FK__PlayerAns__Playe__5441852A");
 
             entity.HasOne(d => d.QuestionInGame).WithMany(p => p.PlayerAnswers)
                 .HasForeignKey(d => d.QuestionInGameId)
-                .HasConstraintName("FK__PlayerAns__Quest__6754599E");
+                .HasConstraintName("FK__PlayerAns__Quest__5535A963");
         });
 
         modelBuilder.Entity<Question>(entity =>
         {
-            entity.HasKey(e => e.QuestionId).HasName("PK__Question__0DC06F8CF1489D6F");
+            entity.HasKey(e => e.QuestionId).HasName("PK__Question__0DC06F8CB3FE44B6");
 
             entity.ToTable("Question");
 
@@ -161,12 +161,12 @@ public partial class QuizGame2Context : DbContext
 
             entity.HasOne(d => d.Quiz).WithMany(p => p.Questions)
                 .HasForeignKey(d => d.QuizId)
-                .HasConstraintName("FK__Question__QuizID__5629CD9C");
+                .HasConstraintName("FK__Question__QuizID__440B1D61");
         });
 
         modelBuilder.Entity<QuestionInGame>(entity =>
         {
-            entity.HasKey(e => e.QuestionInGameId).HasName("PK__Question__BFABBBA6674AEDAF");
+            entity.HasKey(e => e.QuestionInGameId).HasName("PK__Question__BFABBBA6AAA547F4");
 
             entity.ToTable("QuestionInGame");
 
@@ -176,16 +176,16 @@ public partial class QuizGame2Context : DbContext
 
             entity.HasOne(d => d.Game).WithMany(p => p.QuestionInGames)
                 .HasForeignKey(d => d.GameId)
-                .HasConstraintName("FK__QuestionI__GameI__59FA5E80");
+                .HasConstraintName("FK__QuestionI__GameI__47DBAE45");
 
             entity.HasOne(d => d.Question).WithMany(p => p.QuestionInGames)
                 .HasForeignKey(d => d.QuestionId)
-                .HasConstraintName("FK__QuestionI__Quest__59063A47");
+                .HasConstraintName("FK__QuestionI__Quest__46E78A0C");
         });
 
         modelBuilder.Entity<Quiz>(entity =>
         {
-            entity.HasKey(e => e.QuizId).HasName("PK__Quiz__8B42AE6E8E94DDDE");
+            entity.HasKey(e => e.QuizId).HasName("PK__Quiz__8B42AE6E441C7D54");
 
             entity.ToTable("Quiz");
 
@@ -198,7 +198,7 @@ public partial class QuizGame2Context : DbContext
 
         modelBuilder.Entity<Team>(entity =>
         {
-            entity.HasKey(e => e.TeamId).HasName("PK__Team__123AE7B9C2BAB1CF");
+            entity.HasKey(e => e.TeamId).HasName("PK__Team__123AE7B9DFFE5251");
 
             entity.ToTable("Team");
 
@@ -214,12 +214,12 @@ public partial class QuizGame2Context : DbContext
 
             entity.HasOne(d => d.Game).WithMany(p => p.Teams)
                 .HasForeignKey(d => d.GameId)
-                .HasConstraintName("FK__Team__GameID__5DCAEF64");
+                .HasConstraintName("FK__Team__GameID__4BAC3F29");
         });
 
         modelBuilder.Entity<TeamScore>(entity =>
         {
-            entity.HasKey(e => e.TeamScoreId).HasName("PK__TeamScor__0B675FA902568C65");
+            entity.HasKey(e => e.TeamScoreId).HasName("PK__TeamScor__0B675FA9AE3A5DF0");
 
             entity.ToTable("TeamScore");
 
@@ -230,20 +230,20 @@ public partial class QuizGame2Context : DbContext
 
             entity.HasOne(d => d.QuestionInGame).WithMany(p => p.TeamScores)
                 .HasForeignKey(d => d.QuestionInGameId)
-                .HasConstraintName("FK__TeamScore__Quest__6C190EBB");
+                .HasConstraintName("FK__TeamScore__Quest__59FA5E80");
 
             entity.HasOne(d => d.Team).WithMany(p => p.TeamScores)
                 .HasForeignKey(d => d.TeamId)
-                .HasConstraintName("FK__TeamScore__TeamI__6B24EA82");
+                .HasConstraintName("FK__TeamScore__TeamI__59063A47");
         });
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.UserId).HasName("PK__User__1788CCACBA5E97E9");
+            entity.HasKey(e => e.UserId).HasName("PK__User__1788CCAC2DBE5BB2");
 
             entity.ToTable("User");
 
-            entity.HasIndex(e => e.Email, "UQ__User__A9D10534D74C449D").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__User__A9D10534D5A0C715").IsUnique();
 
             entity.Property(e => e.UserId).HasColumnName("UserID");
             entity.Property(e => e.CreatedAt)
@@ -253,6 +253,10 @@ public partial class QuizGame2Context : DbContext
                 .IsRequired()
                 .HasMaxLength(100)
                 .IsUnicode(false);
+            entity.Property(e => e.Password)
+                .IsRequired()
+                .HasMaxLength(10)
+                .IsFixedLength();
             entity.Property(e => e.UserName)
                 .IsRequired()
                 .HasMaxLength(100)

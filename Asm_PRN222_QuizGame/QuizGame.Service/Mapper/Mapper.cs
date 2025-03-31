@@ -5,9 +5,9 @@ using QuizGame.Service.BusinessModel;
 
 namespace QuizGame.Service.Mapper
 {
-    public class Mapper : Profile
+    public class MapperProfile : Profile
     {
-        public Mapper()
+        public MapperProfile()
         {
             CreateMap<Question, QuestionModel>().ReverseMap();
             CreateMap<User, UserModel>().ReverseMap();
