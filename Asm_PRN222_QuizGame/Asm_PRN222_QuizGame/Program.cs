@@ -31,6 +31,8 @@ namespace Asm_PRN222_QuizGame.Admin
             builder.Services.AddScoped<IQuestionService, QuestionService>();
             builder.Services.AddScoped<IQuizService, QuizService>();
             builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IScoreService, ScoreService>();
+            builder.Services.AddScoped<IGameService, GameService>();
 
             builder.Services.AddAutoMapper(typeof(MapperProfile).Assembly);
 

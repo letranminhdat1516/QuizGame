@@ -1,0 +1,122 @@
+﻿@page
+@model Asm_PRN222_QuizGame.Admin.Pages.Score.ScoreIndexModel
+@{
+    ViewData["Title"] = "Score List";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary fw-bold">Score Management</h2>
+
+    <div class="card shadow-lg p-4 border-0 rounded-4 mt-4">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+                <a asp-page="CreateScore" class="btn btn-success">
+                    <i class="fas fa-plus"></i> Add New Score
+                </a>
+
+                <form method="get" class="d-flex">
+                    <input type="text" name="searchTerm" value="@Model.ScoreList.SearchTerm"
+                           class="form-control me-2" placeholder="Search Score..." style="width: 250px;" />
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </form>
+            </div>
+
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger mt-3">
+                    <i class="fas fa-exclamation-circle"></i> @TempData["ErrorMessage"]
+                </div>
+            }
+
+            @if (TempData["InfoMessage"] != null)
+            {
+                <div class="alert alert-info mt-3">
+                    <i class="fas fa-info-circle"></i> @TempData["InfoMessage"]
+                </div>
+            }
+
+            <div class="table-responsive mt-4">
+                <table class="table table-hover table-bordered">
+                    <thead class="table-light">
+                        <tr class="text-center">
+                            <th>Team Score ID</th>
+                            <th>Team ID</th>
+                            <th>Question In Game ID</th>
+                            <th>Score</th>
+                            <th>Rank</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (!Model.Scores.Any())
+                        {
+                            <tr>
+                                <td colspan="6" class="text-center text-muted">No scores available.</td>
+                            </tr>
+                        }
+                        else
+                        {
+                            @foreach (var item in Model.Scores)
+                            {
+                                <tr class="text-center">
+                                    <td>@item.TeamScoreId</td>
+                                    <td>@item.TeamId</td>
+                                    <td>@item.QuestionInGameId</td>
+                                    <td>@item.Score</td>
+                                    <td>@item.Rank</td>
+                                    <td>
+                                        <a asp-page="./EditScore" asp-route-id="@item.TeamScoreId" class="btn btn-warning btn-sm">
+                                            <i class="fas fa-edit"></i> Edit
+                                        </a>
+                                        <a asp-page="./DetailsScore" asp-route-id="@item.TeamScoreId" class="btn btn-info btn-sm">
+                                            <i class="fas fa-info-circle"></i> Details
+                                        </a>
+                                        <a asp-page="./DeleteScore" asp-route-id="@item.TeamScoreId" class="btn btn-danger btn-sm">
+                                            <i class="fas fa-trash"></i> Delete
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item @(Model.ScoreList.PageNumber <= 1 ? "disabled" : "")">
+                        <a class="page-link"
+                           asp-page="./ScoreIndex"
+                           asp-route-pageNumber="@(Model.ScoreList.PageNumber - 1)"
+                           asp-route-searchTerm="@Model.ScoreList.SearchTerm">
+                            « Prev
+                        </a>
+                    </li>
+
+                    @for (int i = 1; i <= Model.ScoreList.TotalPages; i++)
+                    {
+                        <li class="page-item @(Model.ScoreList.PageNumber == i ? "active" : "")">
+                            <a class="page-link"
+                               asp-page="./ScoreIndex"
+                               asp-route-pageNumber="@i"
+                               asp-route-searchTerm="@Model.ScoreList.SearchTerm">
+                                @i
+                            </a>
+                        </li>
+                    }
+
+                    <li class="page-item @(Model.ScoreList.PageNumber >= Model.ScoreList.TotalPages ? "disabled" : "")">
+                        <a class="page-link"
+                           asp-page="./ScoreIndex"
+                           asp-route-pageNumber="@(Model.ScoreList.PageNumber + 1)"
+                           asp-route-searchTerm="@Model.ScoreList.SearchTerm">
+                            Next »
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

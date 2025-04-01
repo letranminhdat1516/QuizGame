@@ -3491,19 +3491,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\khoitd\\.nuget\\packages\\": {}
+    "C:\\Users\\nhatn\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\QuizGame.Service.csproj",
+      "projectUniqueName": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\QuizGame.Service.csproj",
       "projectName": "QuizGame.Service",
-      "projectPath": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\QuizGame.Service.csproj",
-      "packagesPath": "C:\\Users\\khoitd\\.nuget\\packages\\",
-      "outputPath": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\obj\\",
+      "projectPath": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\QuizGame.Service.csproj",
+      "packagesPath": "C:\\Users\\nhatn\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\khoitd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nhatn\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3511,15 +3511,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://packagesource": {}
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\QuizGame.Repository.csproj": {
-              "projectPath": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\QuizGame.Repository.csproj"
+            "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\QuizGame.Repository.csproj": {
+              "projectPath": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\QuizGame.Repository.csproj"
             }
           }
         }
@@ -3568,7 +3568,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

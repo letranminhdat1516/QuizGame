@@ -14,16 +14,16 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var ctx = document.getElementById('quizChart').getContext('2d');
+            var ctx = document.getElementById('quizChart').getContext('2d'); 
             var quizChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: ['Quizzes', 'Questions'],
+                    labels: ['Quizzes', 'Questions', 'Team Score'],
                     datasets: [{
                         label: 'Count',
-                        data: [@Model.QuizCount, @Model.QuestionCount],
-                        backgroundColor: ['#28a745', '#ffc107'],
-                        borderColor: ['#1e7e34', '#d39e00'],
+                        data: [@Model.QuizCount, @Model.QuestionCount, @Model.ScoreCount],
+                        backgroundColor: ['#28a745', '#ffc107', '#008000'], 
+                        borderColor: ['#1e7e34', '#d39e00', '#ffffff'],
                         borderWidth: 1
                     }]
                 },

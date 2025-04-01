@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3nQbE5dJkSXRggYi+CTScek5J+VXLQTYqRpWVEJ7uYk=",
+  "Hash": "e3fSjphCdQxijxz9fFtoFJJppv8VBSeXVqH7qOhuukE=",
   "Source": "QuizGame.Player",
   "BasePath": "_content/QuizGame.Player",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "QuizGame.Player\\wwwroot",
       "Source": "QuizGame.Player",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
       "BasePath": "_content/QuizGame.Player",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\obj\\Debug\\net7.0\\scopedcss\\bundle\\QuizGame.Player.styles.css",
+      "Identity": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\obj\\Debug\\net7.0\\scopedcss\\bundle\\QuizGame.Player.styles.css",
       "SourceId": "QuizGame.Player",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/QuizGame.Player",
       "RelativePath": "QuizGame.Player.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\obj\\Debug\\net7.0\\scopedcss\\bundle\\QuizGame.Player.styles.css"
+      "OriginalItemSpec": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\obj\\Debug\\net7.0\\scopedcss\\bundle\\QuizGame.Player.styles.css"
     },
     {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\QuizGame.Player.bundle.scp.css",
+      "Identity": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\QuizGame.Player.bundle.scp.css",
       "SourceId": "QuizGame.Player",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/QuizGame.Player",
       "RelativePath": "QuizGame.Player.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\QuizGame.Player.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\QuizGame.Player.bundle.scp.css"
     },
     {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "QuizGame.Player",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
       "BasePath": "_content/QuizGame.Player",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "QuizGame.Player",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
       "BasePath": "_content/QuizGame.Player",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "QuizGame.Player",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
       "BasePath": "_content/QuizGame.Player",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "QuizGame.Player",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
       "BasePath": "_content/QuizGame.Player",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "QuizGame.Player",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
       "BasePath": "_content/QuizGame.Player",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "QuizGame.Player",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
       "BasePath": "_content/QuizGame.Player",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "QuizGame.Player",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
       "BasePath": "_content/QuizGame.Player",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "QuizGame.Player",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
       "BasePath": "_content/QuizGame.Player",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "QuizGame.Player",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
       "BasePath": "_content/QuizGame.Player",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "QuizGame.Player",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
       "BasePath": "_content/QuizGame.Player",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "QuizGame.Player",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
       "BasePath": "_content/QuizGame.Player",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\site.css",
       "SourceId": "QuizGame.Player",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
       "BasePath": "_content/QuizGame.Player",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\favicon.png",
       "SourceId": "QuizGame.Player",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nhatn\\Desktop\\ky 7\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
       "BasePath": "_content/QuizGame.Player",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
