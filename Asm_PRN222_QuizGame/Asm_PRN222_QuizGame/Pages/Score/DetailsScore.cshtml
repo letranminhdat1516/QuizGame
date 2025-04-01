@@ -1,0 +1,50 @@
+﻿@page
+@model Asm_PRN222_QuizGame.Admin.Pages.Score.DetailsScoreModel
+@{
+    ViewData["Title"] = "Score Details";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary fw-bold">Score Details</h2>
+
+    <div class="card shadow-lg p-4 border-0 rounded-4 mt-4">
+        <div class="card-body">
+            @if (Model.Score != null)
+            {
+                <dl class="row">
+                    <dt class="col-sm-2">Team Score ID</dt>
+                    <dd class="col-sm-10">@Model.Score.TeamScoreId</dd>
+                    <dt class="col-sm-2">Team ID</dt>
+                    <dd class="col-sm-10">@Model.Score.TeamId</dd>
+                    <dt class="col-sm-2">Question In Game ID</dt>
+                    <dd class="col-sm-10">@Model.Score.QuestionInGameId</dd>
+                    <dt class="col-sm-2">Score</dt>
+                    <dd class="col-sm-10">@Model.Score.Score</dd>
+                    <dt class="col-sm-2">Rank</dt>
+                    <dd class="col-sm-10">@Model.Score.Rank</dd>
+                </dl>
+
+                <div class="mt-3">
+                    <a asp-page="./EditScore" asp-route-id="@Model.Score.TeamScoreId" class="btn btn-warning">
+                        <i class="fas fa-edit"></i> Edit
+                    </a>
+                    <a asp-page="./DeleteScore" asp-route-id="@Model.Score.TeamScoreId" class="btn btn-danger">
+                        <i class="fas fa-trash"></i> Delete
+                    </a>
+                    <a asp-page="./ScoreIndex" class="btn btn-secondary">Back to List</a>
+                </div>
+            }
+            else
+            {
+                <p class="text-center text-muted">Score not found.</p>
+            }
+
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <div class="alert alert-danger mt-3">
+                    <i class="fas fa-exclamation-circle"></i> @Model.ErrorMessage
+                </div>
+            }
+        </div>
+    </div>
+</div>

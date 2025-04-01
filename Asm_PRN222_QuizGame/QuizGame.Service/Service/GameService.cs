@@ -1,6 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using QuizGame.Repository.Contact;
 using QuizGame.Repository.Models;
+using QuizGame.Service.BusinessModel;
 using QuizGame.Service.Interface;
 using System;
 using System.Collections.Generic;
@@ -13,14 +15,14 @@ namespace QuizGame.Service.Service
     public class GameService : IGameService
     {
         private readonly IUnitOfWork _uow;
-        private int _currentQuestionIndex = 0;
-        private readonly Dictionary<int, List<int>> _questionOrder = new();
+        private readonly IMapper _mapper;
+        private readonly Dictionary<int, int> _currentQuestionIndex = new(); // Lưu chỉ số câu hỏi hiện tại cho mỗi game
+        private readonly Dictionary<int, List<int>> _questionOrder = new(); // Lưu thứ tự câu hỏi cho mỗi game
 
-        public GameService(IUnitOfWork uow, int currentQuestionIndex, Dictionary<int, List<int>> questionOrder)
+        public GameService(IUnitOfWork uow, IMapper mapper)
         {
             _uow = uow;
-            _currentQuestionIndex = currentQuestionIndex;
-            _questionOrder = questionOrder;
+            _mapper = mapper;
         }
 
         public async Task<object?> GetNextQuestionAsync(int gameId)
@@ -36,10 +38,18 @@ namespace QuizGame.Service.Service
                 _questionOrder[gameId] = game.Quiz.Questions.OrderBy(q => Guid.NewGuid()).Select(q => q.QuestionId).ToList();
             }
 
-            if (_currentQuestionIndex >= _questionOrder[gameId].Count)
-                return null;
+            if (!_currentQuestionIndex.ContainsKey(gameId))
+            {
+                _currentQuestionIndex[gameId] = 0;
+            }
 
-            var questionId = _questionOrder[gameId][_currentQuestionIndex++];
+            if (_currentQuestionIndex[gameId] >= _questionOrder[gameId].Count)
+            {
+                return null;
+            }
+
+
+            var questionId = _questionOrder[gameId][_currentQuestionIndex[gameId]];
             var question = await _uow.GetRepository<Question>().GetByIdAsync(questionId);
 
             return new
@@ -98,5 +108,20 @@ namespace QuizGame.Service.Service
             return result;
         }
 
+        public Task AddGame(GameModel game)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<GameModel> GetGameByPin(string gamePin)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<QuizModel> GetQuizByGamePin(string gamePin)
+        {
+            throw new NotImplementedException();
+        }
     }
+    
 }

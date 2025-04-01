@@ -1,0 +1,78 @@
+﻿@page
+@model Asm_PRN222_QuizGame.Admin.Pages.Game.CreateGameModel
+@{
+    ViewData["Title"] = "Create Game";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary fw-bold">Create New Game</h2>
+
+    <div class="card shadow-lg p-4 border-0 rounded-4 mt-4">
+        <div class="card-body">
+            <form method="post">
+                <div class="form-group">
+                    <label asp-for="Game.GameName" class="control-label"></label>
+                    <input asp-for="Game.GameName" class="form-control" />
+                    <span asp-validation-for="Game.GameName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Game.HostId" class="control-label"></label>
+                    <input asp-for="Game.HostId" class="form-control" type="number" />
+                    <span asp-validation-for="Game.HostId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Game.GamePin" class="control-label"></label>
+                    <input asp-for="Game.GamePin" class="form-control" placeholder="Enter a unique 6-digit PIN" />
+                    <span asp-validation-for="Game.GamePin" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Game.QuizId" class="control-label"></label>
+                    <input asp-for="Game.QuizId" class="form-control" type="number" />
+                    <span asp-validation-for="Game.QuizId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Game.Status" class="control-label"></label>
+                    <select asp-for="Game.Status" class="form-control">
+                        <option value="">Select Status</option>
+                        <option value="Waiting">Waiting</option>
+                        <option value="Ongoing">Ongoing</option>
+                        <option value="Finished">Finished</option>
+                    </select>
+                    <span asp-validation-for="Game.Status" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Game.StartTime" class="control-label"></label>
+                    <input asp-for="Game.StartTime" class="form-control" type="datetime-local" />
+                    <span asp-validation-for="Game.StartTime" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Game.EndTime" class="control-label"></label>
+                    <input asp-for="Game.EndTime" class="form-control" type="datetime-local" />
+                    <span asp-validation-for="Game.EndTime" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-3">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                    <a asp-page="./GameIndex" class="btn btn-secondary">Cancel</a>
+                </div>
+            </form>
+
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <div class="alert alert-danger mt-3">
+                    <i class="fas fa-exclamation-circle"></i> @Model.ErrorMessage
+                </div>
+            }
+
+            @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+            {
+                <div class="alert alert-success mt-3">
+                    <i class="fas fa-check-circle"></i> @Model.SuccessMessage
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

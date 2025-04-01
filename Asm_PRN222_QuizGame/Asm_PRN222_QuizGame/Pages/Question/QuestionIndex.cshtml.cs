@@ -40,7 +40,7 @@ namespace Asm_PRN222_QuizGame.Admin.Pages.Question
             QuestionList.PageNumber = pageNumber;
 
            
-                Questions = (await _questionService.GetQuestions(searchTerm, pageNumber, pageSize)).ToList();
+                Questions = (IList<QuestionModel>)(await _questionService.GetQuestions(searchTerm, pageNumber, pageSize)).ToList();
               
                 QuestionList.TotalItems = await _questionService.GetTotalQuestionsCount(searchTerm);
 

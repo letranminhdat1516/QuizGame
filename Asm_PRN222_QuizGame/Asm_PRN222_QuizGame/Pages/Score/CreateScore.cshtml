@@ -1,0 +1,51 @@
+﻿@page
+@model Asm_PRN222_QuizGame.Admin.Pages.Score.CreateScoreModel
+@{
+    ViewData["Title"] = "Create Score";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary fw-bold">Create New Score</h2>
+
+    <div class="card shadow-lg p-4 border-0 rounded-4 mt-4">
+        <div class="card-body">
+            <form method="post">
+                <div class="form-group">
+                    <label asp-for="Score.TeamId" class="control-label"></label>
+                    <input asp-for="Score.TeamId" class="form-control" type="number" />
+                    <span asp-validation-for="Score.TeamId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Score.QuestionInGameId" class="control-label"></label>
+                    <input asp-for="Score.QuestionInGameId" class="form-control" type="number" />
+                    <span asp-validation-for="Score.QuestionInGameId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Score.Score" class="control-label"></label>
+                    <input asp-for="Score.Score" class="form-control" type="number" />
+                    <span asp-validation-for="Score.Score" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Score.Rank" class="control-label"></label>
+                    <input asp-for="Score.Rank" class="form-control" type="number" />
+                    <span asp-validation-for="Score.Rank" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-3">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                    <a asp-page="./ScoreIndex" class="btn btn-secondary">Cancel</a>
+                </div>
+            </form>
+
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <div class="alert alert-danger mt-3">
+                    <i class="fas fa-exclamation-circle"></i> @Model.ErrorMessage
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

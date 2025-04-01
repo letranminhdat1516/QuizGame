@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YePzcU3qkVMsqKeoj6S4MYQXJAiFKAnkFZGudJ0yxWE=",
+  "Hash": "drscCiEehZZqz4f5LWT9gfXKosc02cQRIJAQPF5hgEw=",
   "Source": "QuizGame.Player",
   "BasePath": "_content/QuizGame.Player",
   "Mode": "Default",
@@ -1422,7 +1422,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 04:19:49 GMT"
+          "Value": "Tue, 01 Apr 2025 19:08:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1459,7 +1459,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 04:19:49 GMT"
+          "Value": "Tue, 01 Apr 2025 19:08:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1504,7 +1504,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 04:19:49 GMT"
+          "Value": "Tue, 01 Apr 2025 19:08:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1549,7 +1549,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 01 Apr 2025 04:19:49 GMT"
+          "Value": "Tue, 01 Apr 2025 19:08:24 GMT"
         },
         {
           "Name": "Cache-Control",

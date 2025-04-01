@@ -36,6 +36,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Game/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Game/JoinGame.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZVxKb2luR2FtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -86,6 +94,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Quiz/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpelxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Score/CreateScore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2NvcmVcQ3JlYXRlU2NvcmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Score/DeleteScore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2NvcmVcRGVsZXRlU2NvcmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Score/DetailsScore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2NvcmVcRGV0YWlsc1Njb3JlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Score/EditScore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2NvcmVcRWRpdFNjb3JlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Score/ScoreIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2NvcmVcU2NvcmVJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Shared/_ValidationScriptsPartial.cshtml]

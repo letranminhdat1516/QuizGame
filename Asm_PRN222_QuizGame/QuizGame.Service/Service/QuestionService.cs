@@ -70,7 +70,7 @@ namespace QuizGame.Service.Service
             }
         }
 
-        public async Task<IEnumerable<List<QuestionModel>>> GetQuestions(string search, int pageNumber, int pageSize)
+        public async Task<IEnumerable<QuestionModel>> GetQuestions(string search, int pageNumber, int pageSize)
         {
             try
             {
@@ -92,7 +92,7 @@ namespace QuizGame.Service.Service
                 query = query.Skip(skip).Take(pageSize);
 
                 var questions = await query.ToListAsync();
-                return _mapper.Map<IEnumerable<List<QuestionModel>>>(questions);
+                return _mapper.Map<IEnumerable<QuestionModel>>(questions);
             }
             catch (Exception ex)
             {

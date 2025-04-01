@@ -42,7 +42,7 @@ namespace Asm_PRN222_QuizGame.Admin.Pages.Question
             QuestionList.PageNumber = pageNumber;
 
             // Lấy danh sách câu hỏi có phân trang
-            Questions = (await _questionService.GetQuestions(searchTerm, pageNumber, pageSize)).ToList();
+            Questions = (IList<QuestionModel>)(await _questionService.GetQuestions(searchTerm, pageNumber, pageSize)).ToList();
 
             // Lấy tổng số câu hỏi để phân trang
             QuestionList.TotalItems = await _questionService.GetTotalQuestionsCount(searchTerm);
