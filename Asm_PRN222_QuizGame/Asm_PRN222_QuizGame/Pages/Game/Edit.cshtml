@@ -1,0 +1,39 @@
+﻿@page
+@model Asm_PRN222_QuizGame.Admin.Pages.Game.EditModel
+@{
+    ViewData["Title"] = "Edit Game";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary fw-bold">Edit Game</h2>
+
+    <div class="card shadow-lg p-4 border-0 rounded-4 mt-4">
+        <div class="card-body">
+            <form method="post">
+                <input type="hidden" asp-for="Game.GameId" />
+
+                <div class="form-group">
+                    <label asp-for="Game.GameName" class="control-label"></label>
+                    <input asp-for="Game.GameName" class="form-control" />
+                    <span asp-validation-for="Game.GameName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mt-3">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <a asp-page="./Index" class="btn btn-secondary">Cancel</a>
+                </div>
+            </form>
+
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <div class="alert alert-danger mt-3">
+                    <i class="fas fa-exclamation-circle"></i> @Model.ErrorMessage
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
