@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZgsHuapQBITVWQv6zfv630V0HNd9eeacgQu44UyS+L4=",
+  "Hash": "3nQbE5dJkSXRggYi+CTScek5J+VXLQTYqRpWVEJ7uYk=",
   "Source": "QuizGame.Player",
   "BasePath": "_content/QuizGame.Player",
   "Mode": "Default",
@@ -91,25 +91,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
-    },
-    {
-      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "QuizGame.Player",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
-      "BasePath": "_content/QuizGame.Player",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
@@ -224,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "QuizGame.Player",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\",
+      "BasePath": "_content/QuizGame.Player",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\wwwroot\\css\\open-iconic\\ICON-LICENSE",

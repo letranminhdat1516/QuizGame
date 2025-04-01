@@ -3,92 +3,164 @@
   "WorkspaceRootPath": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\question\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\question\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7982AB51-6736-472A-B152-1ED0E2E2A6C5}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7982AB51-6736-472A-B152-1ED0E2E2A6C5}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\question\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\question\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\pages\\gamepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\pages\\gamepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{004660A3-949E-4EB9-B75D-5B724A970C34}|QuizGame.Repository\\QuizGame.Repository.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.repository\\models\\quizgame2context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{004660A3-949E-4EB9-B75D-5B724A970C34}|QuizGame.Repository\\QuizGame.Repository.csproj|solutionrelative:quizgame.repository\\models\\quizgame2context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\pages\\joingame.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\pages\\joingame.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{004660A3-949E-4EB9-B75D-5B724A970C34}|QuizGame.Repository\\QuizGame.Repository.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.repository\\models\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{004660A3-949E-4EB9-B75D-5B724A970C34}|QuizGame.Repository\\QuizGame.Repository.csproj|solutionrelative:quizgame.repository\\models\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\quiz\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\quiz\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\shared\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\shared\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F57C91C2-DA70-45C3-A618-6D597BF38355}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\service\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F57C91C2-DA70-45C3-A618-6D597BF38355}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\service\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F57C91C2-DA70-45C3-A618-6D597BF38355}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\service\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F57C91C2-DA70-45C3-A618-6D597BF38355}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\service\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F57C91C2-DA70-45C3-A618-6D597BF38355}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\interface\\iquizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F57C91C2-DA70-45C3-A618-6D597BF38355}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\interface\\iquizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\service\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\service\\playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\quiz\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\quiz\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\service\\playeranswerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\service\\playeranswerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F57C91C2-DA70-45C3-A618-6D597BF38355}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\interface\\iquestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F57C91C2-DA70-45C3-A618-6D597BF38355}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\interface\\iquestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\service\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\service\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\interface\\iquestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\interface\\iquestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\dashboard\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\interface\\iquizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\interface\\iquizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\interface\\iteamscoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\interface\\iteamscoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\interface\\iteamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\interface\\iteamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F57C91C2-DA70-45C3-A618-6D597BF38355}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F57C91C2-DA70-45C3-A618-6D597BF38355}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\interface\\iplayerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\interface\\iplayerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\interface\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\interface\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{004660A3-949E-4EB9-B75D-5B724A970C34}|QuizGame.Repository\\QuizGame.Repository.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.repository\\contact\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{004660A3-949E-4EB9-B75D-5B724A970C34}|QuizGame.Repository\\QuizGame.Repository.csproj|solutionrelative:quizgame.repository\\contact\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\interface\\igamelogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\interface\\igamelogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{004660A3-949E-4EB9-B75D-5B724A970C34}|QuizGame.Repository\\QuizGame.Repository.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{004660A3-949E-4EB9-B75D-5B724A970C34}|QuizGame.Repository\\QuizGame.Repository.csproj|solutionrelative:quizgame.repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F57C91C2-DA70-45C3-A618-6D597BF38355}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F57C91C2-DA70-45C3-A618-6D597BF38355}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7982AB51-6736-472A-B152-1ED0E2E2A6C5}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7982AB51-6736-472A-B152-1ED0E2E2A6C5}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F6144F6D-D941-4BE2-A26C-120B79B8ED6D}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7982AB51-6736-472A-B152-1ED0E2E2A6C5}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7982AB51-6736-472A-B152-1ED0E2E2A6C5}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7982AB51-6736-472A-B152-1ED0E2E2A6C5}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7982AB51-6736-472A-B152-1ED0E2E2A6C5}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7982AB51-6736-472A-B152-1ED0E2E2A6C5}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7982AB51-6736-472A-B152-1ED0E2E2A6C5}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7982AB51-6736-472A-B152-1ED0E2E2A6C5}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\asm_prn222_quizgame\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7982AB51-6736-472A-B152-1ED0E2E2A6C5}|Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame.Admin.csproj|solutionrelative:asm_prn222_quizgame\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C910947D-CBA7-41A5-B280-0840AE710299}|QuizGame.Repository\\QuizGame.Repository.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C910947D-CBA7-41A5-B280-0840AE710299}|QuizGame.Repository\\QuizGame.Repository.csproj|solutionrelative:quizgame.repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C910947D-CBA7-41A5-B280-0840AE710299}|QuizGame.Repository\\QuizGame.Repository.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C910947D-CBA7-41A5-B280-0840AE710299}|QuizGame.Repository\\QuizGame.Repository.csproj|solutionrelative:quizgame.repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\service\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\service\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\interface\\igamelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\interface\\igamelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\interface\\iplayeranswerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\interface\\iplayeranswerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.service\\quizgame.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1CDE7C91-3E26-4EEB-9491-2E6988927B12}|QuizGame.Service\\QuizGame.Service.csproj|solutionrelative:quizgame.service\\quizgame.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C910947D-CBA7-41A5-B280-0840AE710299}|QuizGame.Repository\\QuizGame.Repository.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.repository\\quizgame.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C910947D-CBA7-41A5-B280-0840AE710299}|QuizGame.Repository\\QuizGame.Repository.csproj|solutionrelative:quizgame.repository\\quizgame.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\shared\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\shared\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\shared\\surveyprompt.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\shared\\surveyprompt.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|d:\\fptu\\sesmeter 7\\prn222\\assignment\\quizgame\\asm_prn222_quizgame\\quizgame.player\\quizgame.player.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{616908AB-0005-4658-A9F0-55D063C9BC02}|QuizGame.Player\\QuizGame.Player.csproj|solutionrelative:quizgame.player\\quizgame.player.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,219 +170,414 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Quiz.cs",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\Models\\Quiz.cs",
-              "RelativeDocumentMoniker": "QuizGame.Repository\\Models\\Quiz.cs",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\Models\\Quiz.cs",
-              "RelativeToolTip": "QuizGame.Repository\\Models\\Quiz.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:15:40.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QuizGame2Context.cs",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\Models\\QuizGame2Context.cs",
-              "RelativeDocumentMoniker": "QuizGame.Repository\\Models\\QuizGame2Context.cs",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\Models\\QuizGame2Context.cs",
-              "RelativeToolTip": "QuizGame.Repository\\Models\\QuizGame2Context.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAiwMgAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:15:39.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IQuizService.cs",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IQuizService.cs",
-              "RelativeDocumentMoniker": "QuizGame.Service\\Interface\\IQuizService.cs",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IQuizService.cs",
-              "RelativeToolTip": "QuizGame.Service\\Interface\\IQuizService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:04:33.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Question\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\Question\\Index.cshtml.cs",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Question\\Index.cshtml.cs",
-              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\Question\\Index.cshtml.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAUwDUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T13:39:52.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "QuestionService.cs",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Service\\QuestionService.cs",
-              "RelativeDocumentMoniker": "QuizGame.Service\\Service\\QuestionService.cs",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Service\\QuestionService.cs",
-              "RelativeToolTip": "QuizGame.Service\\Service\\QuestionService.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAgwFUAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T13:55:06.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Quiz\\Index.cshtml",
-              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\Quiz\\Index.cshtml",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Quiz\\Index.cshtml",
-              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\Quiz\\Index.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAFYAAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T14:41:28.48Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Question\\Index.cshtml",
-              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\Question\\Index.cshtml",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Question\\Index.cshtml",
-              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\Question\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T13:39:50.266Z",
+              "WhenOpened": "2025-04-01T03:20:52.95Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "QuizService.cs",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Service\\QuizService.cs",
-              "RelativeDocumentMoniker": "QuizGame.Service\\Service\\QuizService.cs",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Service\\QuizService.cs",
-              "RelativeToolTip": "QuizGame.Service\\Service\\QuizService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA1wC8AAAAgAAAAAAAAAA==",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\appsettings.json",
+              "RelativeDocumentMoniker": "QuizGame.Player\\appsettings.json",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\appsettings.json",
+              "RelativeToolTip": "QuizGame.Player\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-31T22:03:19.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Program.cs",
+              "RelativeDocumentMoniker": "QuizGame.Player\\Program.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Program.cs",
+              "RelativeToolTip": "QuizGame.Player\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCQAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T13:55:04.502Z",
+              "WhenOpened": "2025-03-31T21:46:21.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JoinGame.razor",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Pages\\JoinGame.razor",
+              "RelativeDocumentMoniker": "QuizGame.Player\\Pages\\JoinGame.razor",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Pages\\JoinGame.razor",
+              "RelativeToolTip": "QuizGame.Player\\Pages\\JoinGame.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T21:42:34.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "QuizGame.Player\\Shared\\MainLayout.razor",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "QuizGame.Player\\Shared\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T21:42:40.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFQAAAAdAAAAAAAAAA==",
+              "Title": "NavMenu.razor.css",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Shared\\NavMenu.razor.css",
+              "RelativeDocumentMoniker": "QuizGame.Player\\Shared\\NavMenu.razor.css",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Shared\\NavMenu.razor.css",
+              "RelativeToolTip": "QuizGame.Player\\Shared\\NavMenu.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-31T21:44:06.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "QuizGame.Player\\Shared\\NavMenu.razor",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "QuizGame.Player\\Shared\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T14:50:12.116Z",
+              "WhenOpened": "2025-03-31T21:42:44.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GamePage.razor",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Pages\\GamePage.razor",
+              "RelativeDocumentMoniker": "QuizGame.Player\\Pages\\GamePage.razor",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Pages\\GamePage.razor",
+              "RelativeToolTip": "QuizGame.Player\\Pages\\GamePage.razor",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAH4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T21:42:01.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlayerService.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Service\\PlayerService.cs",
+              "RelativeDocumentMoniker": "QuizGame.Service\\Service\\PlayerService.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Service\\PlayerService.cs",
+              "RelativeToolTip": "QuizGame.Service\\Service\\PlayerService.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAcwD8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T21:59:58.681Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Quiz\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\Quiz\\Index.cshtml.cs",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Quiz\\Index.cshtml.cs",
-              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\Quiz\\Index.cshtml.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwCMAAAAvAAAAAAAAAA==",
+              "Title": "PlayerAnswerService.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Service\\PlayerAnswerService.cs",
+              "RelativeDocumentMoniker": "QuizGame.Service\\Service\\PlayerAnswerService.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Service\\PlayerAnswerService.cs",
+              "RelativeToolTip": "QuizGame.Service\\Service\\PlayerAnswerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T14:41:39.783Z",
+              "WhenOpened": "2025-03-31T22:01:43.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "IQuestionService.cs",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IQuestionService.cs",
-              "RelativeDocumentMoniker": "QuizGame.Service\\Interface\\IQuestionService.cs",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IQuestionService.cs",
-              "RelativeToolTip": "QuizGame.Service\\Interface\\IQuestionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBgAAAAAAAAAAAAAAA==",
+              "Title": "GameService.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Service\\GameService.cs",
+              "RelativeDocumentMoniker": "QuizGame.Service\\Service\\GameService.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Service\\GameService.cs",
+              "RelativeToolTip": "QuizGame.Service\\Service\\GameService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAIwGoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T13:49:29.433Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\DashBoard\\Index.cshtml",
-              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\DashBoard\\Index.cshtml",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\DashBoard\\Index.cshtml",
-              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\DashBoard\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T14:30:14.078Z",
+              "WhenOpened": "2025-03-31T21:59:32.905Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\DashBoard\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\DashBoard\\Index.cshtml.cs",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\DashBoard\\Index.cshtml.cs",
-              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\DashBoard\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T14:30:16.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "_Layout.cshtml.css",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Shared\\_Layout.cshtml.css",
-              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\Shared\\_Layout.cshtml.css",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Shared\\_Layout.cshtml.css",
-              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\Shared\\_Layout.cshtml.css",
+              "Title": "IQuizService.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IQuizService.cs",
+              "RelativeDocumentMoniker": "QuizGame.Service\\Interface\\IQuizService.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IQuizService.cs",
+              "RelativeToolTip": "QuizGame.Service\\Interface\\IQuizService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-31T14:50:19.061Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T21:48:26.093Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\appsettings.json",
-              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\appsettings.json",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\appsettings.json",
-              "RelativeToolTip": "Asm_PRN222_QuizGame\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-31T14:16:20.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\Index.cshtml",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T13:55:56.22Z",
+              "Title": "ITeamService.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\ITeamService.cs",
+              "RelativeDocumentMoniker": "QuizGame.Service\\Interface\\ITeamService.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\ITeamService.cs",
+              "RelativeToolTip": "QuizGame.Service\\Interface\\ITeamService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T21:48:20.822Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "IPlayerService.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IPlayerService.cs",
+              "RelativeDocumentMoniker": "QuizGame.Service\\Interface\\IPlayerService.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IPlayerService.cs",
+              "RelativeToolTip": "QuizGame.Service\\Interface\\IPlayerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T21:47:39.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IGameService.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IGameService.cs",
+              "RelativeDocumentMoniker": "QuizGame.Service\\Interface\\IGameService.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IGameService.cs",
+              "RelativeToolTip": "QuizGame.Service\\Interface\\IGameService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T21:48:09.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IGameLogService.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IGameLogService.cs",
+              "RelativeDocumentMoniker": "QuizGame.Service\\Interface\\IGameLogService.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IGameLogService.cs",
+              "RelativeToolTip": "QuizGame.Service\\Interface\\IGameLogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T21:48:14.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ITeamScoreService.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\ITeamScoreService.cs",
+              "RelativeDocumentMoniker": "QuizGame.Service\\Interface\\ITeamScoreService.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\ITeamScoreService.cs",
+              "RelativeToolTip": "QuizGame.Service\\Interface\\ITeamScoreService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T21:48:22.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IQuestionService.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IQuestionService.cs",
+              "RelativeDocumentMoniker": "QuizGame.Service\\Interface\\IQuestionService.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IQuestionService.cs",
+              "RelativeToolTip": "QuizGame.Service\\Interface\\IQuestionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T21:47:36.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "QuizGame.Player\\Pages\\Error.cshtml",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Pages\\Error.cshtml",
+              "RelativeToolTip": "QuizGame.Player\\Pages\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T21:42:17.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T21:58:12.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T21:58:12.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "QuizGame.Player\\Pages\\Index.razor",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Pages\\Index.razor",
+              "RelativeToolTip": "QuizGame.Player\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T21:42:12.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\Index.cshtml",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T21:58:11.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\Privacy.cshtml",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T21:58:09.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\appsettings.json",
+              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\appsettings.json",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\appsettings.json",
+              "RelativeToolTip": "Asm_PRN222_QuizGame\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-31T21:58:08.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\App.razor",
+              "RelativeDocumentMoniker": "QuizGame.Player\\App.razor",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\App.razor",
+              "RelativeToolTip": "QuizGame.Player\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T21:58:01.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\_Imports.razor",
+              "RelativeDocumentMoniker": "QuizGame.Player\\_Imports.razor",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\_Imports.razor",
+              "RelativeToolTip": "QuizGame.Player\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T21:58:00.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "QuizGame.Repository\\GenericRepository.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\GenericRepository.cs",
+              "RelativeToolTip": "QuizGame.Repository\\GenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T21:51:17.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "QuizGame.Repository\\UnitOfWork.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\UnitOfWork.cs",
+              "RelativeToolTip": "QuizGame.Repository\\UnitOfWork.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T21:51:18.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Gamehub.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Gamehub.cs",
+              "RelativeDocumentMoniker": "QuizGame.Player\\Gamehub.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Gamehub.cs",
+              "RelativeToolTip": "QuizGame.Player\\Gamehub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T21:46:21.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "QuestionService.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Service\\QuestionService.cs",
+              "RelativeDocumentMoniker": "QuizGame.Service\\Service\\QuestionService.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Service\\QuestionService.cs",
+              "RelativeToolTip": "QuizGame.Service\\Service\\QuestionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T21:51:28.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "IUserService.cs",
               "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IUserService.cs",
               "RelativeDocumentMoniker": "QuizGame.Service\\Interface\\IUserService.cs",
@@ -318,46 +585,111 @@
               "RelativeToolTip": "QuizGame.Service\\Interface\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T13:55:05.6Z",
+              "WhenOpened": "2025-03-31T21:48:19.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\Contact\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "QuizGame.Repository\\Contact\\IGenericRepository.cs",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\Contact\\IGenericRepository.cs",
-              "RelativeToolTip": "QuizGame.Repository\\Contact\\IGenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T13:49:33.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Service\\UserService.cs",
-              "RelativeDocumentMoniker": "QuizGame.Service\\Service\\UserService.cs",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Service\\UserService.cs",
-              "RelativeToolTip": "QuizGame.Service\\Service\\UserService.cs",
+              "DocumentIndex": 32,
+              "Title": "IGameLog.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IGameLog.cs",
+              "RelativeDocumentMoniker": "QuizGame.Service\\Interface\\IGameLog.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IGameLog.cs",
+              "RelativeToolTip": "QuizGame.Service\\Interface\\IGameLog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T13:55:03.718Z",
+              "WhenOpened": "2025-03-31T21:48:15.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "QuizGame.Repository\\GenericRepository.cs",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\GenericRepository.cs",
-              "RelativeToolTip": "QuizGame.Repository\\GenericRepository.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAiwDgAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 33,
+              "Title": "IPlayerAnswerService.cs",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IPlayerAnswerService.cs",
+              "RelativeDocumentMoniker": "QuizGame.Service\\Interface\\IPlayerAnswerService.cs",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\Interface\\IPlayerAnswerService.cs",
+              "RelativeToolTip": "QuizGame.Service\\Interface\\IPlayerAnswerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T13:44:07.477Z",
+              "WhenOpened": "2025-03-31T21:48:06.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "QuizGame.Service",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\QuizGame.Service.csproj",
+              "RelativeDocumentMoniker": "QuizGame.Service\\QuizGame.Service.csproj",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Service\\QuizGame.Service.csproj",
+              "RelativeToolTip": "QuizGame.Service\\QuizGame.Service.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-31T21:47:32.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "QuizGame.Repository",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\QuizGame.Repository.csproj",
+              "RelativeDocumentMoniker": "QuizGame.Repository\\QuizGame.Repository.csproj",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\QuizGame.Repository.csproj",
+              "RelativeToolTip": "QuizGame.Repository\\QuizGame.Repository.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-31T21:47:31.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "MainLayout.razor.css",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Shared\\MainLayout.razor.css",
+              "RelativeDocumentMoniker": "QuizGame.Player\\Shared\\MainLayout.razor.css",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Shared\\MainLayout.razor.css",
+              "RelativeToolTip": "QuizGame.Player\\Shared\\MainLayout.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-31T21:44:09.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "SurveyPrompt.razor",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Shared\\SurveyPrompt.razor",
+              "RelativeDocumentMoniker": "QuizGame.Player\\Shared\\SurveyPrompt.razor",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Shared\\SurveyPrompt.razor",
+              "RelativeToolTip": "QuizGame.Player\\Shared\\SurveyPrompt.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T21:44:07.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "_Host.cshtml",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Pages\\_Host.cshtml",
+              "RelativeDocumentMoniker": "QuizGame.Player\\Pages\\_Host.cshtml",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\Pages\\_Host.cshtml",
+              "RelativeToolTip": "QuizGame.Player\\Pages\\_Host.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T21:41:52.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "QuizGame.Player",
+              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\QuizGame.Player.csproj",
+              "RelativeDocumentMoniker": "QuizGame.Player\\QuizGame.Player.csproj",
+              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Player\\QuizGame.Player.csproj",
+              "RelativeToolTip": "QuizGame.Player\\QuizGame.Player.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-31T21:41:34.319Z",
               "EditorCaption": ""
             },
             {
@@ -403,32 +735,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\Account\\Login.cshtml.cs",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\Account\\Login.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T13:28:08.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Asm_PRN222_QuizGame\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "D:\\FPTU\\Sesmeter 7\\PRN222\\Assignment\\QuizGame\\Asm_PRN222_QuizGame\\Asm_PRN222_QuizGame\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "Asm_PRN222_QuizGame\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAmwC4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T13:28:05.565Z",
-              "EditorCaption": ""
             }
           ]
         },

@@ -13,7 +13,7 @@ public partial class PlayerAnswer
 
     public int? QuestionInGameId { get; set; }
 
-    public string Answer { get; set; }
+    public char Answer { get; set; }
 
     public bool? IsCorrect { get; set; }
 

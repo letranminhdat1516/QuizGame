@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using QuizGame.Repository.Contact;
 using QuizGame.Repository;
@@ -9,6 +9,7 @@ using AutoMapper;
 using QuizGame.Service.Mapper;
 
 namespace Asm_PRN222_QuizGame.Admin
+
 {
     public class Program
     {
@@ -17,6 +18,7 @@ namespace Asm_PRN222_QuizGame.Admin
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddRazorPages();
+
             builder.Services.AddSignalR();
 
             builder.Services.AddDbContext<QuizGame2Context>(options =>
@@ -29,7 +31,6 @@ namespace Asm_PRN222_QuizGame.Admin
             builder.Services.AddScoped<IQuestionService, QuestionService>();
             builder.Services.AddScoped<IQuizService, QuizService>();
             builder.Services.AddScoped<IUserService, UserService>();
-           
 
             builder.Services.AddAutoMapper(typeof(MapperProfile).Assembly);
 
@@ -42,12 +43,14 @@ namespace Asm_PRN222_QuizGame.Admin
                     options.SlidingExpiration = true;
                 });
 
+            builder.Services.AddServerSideBlazor();
+            builder.Services.AddSignalR();
+
             var app = builder.Build();
 
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
@@ -61,6 +64,7 @@ namespace Asm_PRN222_QuizGame.Admin
             app.UseAuthorization();
 
             app.MapRazorPages();
+            app.MapBlazorHub();
 
             app.Run();
         }

@@ -1,0 +1,46 @@
+﻿@page
+@model Asm_PRN222_QuizGame.Admin.Pages.Question.CreateQuestionModel
+@{
+    ViewData["Title"] = "Create Question";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary fw-bold">Create New Question</h2>
+
+    <div class="card shadow-lg p-4 border-0 rounded-4 mt-4">
+        <div class="card-body">
+            <form method="post">
+                <div class="form-group">
+                    <label asp-for="Question.QuizId" class="control-label"></label>
+                    <input asp-for="Question.QuizId" class="form-control" type="number" />
+                    <span asp-validation-for="Question.QuizId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Question.QuestionText" class="control-label"></label>
+                    <input asp-for="Question.QuestionText" class="form-control" />
+                    <span asp-validation-for="Question.QuestionText" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Question.CorrectAnswer" class="control-label"></label>
+                    <input asp-for="Question.CorrectAnswer" class="form-control" />
+                    <span asp-validation-for="Question.CorrectAnswer" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-3">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                    <a asp-page="./QuestionIndex" class="btn btn-secondary">Cancel</a>
+                </div>
+            </form>
+
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <div class="alert alert-danger mt-3">
+                    <i class="fas fa-exclamation-circle"></i> @Model.ErrorMessage
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

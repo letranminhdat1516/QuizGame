@@ -104,6 +104,7 @@ public partial class QuizGame2Context : DbContext
             entity.Property(e => e.PinCode)
                 .HasMaxLength(10)
                 .IsUnicode(false);
+            entity.Property(e => e.PlayerName).HasMaxLength(50);
             entity.Property(e => e.TeamId).HasColumnName("TeamID");
             entity.Property(e => e.UserId).HasColumnName("UserID");
 
@@ -154,9 +155,19 @@ public partial class QuizGame2Context : DbContext
                 .HasMaxLength(1)
                 .IsUnicode(false)
                 .IsFixedLength();
-            entity.Property(e => e.QuestionText)
-                .IsRequired()
-                .HasColumnType("text");
+            entity.Property(e => e.Option1)
+                .HasMaxLength(500)
+                .IsFixedLength();
+            entity.Property(e => e.Option2)
+                .HasMaxLength(500)
+                .IsFixedLength();
+            entity.Property(e => e.Option3)
+                .HasMaxLength(500)
+                .IsFixedLength();
+            entity.Property(e => e.Option4)
+                .HasMaxLength(500)
+                .IsFixedLength();
+            entity.Property(e => e.QuestionText).IsRequired();
             entity.Property(e => e.QuizId).HasColumnName("QuizID");
 
             entity.HasOne(d => d.Quiz).WithMany(p => p.Questions)

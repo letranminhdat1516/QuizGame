@@ -19,6 +19,8 @@ public partial class Player
 
     public DateTime? JoinTime { get; set; }
 
+    public string PlayerName { get; set; }
+
     public virtual Game Game { get; set; }
 
     public virtual ICollection<PlayerAnswer> PlayerAnswers { get; set; } = new List<PlayerAnswer>();
