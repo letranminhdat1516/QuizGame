@@ -1,9 +1,0 @@
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.csproj.AssemblyReference.cache
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.GeneratedMSBuildEditorConfig.editorconfig
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.AssemblyInfoInputs.cache
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.AssemblyInfo.cs
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.csproj.CoreCompileInputs.cache
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.MvcApplicationPartsAssemblyInfo.cache
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.RazorAssemblyInfo.cache
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.RazorAssemblyInfo.cs
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.sourcelink.json
