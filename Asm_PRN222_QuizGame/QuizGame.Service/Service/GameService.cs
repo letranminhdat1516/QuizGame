@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using QuizGame.Repository;
 using QuizGame.Repository.Contact;
 using QuizGame.Repository.Models;
 using QuizGame.Service.BusinessModel;
@@ -69,9 +70,9 @@ namespace QuizGame.Service.Service
         public async Task<bool> SaveAnswerAsync(string playerName, int gameId, int questionId, string answer, int timeTaken)
         {
             // Đảm bảo Player có namespace và class đúng
-               var player = await _uow.GetRepository<QuizGame.Repository.Models.Player>().AsQueryable()
-                .Where(p => p.PlayerName == playerName && p.GameId == gameId)  
-                .FirstOrDefaultAsync();
+            var player = await _uow.GetRepository<QuizGame.Repository.Models.Player>().AsQueryable()
+             .Where(p => p.PlayerName == playerName && p.GameId == gameId)
+             .FirstOrDefaultAsync();
             if (player == null) return false;
 
             var question = await _uow.GetRepository<Question>().GetByIdAsync(questionId);
@@ -79,7 +80,7 @@ namespace QuizGame.Service.Service
 
             await _uow.GetRepository<PlayerAnswer>().AddAsync(new Repository.Models.PlayerAnswer
             {
-                PlayerId = player.PlayerId,  
+                PlayerId = player.PlayerId,
                 QuestionInGameId = questionId, // Giả sử mapping 1:1
                 Answer = answer,
                 IsCorrect = isCorrect,
@@ -107,21 +108,182 @@ namespace QuizGame.Service.Service
             }).ToList<object>();
             return result;
         }
-
-        public Task AddGame(GameModel game)
+        public async Task AddGame(GameModel game)
         {
-            throw new NotImplementedException();
+            try
+            {
+                // Kiểm tra xem GamePin có được cung cấp không
+                if (string.IsNullOrEmpty(game.GamePin))
+                {
+                    throw new Exception("Game PIN is required.");
+                }
+
+                // Kiểm tra xem GamePin đã tồn tại chưa
+                var existingGame = await _uow.GetRepository<Game>().FindAsync(g => g.GamePin == game.GamePin);
+                if (existingGame.Any())
+                {
+                    throw new Exception($"Game PIN {game.GamePin} already exists. Please choose a different PIN.");
+                }
+
+                var gameEntity = _mapper.Map<Game>(game);
+                var gameRepository = _uow.GetRepository<Game>();
+                await gameRepository.AddAsync(gameEntity);
+                await _uow.SaveAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error adding game: {ex.Message}", ex);
+            }
         }
 
-        public Task<GameModel> GetGameByPin(string gamePin)
+
+        public async Task<GameModel> GetGameByPin(string gamePin)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (string.IsNullOrEmpty(gamePin))
+                {
+                    throw new Exception("Game PIN cannot be empty.");
+                }
+
+                var gameRepository = _uow.GetRepository<Game>();
+                var game = await gameRepository.FindAsync(g => g.GamePin == gamePin);
+                var result = game.FirstOrDefault();
+                if (result == null)
+                {
+                    throw new Exception($"Game with PIN {gamePin} not found.");
+                }
+                return _mapper.Map<GameModel>(result);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error retrieving game by PIN: {ex.Message}", ex);
+            }
         }
 
-        public Task<QuizModel> GetQuizByGamePin(string gamePin)
+        public async Task<QuizModel> GetQuizByGamePin(string gamePin)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (string.IsNullOrEmpty(gamePin))
+                {
+                    throw new Exception("Game PIN cannot be empty.");
+                }
+
+                var gameRepository = _uow.GetRepository<Game>();
+                var quizRepository = _uow.GetRepository<Quiz>();
+
+                // Lấy Game theo GamePin và bao gồm Quiz
+                var gameQuery = gameRepository.AsQueryable()
+                    .Include(g => g.Quiz)
+                    .Where(g => g.GamePin == gamePin);
+
+                var game = await gameQuery.FirstOrDefaultAsync();
+
+                if (game == null)
+                {
+                    throw new Exception($"Game with PIN {gamePin} not found.");
+                }
+
+                if (game.QuizId == null || game.Quiz == null)
+                {
+                    throw new Exception($"Quiz not found for Game with PIN {gamePin}.");
+                }
+
+                return _mapper.Map<QuizModel>(game.Quiz);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error retrieving quiz by game PIN: {ex.Message}", ex);
+            }
         }
+
+        public async Task<GameModel> GetGameById(int gameId)
+        {
+            try
+            {
+                var gameRepository = _uow.GetRepository<Game>();
+                var game_Temp = await gameRepository.GetByIdAsync(gameId);
+                return _mapper.Map<GameModel>(game_Temp);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error retrieving question: {ex.Message}", ex);
+            }
+        }
+
+        public async Task<IEnumerable<GameModel>> GetGames(string search, int pageNumber, int pageSize)
+        {
+            try
+            {
+                var gameRepository = _uow.GetRepository<Game>();
+
+                var query = gameRepository.AsQueryable();
+
+
+                if (!string.IsNullOrEmpty(search))
+                {
+                    query = query.Where(q => q.GameName.Contains(search) || q.GamePin.Contains(search));
+                }
+
+                // Sắp xếp theo ID để đảm bảo kết quả đúng thứ tự
+                query = query.OrderBy(q => q.GameId);
+
+                // Áp dụng phân trang
+                int skip = (pageNumber - 1) * pageSize;
+                query = query.Skip(skip).Take(pageSize);
+
+                var games = await query.ToListAsync();
+                return _mapper.Map<IEnumerable<GameModel>>(games);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error retrieving questions: {ex.Message}", ex);
+            }
+        }
+
+        public async Task EditGame(GameModel game)
+        {
+            try
+            {
+                var gameRepository = _uow.GetRepository<Game>();
+                var game_Temp = _mapper.Map<Game>(game);
+                await gameRepository.UpdateAsync(game_Temp);
+                await _uow.SaveAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error updating question: {ex.Message}", ex);
+            }
+        }
+
+        public async Task RemoveGame(int id)
+        {
+            try
+            {
+                var gameRepository = _uow.GetRepository<Game>();
+                await gameRepository.DeleteAsync(id);
+                await _uow.SaveAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error removing question: {ex.Message}", ex);
+            }
+        }
+
+        public async Task<int> GetTotalGamesCount(string search)
+        {
+            var gameRepository = _uow.GetRepository<Game>();
+            var query = gameRepository.AsQueryable();
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                query = query.Where(q => q.GameName.Contains(search) || q.GamePin.Contains(search));
+            }
+
+            return await query.CountAsync();
+        }
+
     }
-    
+
 }
