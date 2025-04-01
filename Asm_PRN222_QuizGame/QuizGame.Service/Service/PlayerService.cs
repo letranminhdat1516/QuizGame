@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.SignalR;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using QuizGame.Player;
 using QuizGame.Repository.Contact;
@@ -8,16 +9,16 @@ using QuizGame.Service.Interface;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-
 public class PlayerService : IPlayerService
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly IHubContext<GameHub> _hubContext;
-
-    public PlayerService(IUnitOfWork unitOfWork, IHubContext<GameHub> hubContext)
+    private readonly IHttpContextAccessor _httpContextAccessor;
+    public PlayerService(IUnitOfWork unitOfWork, IHubContext<GameHub> hubContext, IHttpContextAccessor httpContextAccessor)
     {
         _unitOfWork = unitOfWork;
         _hubContext = hubContext;
+        _httpContextAccessor = httpContextAccessor;
     }
 
     // Lấy game theo mã PIN
@@ -48,7 +49,7 @@ public class PlayerService : IPlayerService
         }
 
         var questionRepository = _unitOfWork.GetRepository<Question>();
-        var question = await questionRepository.GetByIdAsync(questionInGame.QuestionInGameId);  
+        var question = await questionRepository.GetByIdAsync(questionInGame.QuestionInGameId);
 
         return new QuestionModel
         {
@@ -108,7 +109,10 @@ public class PlayerService : IPlayerService
         var questions = await questionRepository.AsQueryable()
             .Where(q => q.QuizId == game.QuizId)
             .ToListAsync();
-
+        if (game == null)
+        {
+            throw new InvalidOperationException("Game not found.");
+        }
         if (!questions.Any())
         {
             throw new InvalidOperationException("No questions available for the game.");

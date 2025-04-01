@@ -12,7 +12,7 @@ namespace QuizGame.Service.Interface
     public interface IQuestionService
     {
         Task<QuestionModel> GetQuestionById(int id);
-        Task<IEnumerable<QuestionModel>> GetQuestions(string search , int pageNumber, int pageSize);
+        Task<IEnumerable<List<QuestionModel>>> GetQuestions(string search , int pageNumber, int pageSize);
         Task AddQuestion(QuestionModel question);
         Task UpdateQuestion(QuestionModel question);
         Task RemoveQuestion(int id);
@@ -21,7 +21,8 @@ namespace QuizGame.Service.Interface
         Task<int> GetTotalQuestionsCount(string search);
         Task<Game> GetGameByPinCode(string pinCode);  // Lấy game bằng mã PIN
         Task<QuestionModel> GetNextQuestionForGame(int gameId, int questionNumber);  // Lấy câu hỏi tiếp theo cho game
-        Task<IEnumerable<QuestionModel>> GetQuestionsWithQuizId(int? quizId);
-        Task AddQuestionInGame(QuestionInGameModel questionInGameModel);
+        Task<List<Question>> GetQuestionsWithQuizId(int? quizId);
+        Task AddQuestionInGame(QuestionInGame questionInGame);
+
     }
 }

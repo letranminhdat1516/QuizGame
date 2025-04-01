@@ -13,7 +13,7 @@ public partial class Question
 
     public string QuestionText { get; set; }
 
-    public char CorrectAnswer { get; set; }
+    public string CorrectAnswer { get; set; }
 
     public string Option1 { get; set; }
 

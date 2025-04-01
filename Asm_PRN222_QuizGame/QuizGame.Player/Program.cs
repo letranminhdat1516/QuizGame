@@ -7,6 +7,7 @@ using QuizGame.Repository.Contact;
 using QuizGame.Repository;
 using QuizGame.Repository.Models;
 using AutoMapper;
+using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 
 namespace QuizGame.Player
 {
@@ -18,12 +19,15 @@ namespace QuizGame.Player
 
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
+            builder.Services.AddScoped<ProtectedSessionStorage>();
+
 
             builder.Services.AddDbContext<QuizGame2Context>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
             builder.Services.AddDistributedMemoryCache();  // Lưu trữ trong bộ nhớ
             builder.Services.AddSession(options =>
             {
+                options.Cookie.HttpOnly = true;
                 options.IdleTimeout = TimeSpan.FromMinutes(30); // Thời gian hết hạn session
                 options.Cookie.IsEssential = true; // Cấu hình cookie để sử dụng session
             });
@@ -31,7 +35,7 @@ namespace QuizGame.Player
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>(); 
             builder.Services.AddScoped<IPlayerService, PlayerService>();
             builder.Services.AddScoped<IQuestionService, QuestionService>();
-            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>(); 
+            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddScoped<IPlayerAnswerService, PlayerAnswerService>();
             builder.Services.AddAutoMapper(typeof(Mapper));

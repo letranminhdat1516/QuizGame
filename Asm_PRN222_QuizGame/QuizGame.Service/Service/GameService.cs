@@ -56,7 +56,7 @@ namespace QuizGame.Service.Service
             };
         }
 
-        public async Task<bool> SaveAnswerAsync(string playerName, int gameId, int questionId, char answer, int timeTaken)
+        public async Task<bool> SaveAnswerAsync(string playerName, int gameId, int questionId, string answer, int timeTaken)
         {
             // Đảm bảo Player có namespace và class đúng
                var player = await _uow.GetRepository<QuizGame.Repository.Models.Player>().AsQueryable()
@@ -65,7 +65,7 @@ namespace QuizGame.Service.Service
             if (player == null) return false;
 
             var question = await _uow.GetRepository<Question>().GetByIdAsync(questionId);
-            bool isCorrect = question.CorrectAnswer == answer;
+            bool isCorrect = question.CorrectAnswer.Equals(answer);
 
             await _uow.GetRepository<PlayerAnswer>().AddAsync(new Repository.Models.PlayerAnswer
             {
@@ -98,9 +98,5 @@ namespace QuizGame.Service.Service
             return result;
         }
 
-        public Task<bool> SaveAnswerAsync(string playerName, int gameId, int questionId, string answer, int timeTaken)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

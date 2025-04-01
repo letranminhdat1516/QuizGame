@@ -1,5 +1,6 @@
 ﻿@page "/game"
 @using Microsoft.AspNetCore.SignalR
+@using QuizGame.Repository.Models
 @using QuizGame.Service.BusinessModel
 @using QuizGame.Service.Interface
 @inject IPlayerService PlayerService
@@ -8,6 +9,9 @@
 @inject IHubContext<GameHub> GameHubContext
 @inject NavigationManager Navigation
 @inject IHttpContextAccessor HttpContextAccessor
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@inject ProtectedSessionStorage SessionStorage
+
 
 <h3>Game - Question</h3>
 
@@ -36,6 +40,7 @@
 
 		<button type="submit" class="btn btn-primary">Submit Answer</button>
 	</EditForm>
+	<p>Time remaining: @timeRemaining seconds</p>
 }
 else
 {
@@ -50,11 +55,15 @@ else
 	private int currentPlayerId;
 	private	int currentQuestionNumber = 0;
 	private string[] currentOptions = new string[4];
+	private int timeRemaining = 30; // Mỗi câu hỏi có thời gian 30 giây
+	private Timer timer;
 
 	protected override async Task OnInitializedAsync()
 	{
 		// Lấy mã PIN từ session hoặc URL
-		string pinCode = HttpContextAccessor.HttpContext.Session.GetString("GamePin");
+		var result = await SessionStorage.GetAsync<string>("GamePin");
+		string pinCode = result.Success ? result.Value : null;
+
 
 		if (string.IsNullOrEmpty(pinCode))
 		{
@@ -75,10 +84,11 @@ else
 		if (game.QuizId.HasValue)
 		{
 			var listQuestion_Temp = await QuestionService.GetQuestionsWithQuizId(game.QuizId.Value);
+
 			int i = 0;
-			foreach (QuestionModel q in listQuestion_Temp)
+			foreach (Question q in listQuestion_Temp)
 			{
-				var questionInGame = new QuestionInGameModel
+				var questionInGame = new QuestionInGame
 					{
 						GameId = currentGameId,
 						QuestionId = q.QuestionId,
@@ -93,20 +103,8 @@ else
 			Navigation.NavigateTo("/error");
 		}
 		await LoadQuestion();
-		// Lấy câu hỏi từ database
-		// var question = await QuestionService.GetNextQuestionForGame(currentGameId, currentQuestionNumber);
-		// if (question != null)
-		// {
-		// 	currentQuestionId = question.QuestionId;
-		// 	currentQuestionText = question.QuestionText;
-		// }
-		// else
-		// {
-		// 	Navigation.NavigateTo("/game/finished");  Chuyển hướng nếu hết câu hỏi
-		// }
-
-		// Lấy ID của player từ session hoặc database
 	}
+
 	private async Task LoadQuestion()
 	{
 		var question = await QuestionService.GetNextQuestionForGame(currentGameId, currentQuestionNumber);
@@ -116,24 +114,50 @@ else
 			currentQuestionText = question.QuestionText;
 			currentOptions[0] = question.Option1;
 			currentOptions[1] = question.Option2;
-			currentOptions[2] = question.Option3;
+			currentOptions[2] = question.Option3;  
 			currentOptions[3] = question.Option4;
+			// Khởi tạo lại bộ đếm thời gian mỗi khi câu hỏi mới được tải
+			timeRemaining = 30;
+			// Start timer
+			timer = new Timer(TimerTick, null, 0, 1000);  // Mỗi giây, phương thức TimerTick sẽ được gọi
 		}
 		else
 		{
 			Navigation.NavigateTo("/game/finished");
 		}
 	}
+	private void TimerTick(object state)
+	{
+		if (timeRemaining > 0)
+		{
+			timeRemaining--;
+			InvokeAsync(() => StateHasChanged());  // Cập nhật UI sau mỗi giây
+		}
+		else
+		{
+			// Nếu hết giờ, mặc định câu trả lời là sai và chuyển sang câu hỏi tiếp theo
+			HandleAnswer();
+		}
+	}
 	private async Task HandleAnswer()
 	{
 		try
 		{
+			timer?.Dispose();
+			int timeTaken = 30 - timeRemaining;  // Thời gian trả lời, tính theo giây
 			if (!string.IsNullOrEmpty(playerAnswer.Answer))
 			{
-				await PlayerAnswerService.SubmitAnswer(currentPlayerId, currentQuestionId, playerAnswer.Answer);
+				await PlayerAnswerService.SubmitAnswer(currentPlayerId, currentQuestionId, playerAnswer.Answer, timeTaken);
 				currentQuestionNumber++;
 
-				await LoadQuestion(); // Tải câu hỏi tiếp theo mà không cần điều hướng
+				await LoadQuestion();
+			}
+			else
+			{
+				// Trường hợp người chơi không trả lời
+				await PlayerAnswerService.SubmitAnswer(currentPlayerId, currentQuestionId, null, 30);
+				currentQuestionNumber++;
+				await LoadQuestion();
 			}
 		}
 		catch (Exception ex)

@@ -70,7 +70,7 @@ namespace QuizGame.Service.Service
             }
         }
 
-        public async Task<IEnumerable<QuestionModel>> GetQuestions(string search, int pageNumber, int pageSize)
+        public async Task<IEnumerable<List<QuestionModel>>> GetQuestions(string search, int pageNumber, int pageSize)
         {
             try
             {
@@ -92,7 +92,7 @@ namespace QuizGame.Service.Service
                 query = query.Skip(skip).Take(pageSize);
 
                 var questions = await query.ToListAsync();
-                return _mapper.Map<IEnumerable<QuestionModel>>(questions);
+                return _mapper.Map<IEnumerable<List<QuestionModel>>>(questions);
             }
             catch (Exception ex)
             {
@@ -100,22 +100,23 @@ namespace QuizGame.Service.Service
             }
         }
 
-        public async Task<IEnumerable<QuestionModel>> GetQuestionsWithQuizId(int? quizId)
+        public async Task<List<Question>> GetQuestionsWithQuizId(int? quizId)
         {
             try
             {
                 if (quizId == null)
                 {
-                    return Enumerable.Empty<QuestionModel>();
+                    return new List<Question>();
                 }
-                var questionRepository = _unitOfWork.GetRepository<Question>();
+                    var questionRepository = _unitOfWork.GetRepository<Question>();
 
                 var query = questionRepository.AsQueryable();
 
                 query = query.Where(q => q.QuizId == quizId);
                 var questions = await query.ToListAsync();
                 // Map to QuestionModel and return
-                return _mapper.Map<IEnumerable<QuestionModel>>(questions);
+                return questions;
+
             }
             catch (Exception ex)
             {
@@ -215,17 +216,20 @@ namespace QuizGame.Service.Service
             {
                 QuestionId = question.QuestionId,
                 QuestionText = question.QuestionText,
-                CorrectAnswer = question.CorrectAnswer
+                CorrectAnswer = question.CorrectAnswer,
+                Option1 = question.Option1,
+                Option2 = question.Option2,
+                Option3 = question.Option3,
+                Option4 = question.Option4,
             };
         }
 
-        public async Task AddQuestionInGame(QuestionInGameModel questionInGameModel)
+        public async Task AddQuestionInGame(QuestionInGame questionInGame)
         {
             try
             {
-                var question_Temp = _mapper.Map<QuestionInGame>(questionInGameModel); 
                 var questionRepository = _unitOfWork.GetRepository<QuestionInGame>();
-                await questionRepository.AddAsync(question_Temp);
+                await questionRepository.AddAsync(questionInGame);
                 await _unitOfWork.SaveAsync();
             }
             catch (Exception ex)

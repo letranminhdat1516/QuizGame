@@ -8,6 +8,6 @@ namespace QuizGame.Service.Interface
 {
     public interface IPlayerAnswerService
     {
-        Task SubmitAnswer(int playerId, int questionInGameId, string answer);  // Người chơi trả lời câu hỏi và lưu câu trả lời
+        Task<bool> SubmitAnswer(int playerId, int questionId, string answer, int timeTaken);  // Người chơi trả lời câu hỏi và lưu câu trả lời
     }
 }

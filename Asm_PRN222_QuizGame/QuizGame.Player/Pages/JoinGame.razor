@@ -1,8 +1,12 @@
 ﻿@page "/joingame"
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
 @using QuizGame.Service.BusinessModel
 @using QuizGame.Service.Interface
 @inject IPlayerService PlayerService
 @inject NavigationManager Navigation
+@inject IHttpContextAccessor HttpContextAccessor
+@inject ProtectedSessionStorage SessionStorage
+
 
 <h3>Join Game</h3>
 
@@ -32,6 +36,7 @@
         {
             // Gọi service để player tham gia game
             await PlayerService.JoinGame(joinGameRequest.PinCode, joinGameRequest.PlayerName);
+            await SessionStorage.SetAsync("GamePin", joinGameRequest.PinCode);
             Navigation.NavigateTo("/game");  // Điều hướng tới trang game
         }
         catch (Exception ex)
