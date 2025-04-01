@@ -3,17 +3,21 @@
 using System;
 using System.Collections.Generic;
 
-namespace QuizGame.Repository.Models
-{
-    public partial class TeamScore
-    {
-        public int TeamScoreId { get; set; }
-        public int? TeamId { get; set; }
-        public int? QuestionInGameId { get; set; }
-        public int? Score { get; set; }
-        public int? Rank { get; set; }
+namespace QuizGame.Repository.Models;
 
-        public virtual QuestionInGame QuestionInGame { get; set; }
-        public virtual Team Team { get; set; }
-    }
+public partial class TeamScore
+{
+    public int TeamScoreId { get; set; }
+
+    public int? TeamId { get; set; }
+
+    public int? QuestionInGameId { get; set; }
+
+    public int? Score { get; set; }
+
+    public int? Rank { get; set; }
+
+    public virtual QuestionInGame QuestionInGame { get; set; }
+
+    public virtual Team Team { get; set; }
 }

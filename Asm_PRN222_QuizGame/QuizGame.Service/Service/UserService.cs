@@ -65,5 +65,17 @@ namespace QuizGame.Service.Service
                 throw new Exception(ex.Message);
             }
         }
+
+        public async Task<UserModel> Login(string email, string password)
+        {
+            var userRepo =  _unitOfWork.GetRepository<User>();
+            var user_temp = await userRepo.FindAsync(a => a.Email == email && a.Password == password);
+            var user = user_temp.FirstOrDefault();
+            if (user == null)
+            {
+                return null;
+            }
+            return _mapper.Map<UserModel>(user);
+        }
     }
 }

@@ -66,12 +66,14 @@ namespace QuizGame.Service.Service
                     query = query.Where(q => q.QuizName.Contains(search));
                 }
 
-                // Calculate pagination
+                // Sắp xếp theo ID để đảm bảo kết quả đúng thứ tự
+                query = query.OrderBy(q => q.QuizId);
+
+                // Áp dụng phân trang
                 int skip = (pageNumber - 1) * pageSize;
                 query = query.Skip(skip).Take(pageSize);
-                var quizs = await query.ToListAsync();
 
-                // Map to QuizModel and return
+                var quizs = await query.ToListAsync();
                 return _mapper.Map<IEnumerable<QuizModel>>(quizs);
             }
             catch (Exception ex)
@@ -107,6 +109,19 @@ namespace QuizGame.Service.Service
             {
                 throw new Exception($"Error updating Quiz: {ex.Message}", ex);
             }
+        }
+
+        public async Task<int> GetTotalQuizCount(string search)
+        {
+            var quizRepository = _unitOfWork.GetRepository<Quiz>();
+            var query = quizRepository.AsQueryable();
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                query = query.Where(q => q.QuizName.Contains(search));
+            }
+
+            return await query.CountAsync();
         }
     }
 }

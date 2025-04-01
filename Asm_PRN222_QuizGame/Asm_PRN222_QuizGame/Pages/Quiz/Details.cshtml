@@ -1,0 +1,62 @@
+﻿@page
+@model Asm_PRN222_QuizGame.Admin.Pages.Quiz.DetailsModel
+@{
+    ViewData["Title"] = "Quiz Details";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary fw-bold">Quiz Details</h2>
+
+    <div class="card shadow-lg p-4 border-0 rounded-4 mt-4">
+        <div class="card-body">
+            @if (Model.Quiz != null)
+            {
+                <h4>@Model.Quiz.QuizName</h4>
+                <h5>Questions</h5>
+              
+
+                <div class="table-responsive mt-4">
+                    <table class="table table-hover table-bordered">
+                        <thead class="table-light">
+                            <tr class="text-center">
+                                <th>Question ID</th>
+                                <th>Question Text</th>
+                                <th>Correct Answer</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (!Model.Questions.Any())
+                            {
+                                <tr>
+                                    <td colspan="4" class="text-center text-muted">No questions available.</td>
+                                </tr>
+                            }
+                            else
+                            {
+                                @foreach (var item in Model.Questions)
+                                {
+                                    <tr class="text-center">
+                                        <td>@item.QuestionId</td>
+                                        <td>@item.QuestionText</td>
+                                        <td>@item.CorrectAnswer</td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mt-3">
+                    <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
+                </div>
+            }
+
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <div class="alert alert-danger mt-3">
+                    <i class="fas fa-exclamation-circle"></i> @Model.ErrorMessage
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -3,18 +3,23 @@
 using System;
 using System.Collections.Generic;
 
-namespace QuizGame.Repository.Models
-{
-    public partial class PlayerAnswer
-    {
-        public int PlayerAnswerId { get; set; }
-        public int? PlayerId { get; set; }
-        public int? QuestionInGameId { get; set; }
-        public string Answer { get; set; }
-        public bool? IsCorrect { get; set; }
-        public int? TimeTaken { get; set; }
+namespace QuizGame.Repository.Models;
 
-        public virtual Player Player { get; set; }
-        public virtual QuestionInGame QuestionInGame { get; set; }
-    }
+public partial class PlayerAnswer
+{
+    public int PlayerAnswerId { get; set; }
+
+    public int? PlayerId { get; set; }
+
+    public int? QuestionInGameId { get; set; }
+
+    public char Answer { get; set; }
+
+    public bool? IsCorrect { get; set; }
+
+    public int? TimeTaken { get; set; }
+
+    public virtual Player Player { get; set; }
+
+    public virtual QuestionInGame QuestionInGame { get; set; }
 }

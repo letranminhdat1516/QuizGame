@@ -3,23 +3,21 @@
 using System;
 using System.Collections.Generic;
 
-namespace QuizGame.Repository.Models
+namespace QuizGame.Repository.Models;
+
+public partial class Team
 {
-    public partial class Team
-    {
-        public Team()
-        {
-            Players = new HashSet<Player>();
-            TeamScores = new HashSet<TeamScore>();
-        }
+    public int TeamId { get; set; }
 
-        public int TeamId { get; set; }
-        public string TeamName { get; set; }
-        public int? GameId { get; set; }
-        public DateTime? CreatedAt { get; set; }
+    public string TeamName { get; set; }
 
-        public virtual Game Game { get; set; }
-        public virtual ICollection<Player> Players { get; set; }
-        public virtual ICollection<TeamScore> TeamScores { get; set; }
-    }
+    public int? GameId { get; set; }
+
+    public DateTime? CreatedAt { get; set; }
+
+    public virtual Game Game { get; set; }
+
+    public virtual ICollection<Player> Players { get; set; } = new List<Player>();
+
+    public virtual ICollection<TeamScore> TeamScores { get; set; } = new List<TeamScore>();
 }

@@ -56,7 +56,7 @@ namespace QuizGame.Service.Service
             };
         }
 
-        public async Task<bool> SaveAnswerAsync(string playerName, int gameId, int questionId, string answer, int timeTaken)
+        public async Task<bool> SaveAnswerAsync(string playerName, int gameId, int questionId, char answer, int timeTaken)
         {
             // Đảm bảo Player có namespace và class đúng
                var player = await _uow.GetRepository<QuizGame.Repository.Models.Player>().AsQueryable()
@@ -96,6 +96,11 @@ namespace QuizGame.Service.Service
                 Score = 1000 - (i * 100)  // Ví dụ: người trả lời nhanh nhất được 1000, mỗi người sau giảm 100
             }).ToList<object>();
             return result;
+        }
+
+        public Task<bool> SaveAnswerAsync(string playerName, int gameId, int questionId, string answer, int timeTaken)
+        {
+            throw new NotImplementedException();
         }
     }
 }

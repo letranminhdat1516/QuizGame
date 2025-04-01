@@ -81,16 +81,17 @@ namespace QuizGame.Service.Service
 
                 if (!string.IsNullOrEmpty(search))
                 {
-                    query = query.Where(q => q.QuestionText.Contains(search) ||
-                                             q.CorrectAnswer.Contains(search));
+                    query = query.Where(q => q.QuestionText.Contains(search));
                 }
 
-                // Calculate pagination
+                // Sắp xếp theo ID để đảm bảo kết quả đúng thứ tự
+                query = query.OrderBy(q => q.QuestionId);
+
+                // Áp dụng phân trang
                 int skip = (pageNumber - 1) * pageSize;
                 query = query.Skip(skip).Take(pageSize);
-                var questions = await query.ToListAsync();
 
-                // Map to QuestionModel and return
+                var questions = await query.ToListAsync();
                 return _mapper.Map<IEnumerable<QuestionModel>>(questions);
             }
             catch (Exception ex)
@@ -175,6 +176,19 @@ namespace QuizGame.Service.Service
             }
         }
 
+        public async Task<int> GetTotalQuestionsCount(string search)
+        {
+            var questionRepository = _unitOfWork.GetRepository<Question>();
+            var query = questionRepository.AsQueryable();
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                query = query.Where(q => q.QuestionText.Contains(search));
+            }
+
+            return await query.CountAsync();
+        }
+
         public async Task<Game> GetGameByPinCode(string pinCode)
         {
             var gameRepository = _unitOfWork.GetRepository<Game>();
@@ -183,7 +197,6 @@ namespace QuizGame.Service.Service
 
             return game;
         }
-
         public async Task<QuestionModel> GetNextQuestionForGame(int gameId, int questionNumber)
         {
             var questionInGameRepository = _unitOfWork.GetRepository<QuestionInGame>();

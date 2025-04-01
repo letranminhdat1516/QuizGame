@@ -3,15 +3,17 @@
 using System;
 using System.Collections.Generic;
 
-namespace QuizGame.Repository.Models
-{
-    public partial class GameLog
-    {
-        public int LogId { get; set; }
-        public int? GameId { get; set; }
-        public string Action { get; set; }
-        public DateTime? ActionTime { get; set; }
+namespace QuizGame.Repository.Models;
 
-        public virtual Game Game { get; set; }
-    }
+public partial class GameLog
+{
+    public int LogId { get; set; }
+
+    public int? GameId { get; set; }
+
+    public string Action { get; set; }
+
+    public DateTime? ActionTime { get; set; }
+
+    public virtual Game Game { get; set; }
 }

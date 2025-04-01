@@ -9,7 +9,6 @@ namespace QuizGame.Service.BusinessModel
     public class QuizModel
     {
         public int QuizId { get; set; }
-
         public string QuizName { get; set; }
     }
 }

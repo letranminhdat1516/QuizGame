@@ -12,5 +12,6 @@ namespace QuizGame.Service.Interface
         Task<UserModel> GetUserById(int id);
         Task AddUser(UserModel user);
         Task UpdateUser(UserModel user);
+        Task<UserModel> Login(string email, string password);
     }
 }

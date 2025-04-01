@@ -4,47 +4,115 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Asm_PRN222_QuizGame</title>
+
+    <!-- Bootstrap & Custom Styles -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Asm_PRN222_QuizGame.styles.css" asp-append-version="true" />
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon" asp-append-version="true" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .logout-link {
+            color: red;
+            font-weight: bold;
+        }
+
+        .logout-link:hover {
+            background-color: #ffe6e6;
+            color: darkred;
+        }
+
+        .sidebar-heading {
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 15px 10px; /* Tăng padding để tạo khoảng cách */
+            margin-bottom: 10px; /* Tạo khoảng cách dưới tiêu đề */
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Giữ viền để tách biệt */
+        }
+
+        #sidebar-wrapper {
+            width: 250px;
+            min-height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: #f8f9fa;
+            border-right: 1px solid #ddd;
+            padding-top: 20px;
+        }
+
+        #page-content-wrapper {
+            margin-left: 250px;
+            width: calc(100% - 250px);
+        }
+
+        #wrapper.toggled #sidebar-wrapper {
+            margin-left: -250px;
+        }
+
+        #wrapper.toggled #page-content-wrapper {
+            margin-left: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Asm_PRN222_QuizGame</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="sidebar-heading text-center">
+                <h4>Admin Page</h4>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+            <div class="list-group list-group-flush">
+                <a asp-page="/Dashboard/Index" class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-chart-line me-2"></i> Dashboard
+                </a>
+                <a asp-page="/Quiz/Index" class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-question-circle me-2"></i> Quizzes
+                </a>
+                <a asp-page="/Question/Index" class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-question me-2"></i>   Questions
+                </a>
+                <a asp-page="/Account/Logout" class="list-group-item list-group-item-action logout-link">
+                    <i class="fas fa-sign-out-alt me-2"></i> Logout
+                </a>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- Navbar for mobile toggle -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary ms-3" id="menu-toggle">☰ Menu</button>
+                <a class="navbar-brand ms-4" asp-page="/Index">ASM_PRN222_QuizGame</a>
+            </nav>
+
+            <main role="main" class="container pt-3">
+                @RenderBody()
+            </main>
+        </div>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - Asm_PRN222_QuizGame - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
-
+    <!-- Scripts -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        // Toggle sidebar visibility
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menu-toggle");
+            if (menuToggle) {
+                menuToggle.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    document.getElementById("wrapper").classList.toggle("toggled");
+                });
+            }
+        });
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
