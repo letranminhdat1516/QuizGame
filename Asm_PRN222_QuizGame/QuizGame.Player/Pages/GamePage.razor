@@ -148,21 +148,22 @@ else
 			if (!string.IsNullOrEmpty(playerAnswer.Answer))
 			{
 				await PlayerAnswerService.SubmitAnswer(currentPlayerId, currentQuestionId, playerAnswer.Answer, timeTaken);
-				currentQuestionNumber++;
-
-				await LoadQuestion();
 			}
 			else
 			{
 				// Trường hợp người chơi không trả lời
 				await PlayerAnswerService.SubmitAnswer(currentPlayerId, currentQuestionId, null, 30);
-				currentQuestionNumber++;
-				await LoadQuestion();
 			}
+				await LoadQuestion();
+				currentQuestionNumber++;
 		}
 		catch (Exception ex)
 		{
 			Console.WriteLine($"Error: {ex.Message}");
 		}
+	}
+	public async ValueTask DisposeAsync()
+	{
+		timer?.Dispose();
 	}
 }

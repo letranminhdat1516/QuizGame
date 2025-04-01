@@ -115,7 +115,6 @@ D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\
 D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\bin\Debug\net7.0\Newtonsoft.Json.dll
 D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
 D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\bin\Debug\net7.0\System.Diagnostics.DiagnosticSource.dll
 D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\bin\Debug\net7.0\System.Drawing.Common.dll
@@ -172,3 +171,6 @@ D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\
 D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\obj\Debug\net7.0\QuizGame.Player.pdb
 D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\obj\Debug\net7.0\QuizGame.Player.genruntimeconfig.cache
 D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\obj\Debug\net7.0\ref\QuizGame.Player.dll
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\bin\Debug\net7.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Client.dll
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\bin\Debug\net7.0\Microsoft.AspNetCore.SignalR.Client.Core.dll

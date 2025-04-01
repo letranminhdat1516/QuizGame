@@ -63,6 +63,7 @@ public class PlayerService : IPlayerService
     public async Task JoinGame(string pinCode, string playerName)
     {
         var game = await GetGameByPinCode(pinCode);
+        if (game == null) throw new Exception("Game not found");
 
         // Thêm player vào game
         var teamRepository = _unitOfWork.GetRepository<Team>();
@@ -95,7 +96,7 @@ public class PlayerService : IPlayerService
         await _unitOfWork.SaveAsync();
 
         // Gửi thông báo player đã tham gia
-        await _hubContext.Clients.All.SendAsync("PlayerJoined", playerName);
+        await _hubContext.Clients.Group(pinCode).SendAsync("PlayerJoined", playerName);
     }
 
     // Khi game bắt đầu, gửi câu hỏi cho player
@@ -123,7 +124,7 @@ public class PlayerService : IPlayerService
 
         if (firstQuestion != null)
         {
-            await _hubContext.Clients.All.SendAsync("ReceiveQuestion", gameId, firstQuestion.QuestionText);
+            await _hubContext.Clients.Group(gameId.ToString()).SendAsync("ReceiveQuestion", gameId, firstQuestion.QuestionText);
         }
 
         // Cập nhật trạng thái game

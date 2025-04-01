@@ -7,7 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\QuizGame.Repository\QuizGame.Repository.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\QuizGame.Service\QuizGame.Service.csproj" />
   </ItemGroup>
 
