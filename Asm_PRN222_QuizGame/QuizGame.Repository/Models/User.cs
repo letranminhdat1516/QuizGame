@@ -3,22 +3,14 @@
 using System;
 using System.Collections.Generic;
 
-namespace QuizGame.Repository.Models
+namespace QuizGame.Repository.Models;
+
+public partial class User
 {
-    public partial class User
-    {
-        public User()
-        {
-            Games = new HashSet<Game>();
-            Players = new HashSet<Player>();
-        }
+    public int UserId { get; set; }
 
-        public int UserId { get; set; }
-        public string UserName { get; set; }
-        public string Email { get; set; }
-        public DateTime? CreatedAt { get; set; }
+    public string UserName { get; set; }
 
-<<<<<<< HEAD
     public string Email { get; set; }
 
     public DateTime? CreatedAt { get; set; }
@@ -30,9 +22,4 @@ namespace QuizGame.Repository.Models
     public virtual ICollection<Game> Games { get; set; } = new List<Game>();
 
     public virtual ICollection<Player> Players { get; set; } = new List<Player>();
-=======
-        public virtual ICollection<Game> Games { get; set; }
-        public virtual ICollection<Player> Players { get; set; }
-    }
->>>>>>> origin/NguyenHP
 }

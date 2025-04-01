@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using QuizGame.Repository.Contact;
 using QuizGame.Repository;
@@ -10,17 +9,7 @@ using AutoMapper;
 using QuizGame.Service.Mapper;
 
 namespace Asm_PRN222_QuizGame.Admin
-=======
-using Asm_PRN222_QuizGame.Admin.GameHub;
-using Microsoft.EntityFrameworkCore;
-using QuizGame.Repository;
-using QuizGame.Repository.Contact;
-using QuizGame.Repository.Models;
-using QuizGame.Service.Interface;
-using QuizGame.Service.Service;
 
-namespace Asm_PRN222_QuizGame
->>>>>>> origin/NguyenHP
 {
     public class Program
     {
@@ -29,7 +18,7 @@ namespace Asm_PRN222_QuizGame
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddRazorPages();
-<<<<<<< HEAD
+
             builder.Services.AddSignalR();
 
             builder.Services.AddDbContext<QuizGame2Context>(options =>
@@ -42,7 +31,6 @@ namespace Asm_PRN222_QuizGame
             builder.Services.AddScoped<IQuestionService, QuestionService>();
             builder.Services.AddScoped<IQuizService, QuizService>();
             builder.Services.AddScoped<IUserService, UserService>();
-           
 
             builder.Services.AddAutoMapper(typeof(MapperProfile).Assembly);
 
@@ -54,21 +42,9 @@ namespace Asm_PRN222_QuizGame
                     options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
                     options.SlidingExpiration = true;
                 });
-=======
+
             builder.Services.AddServerSideBlazor();
             builder.Services.AddSignalR();
-
-            builder.Services.AddDbContext<QuizGame2Context>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-
-            // Dependency Injection
-            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-            builder.Services.AddScoped<IGameService, GameService>();
-            builder.Services.AddScoped<IQuestionService, QuestionService>();
-            builder.Services.AddScoped<IQuizService, QuizService>();
-            builder.Services.AddScoped<IUserService, UserService>();
->>>>>>> origin/NguyenHP
 
             var app = builder.Build();
 
@@ -77,7 +53,6 @@ namespace Asm_PRN222_QuizGame
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
-           
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
@@ -90,7 +65,6 @@ namespace Asm_PRN222_QuizGame
 
             app.MapRazorPages();
             app.MapBlazorHub();
-            app.MapHub<GameHub>("/gameHub");
 
             app.Run();
         }

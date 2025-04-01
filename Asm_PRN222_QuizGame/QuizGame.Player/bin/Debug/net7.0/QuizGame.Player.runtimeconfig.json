@@ -13,10 +13,7 @@
     ],
     "configProperties": {
       "System.GC.Server": true,
-<<<<<<< HEAD
-=======
       "System.Reflection.NullabilityInfoContext.IsSupported": true,
->>>>>>> origin/NguyenHP
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false
     }
   }

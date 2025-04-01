@@ -9,38 +9,29 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QuizGame.Player
 build_property.RootNamespace = QuizGame.Player
-<<<<<<< HEAD
 build_property.ProjectDir = D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\
-=======
-build_property.ProjectDir = D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player\
->>>>>>> origin/NguyenHP
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player
-=======
-build_property.MSBuildProjectDirectory = D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Player
->>>>>>> origin/NguyenHP
 build_property._RazorSourceGeneratorDebug = 
 
-<<<<<<< HEAD
 [D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/GamePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZVBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/JoinGame.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9pbkdhbWUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Shared/SurveyPrompt.razor]
@@ -64,52 +55,5 @@ build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/_Host.cshtml]
-=======
-[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/App.razor]
-build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/GamePage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZVBhZ2UucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/JoinGame.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9pbkdhbWUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/_Imports.razor]
-build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-lgxtnyff0d
-
-[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-u2iqb25d7m
-
-[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/_Host.cshtml]
->>>>>>> origin/NguyenHP
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

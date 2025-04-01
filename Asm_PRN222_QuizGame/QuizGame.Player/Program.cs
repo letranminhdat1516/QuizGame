@@ -6,7 +6,6 @@ using QuizGame.Service.Service;
 using QuizGame.Repository.Contact;
 using QuizGame.Repository;
 using QuizGame.Repository.Models;
-using QuizGame.Player.Data;
 using AutoMapper;
 
 namespace QuizGame.Player
@@ -39,8 +38,6 @@ namespace QuizGame.Player
 
 
             builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-
-            builder.Services.AddSingleton<WeatherForecastService>();
 
             var app = builder.Build();
 

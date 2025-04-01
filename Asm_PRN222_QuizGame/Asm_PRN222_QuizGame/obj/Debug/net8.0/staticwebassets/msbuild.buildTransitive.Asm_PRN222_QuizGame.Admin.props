@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Asm_PRN222_QuizGame.Admin.props" />
-</Project>

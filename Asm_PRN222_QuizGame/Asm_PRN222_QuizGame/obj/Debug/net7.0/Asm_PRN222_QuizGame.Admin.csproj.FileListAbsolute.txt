@@ -1,89 +1,89 @@
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\appsettings.Development.json
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\appsettings.json
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Asm_PRN222_QuizGame.Admin.staticwebassets.runtime.json
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Asm_PRN222_QuizGame.Admin.staticwebassets.endpoints.json
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Asm_PRN222_QuizGame.Admin.exe
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Asm_PRN222_QuizGame.Admin.deps.json
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Asm_PRN222_QuizGame.Admin.runtimeconfig.json
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Asm_PRN222_QuizGame.Admin.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Asm_PRN222_QuizGame.Admin.pdb
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\AutoMapper.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Azure.Core.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Azure.Identity.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.Identity.Client.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Drawing.Common.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Memory.Data.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Runtime.Caching.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Security.Permissions.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Windows.Extensions.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\QuizGame.Repository.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\QuizGame.Service.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\QuizGame.Service.pdb
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\QuizGame.Repository.pdb
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.csproj.AssemblyReference.cache
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.GeneratedMSBuildEditorConfig.editorconfig
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.AssemblyInfoInputs.cache
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.AssemblyInfo.cs
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.csproj.CoreCompileInputs.cache
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.MvcApplicationPartsAssemblyInfo.cache
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.RazorAssemblyInfo.cache
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.RazorAssemblyInfo.cs
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.sourcelink.json
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\scopedcss\bundle\Asm_PRN222_QuizGame.Admin.styles.css
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\scopedcss\projectbundle\Asm_PRN222_QuizGame.Admin.bundle.scp.css
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets.build.json
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets.development.json
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets.build.endpoints.json
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets\msbuild.Asm_PRN222_QuizGame.Admin.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets\msbuild.Asm_PRN222_QuizGame.Admin.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets\msbuild.build.Asm_PRN222_QuizGame.Admin.props
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Asm_PRN222_QuizGame.Admin.props
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Asm_PRN222_QuizGame.Admin.props
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets.pack.json
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN2.C007A8F6.Up2Date
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\refint\Asm_PRN222_QuizGame.Admin.dll
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.pdb
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.genruntimeconfig.cache
-D:\Shool\Temps\7\PRN222\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\ref\Asm_PRN222_QuizGame.Admin.dll
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.csproj.AssemblyReference.cache
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.GeneratedMSBuildEditorConfig.editorconfig
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.AssemblyInfoInputs.cache
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.AssemblyInfo.cs
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.csproj.CoreCompileInputs.cache
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.MvcApplicationPartsAssemblyInfo.cache
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.RazorAssemblyInfo.cache
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.RazorAssemblyInfo.cs
-D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.sourcelink.json
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\appsettings.Development.json
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\appsettings.json
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Asm_PRN222_QuizGame.Admin.staticwebassets.runtime.json
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Asm_PRN222_QuizGame.Admin.exe
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Asm_PRN222_QuizGame.Admin.deps.json
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Asm_PRN222_QuizGame.Admin.runtimeconfig.json
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Asm_PRN222_QuizGame.Admin.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Asm_PRN222_QuizGame.Admin.pdb
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\AutoMapper.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Azure.Core.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Azure.Identity.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Humanizer.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.CodeDom.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Diagnostics.DiagnosticSource.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.IO.Pipelines.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Memory.Data.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Threading.Channels.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\QuizGame.Repository.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\QuizGame.Service.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\QuizGame.Service.pdb
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\bin\Debug\net7.0\QuizGame.Repository.pdb
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.csproj.AssemblyReference.cache
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.AssemblyInfoInputs.cache
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.AssemblyInfo.cs
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.csproj.CoreCompileInputs.cache
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.MvcApplicationPartsAssemblyInfo.cache
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.RazorAssemblyInfo.cache
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.RazorAssemblyInfo.cs
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.sourcelink.json
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets.build.json
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets.development.json
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets\msbuild.Asm_PRN222_QuizGame.Admin.Microsoft.AspNetCore.StaticWebAssets.props
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets\msbuild.build.Asm_PRN222_QuizGame.Admin.props
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Asm_PRN222_QuizGame.Admin.props
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Asm_PRN222_QuizGame.Admin.props
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\staticwebassets.pack.json
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\scopedcss\bundle\Asm_PRN222_QuizGame.Admin.styles.css
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\scopedcss\projectbundle\Asm_PRN222_QuizGame.Admin.bundle.scp.css
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN2.C007A8F6.Up2Date
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\refint\Asm_PRN222_QuizGame.Admin.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.pdb
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\Asm_PRN222_QuizGame.Admin.genruntimeconfig.cache
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\Asm_PRN222_QuizGame\obj\Debug\net7.0\ref\Asm_PRN222_QuizGame.Admin.dll

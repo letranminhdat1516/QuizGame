@@ -176,7 +176,6 @@ namespace QuizGame.Service.Service
             }
         }
 
-<<<<<<< HEAD
         public async Task<int> GetTotalQuestionsCount(string search)
         {
             var questionRepository = _unitOfWork.GetRepository<Question>();
@@ -184,12 +183,12 @@ namespace QuizGame.Service.Service
 
             if (!string.IsNullOrEmpty(search))
             {
-                query = query.Where(q => q.QuestionText.Contains(search) ||
-                                         q.CorrectAnswer.Contains(search));
+                query = query.Where(q => q.QuestionText.Contains(search));
             }
 
             return await query.CountAsync();
-=======
+        }
+
         public async Task<Game> GetGameByPinCode(string pinCode)
         {
             var gameRepository = _unitOfWork.GetRepository<Game>();
@@ -198,7 +197,6 @@ namespace QuizGame.Service.Service
 
             return game;
         }
-
         public async Task<QuestionModel> GetNextQuestionForGame(int gameId, int questionNumber)
         {
             var questionInGameRepository = _unitOfWork.GetRepository<QuestionInGame>();
@@ -234,7 +232,6 @@ namespace QuizGame.Service.Service
             {
                 throw new Exception($"Error adding question: {ex.Message}", ex);
             }
->>>>>>> origin/NguyenHP
         }
     }
 }

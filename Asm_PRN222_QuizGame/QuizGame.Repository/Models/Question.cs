@@ -3,25 +3,27 @@
 using System;
 using System.Collections.Generic;
 
-namespace QuizGame.Repository.Models
+namespace QuizGame.Repository.Models;
+
+public partial class Question
 {
-    public partial class Question
-    {
-        public Question()
-        {
-            QuestionInGames = new HashSet<QuestionInGame>();
-        }
+    public int QuestionId { get; set; }
 
-        public int QuestionId { get; set; }
-        public int? QuizId { get; set; }
-        public string QuestionText { get; set; }
-        public string CorrectAnswer { get; set; }
-        public string Option1 { get; set; }
-        public string Option2 { get; set; }
-        public string Option3 { get; set; }
-        public string Option4 { get; set; }
+    public int? QuizId { get; set; }
 
-        public virtual Quiz Quiz { get; set; }
-        public virtual ICollection<QuestionInGame> QuestionInGames { get; set; }
-    }
+    public string QuestionText { get; set; }
+
+    public char CorrectAnswer { get; set; }
+
+    public string Option1 { get; set; }
+
+    public string Option2 { get; set; }
+
+    public string Option3 { get; set; }
+
+    public string Option4 { get; set; }
+
+    public virtual ICollection<QuestionInGame> QuestionInGames { get; set; } = new List<QuestionInGame>();
+
+    public virtual Quiz Quiz { get; set; }
 }
