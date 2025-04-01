@@ -10,10 +10,12 @@ namespace QuizGame.Player
         //{
         //    await Clients.All.SendAsync("PlayerJoined", playerName); // Gửi thông báo đến tất cả client
         //}
-        public async Task JoinGameGroup(int gameId)
+        public async Task JoinGameGroup(string gamePin)
         {
-            // Thêm người chơi vào nhóm tương ứng với mã pin game
-            await Groups.AddToGroupAsync(Context.ConnectionId, gameId.ToString());
+            // Logic to add player to the group using gamePin
+            await Groups.AddToGroupAsync(Context.ConnectionId, gamePin);
+            // Optionally, notify other clients that a player has joined
+            await Clients.Group(gamePin).SendAsync("PlayerJoined", Context.User.Identity.Name);
         }
 
         // Gửi thông báo khi một player tham gia game

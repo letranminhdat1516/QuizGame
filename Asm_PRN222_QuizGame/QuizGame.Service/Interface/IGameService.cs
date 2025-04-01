@@ -16,6 +16,11 @@ namespace QuizGame.Service.Interface
         Task<List<object>> CalculateScoresAsync(int gameId, int questionId);
         Task<GameModel> GetGameByPin(string gamePin); // Lấy Game theo GamePin (dành cho người dùng)
         Task<QuizModel> GetQuizByGamePin(string gamePin); // Lấy Quiz theo GamePin (dành cho người dùng)
+        Task<GameModel> GetGameById(int gameId);
+        Task<IEnumerable<GameModel>> GetGames(string search, int pageNumber, int pageSize);
+        Task EditGame(GameModel game);
+        Task RemoveGame(int gameId);
+        Task<int> GetTotalGamesCount(string search);
     }
 }
 

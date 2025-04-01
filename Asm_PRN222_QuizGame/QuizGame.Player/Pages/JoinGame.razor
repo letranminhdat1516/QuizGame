@@ -39,15 +39,6 @@
 			.WithUrl(Navigation.ToAbsoluteUri("/gamehub"))
 			.Build();
 
-		hubConnection.On<string>("PlayerJoined", (playerName) =>
-	{
-		InvokeAsync(() =>
-			{
-				// Xử lý thông báo khi có người chơi tham gia
-				// Hiển thị thông báo trong UI hoặc làm gì đó
-				Console.WriteLine($"{playerName} has joined the game");
-			});
-	});
 		// Lắng nghe sự kiện nhận câu hỏi từ Hub
 		hubConnection.On<string>("ReceiveQuestion", (questionText) =>
 		{
@@ -64,11 +55,15 @@
 			// Gọi service để player tham gia game
 			await PlayerService.JoinGame(joinGameRequest.PinCode, joinGameRequest.PlayerName);
 			await SessionStorage.SetAsync("GamePin", joinGameRequest.PinCode);
+			await SessionStorage.SetAsync("PlayerName", joinGameRequest.PlayerName);
+
 			if (hubConnection is not null && isConnected)
 			{
-				await hubConnection.SendAsync("JoinGameGroup", joinGameRequest.PinCode, joinGameRequest.PlayerName);
+				await hubConnection.SendAsync("JoinGameGroup", joinGameRequest.PinCode);
+				// Gửi thông báo người chơi tham gia game
+				await hubConnection.SendAsync("NotifyPlayerJoined", joinGameRequest.PinCode, joinGameRequest.PlayerName);
 			}
-			Navigation.NavigateTo("/game");  // Điều hướng tới trang game
+			Navigation.NavigateTo("/waitingroom");  // Điều hướng tới trang game
 		}
 		catch (Exception ex)
 		{

@@ -20,17 +20,17 @@
             font-weight: bold;
         }
 
-        .logout-link:hover {
-            background-color: #ffe6e6;
-            color: darkred;
-        }
+            .logout-link:hover {
+                background-color: #ffe6e6;
+                color: darkred;
+            }
 
         .sidebar-heading {
             font-size: 1.2rem;
             font-weight: bold;
-            padding: 15px 10px; /* Tăng padding để tạo khoảng cách */
-            margin-bottom: 10px; /* Tạo khoảng cách dưới tiêu đề */
-            border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Giữ viền để tách biệt */
+            padding: 15px 10px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
         }
 
         #sidebar-wrapper {
@@ -39,7 +39,7 @@
             position: fixed;
             left: 0;
             top: 0;
-            background-color: #f8f9fa;
+            background-color: white;
             border-right: 1px solid #ddd;
             padding-top: 20px;
         }
@@ -57,54 +57,49 @@
             margin-left: 0;
             width: 100%;
         }
+
+        .quizgame-logo {
+            width: 200px;
+            height: 150px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 15px;
+        }
     </style>
 </head>
 <body>
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
-            <div class="sidebar-heading text-center">
-                <h4>Admin Page</h4>
-            </div>
+            <img src="~/image/download.png" alt="QuizGame Logo" class="quizgame-logo" />
             <div class="list-group list-group-flush">
-                <a asp-page="/Dashboard/Index" class="list-group-item list-group-item-action bg-light">
-                    <i class="fas fa-chart-line me-2"></i> Dashboard
+                <a asp-page="/Dashboard/Index" class="list-group-item list-group-item-action">
+                    <i class="fas fa-chart-line me-3"></i> Dashboard
                 </a>
-                <a asp-page="/Quiz/Index" class="list-group-item list-group-item-action bg-light">
-                    <i class="fas fa-question-circle me-2"></i> Quizzes
+                <a asp-page="/Question/QuestionIndex" class="list-group-item list-group-item-action">
+                    <i class="fas fa-question me-4"></i> Questions
                 </a>
-                <a asp-page="/Question/Index" class="list-group-item list-group-item-action bg-light">
-                    <i class="fas fa-question me-2"></i>   Questions
+                <a asp-page="/Quiz/Index" class="list-group-item list-group-item-action">
+                    <i class="fas fa-question-circle me-3"></i> Quizzes
                 </a>
-                 <a asp-page="/Score/ScoreIndex" class="list-group-item list-group-item-action bg-light">
-                    <i class="fas fa-trophy me-2"></i>   Teams Score
+                <a asp-page="/Score/ScoreIndex" class="list-group-item list-group-item-action">
+                    <i class="fas fa-trophy me-3"></i> Scores
                 </a>
-               
-                <a asp-page="/Game/JoinGame" class="list-group-item list-group-item-action bg-light">
-                    <i class="fas fa-plus me-2"></i> Create Game Pin
+                <a asp-page="/Game/Index" class="list-group-item list-group-item-action">
+                    <i class="fas fa-gamepad me-3"></i> Games
                 </a>
-
-                <a asp-page="/Game/Create" class="list-group-item list-group-item-action bg-light">
-                    <i class="fas fa-plus me-2"></i> Add Game
-                </a>
-
                 <a asp-page="/Account/Logout" class="list-group-item list-group-item-action logout-link">
-                    <i class="fas fa-sign-out-alt me-2"></i> Logout
+                    <i class="fas fa-sign-out-alt me-3"></i> Logout
                 </a>
-            
-            
-            
             </div>
         </div>
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-            <!-- Navbar for mobile toggle -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                 <button class="btn btn-primary ms-3" id="menu-toggle">☰ Menu</button>
                 <a class="navbar-brand ms-4" asp-page="/Index">ASM_PRN222_QuizGame</a>
             </nav>
-
             <main role="main" class="container pt-3">
                 @RenderBody()
             </main>
@@ -117,7 +112,6 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     <script>
-        // Toggle sidebar visibility
         document.addEventListener("DOMContentLoaded", function () {
             const menuToggle = document.getElementById("menu-toggle");
             if (menuToggle) {
