@@ -30,3 +30,19 @@ C:\Users\nhatn\Desktop\ky 7\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\obj\De
 C:\Users\nhatn\Desktop\ky 7\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\obj\Debug\net7.0\refint\QuizGame.Service.dll
 C:\Users\nhatn\Desktop\ky 7\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\obj\Debug\net7.0\QuizGame.Service.pdb
 C:\Users\nhatn\Desktop\ky 7\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\obj\Debug\net7.0\ref\QuizGame.Service.dll
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\bin\Debug\net7.0\QuizGame.Service.deps.json
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\bin\Debug\net7.0\QuizGame.Service.dll
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\bin\Debug\net7.0\QuizGame.Service.pdb
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\bin\Debug\net7.0\QuizGame.Repository.dll
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\bin\Debug\net7.0\QuizGame.Repository.pdb
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\obj\Debug\net7.0\QuizGame.Service.csproj.AssemblyReference.cache
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\obj\Debug\net7.0\QuizGame.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\obj\Debug\net7.0\QuizGame.Service.AssemblyInfoInputs.cache
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\obj\Debug\net7.0\QuizGame.Service.AssemblyInfo.cs
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\obj\Debug\net7.0\QuizGame.Service.csproj.CoreCompileInputs.cache
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\obj\Debug\net7.0\QuizGame.Service.sourcelink.json
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\obj\Debug\net7.0\QuizGame.1B2E1EDD.Up2Date
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\obj\Debug\net7.0\QuizGame.Service.dll
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\obj\Debug\net7.0\refint\QuizGame.Service.dll
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\obj\Debug\net7.0\QuizGame.Service.pdb
+D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Service\obj\Debug\net7.0\ref\QuizGame.Service.dll
