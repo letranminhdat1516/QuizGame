@@ -34,11 +34,13 @@
                 <table class="table table-hover table-bordered">
                     <thead class="table-light">
                         <tr class="text-center">
-                            <th>Game ID</th>
                             <th>Game Name</th>
                             <th>Game Pin</th>
                             <th>Host ID</th>
                             <th>Status</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Quiz Name</th> <!-- Display Quiz Name -->
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -46,7 +48,7 @@
                         @if (!Model.Games.Any())
                         {
                             <tr>
-                                <td colspan="6" class="text-center text-muted">No games available.</td>
+                                <td colspan="9" class="text-center text-muted">No games available.</td>
                             </tr>
                         }
                         else
@@ -54,11 +56,26 @@
                             @foreach (var item in Model.Games)
                             {
                                 <tr class="text-center">
-                                    <td>@item.GameId</td>
                                     <td>@item.GameName</td>
                                     <td>@item.GamePin</td>
-                                    <td>@item.HostId</td>
+                                    <td>@item.HostId.ToString()</td>
                                     <td>@item.Status</td>
+                                    <td>@item.StartTime?.ToString("yyyy-MM-dd")</td>
+                                    <td>@item.EndTime?.ToString("yyyy-MM-dd")</td>
+                                    <td>
+                                        @* Display Quiz Name based on the QuizId *@
+                                        @{
+                                            var quiz = Model.Quizzes.FirstOrDefault(q => q.Value == item.QuizId.ToString());
+                                        }
+                                        @if (quiz != null)
+                                        {
+                                            @quiz.Text
+                                        }
+                                        else
+                                        {
+                                            @:No Quiz
+                                        }
+                                    </td>
                                     <td>
                                         <a asp-page="./Edit" asp-route-id="@item.GameId" class="btn btn-warning btn-sm">
                                             <i class="fas fa-edit"></i> Edit

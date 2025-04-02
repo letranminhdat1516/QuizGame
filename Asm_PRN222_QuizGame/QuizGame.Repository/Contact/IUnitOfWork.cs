@@ -16,5 +16,6 @@ namespace QuizGame.Repository.Contact
         void Save();
         Task SaveAsync();
         IGenericRepository<T> GetRepository<T>() where T : class;
+        void DetachEntity(object entity);
     }
 }

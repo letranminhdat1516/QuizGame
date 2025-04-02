@@ -21,6 +21,7 @@ namespace QuizGame.Service.Interface
         Task EditGame(GameModel game);
         Task RemoveGame(int gameId);
         Task<int> GetTotalGamesCount(string search);
+        Task<GameModel> GetGameByName(string gameName);
     }
 }
 

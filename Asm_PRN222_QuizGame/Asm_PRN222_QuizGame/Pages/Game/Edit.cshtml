@@ -12,28 +12,71 @@
             <form method="post">
                 <input type="hidden" asp-for="Game.GameId" />
 
-                <div class="form-group">
-                    <label asp-for="Game.GameName" class="control-label"></label>
+                <div class="form-group mb-3">
+                    <label asp-for="Game.GameName" class="control-label">Game Name</label>
                     <input asp-for="Game.GameName" class="form-control" />
                     <span asp-validation-for="Game.GameName" class="text-danger"></span>
                 </div>
 
-                <div class="form-group mt-3">
-                    <button type="submit" class="btn btn-primary">Save</button>
+                <div class="form-group mb-3">
+                    <label asp-for="Game.HostId" class="control-label">Host ID</label>
+                    <input asp-for="Game.HostId" class="form-control" type="number" />
+                    <span asp-validation-for="Game.HostId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Game.GamePin" class="control-label">Game Pin</label>
+                    <input asp-for="Game.GamePin" class="form-control" placeholder="Enter a unique 6-digit PIN" />
+                    <span asp-validation-for="Game.GamePin" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Game.QuizId" class="control-label">Quiz</label>
+                    <select asp-for="Game.QuizId" class="form-control custom-select" asp-items="Model.Quizzes">
+                        <option value="">Select a Quiz</option>
+                    </select>
+                    <span asp-validation-for="Game.QuizId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Game.Status" class="control-label">Status</label>
+                    <select asp-for="Game.Status" class="form-control custom-select">
+                        <option value="">Select Status</option>
+                        <option value="Waiting">Waiting</option>
+                        <option value="Ongoing">Ongoing</option>
+                        <option value="Finished">Finished</option>
+                    </select>
+                    <span asp-validation-for="Game.Status" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Game.StartTime" class="control-label">Start Time</label>
+                    <input asp-for="Game.StartTime" class="form-control" type="datetime-local" value="@Model.Game.StartTime?.ToString("yyyy-MM-ddTHH:mm")" />
+                    <span asp-validation-for="Game.StartTime" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Game.EndTime" class="control-label">End Time</label>
+                    <input asp-for="Game.EndTime" class="form-control" type="datetime-local" value="@Model.Game.EndTime?.ToString("yyyy-MM-ddTHH:mm")" />
+                    <span asp-validation-for="Game.EndTime" class="text-danger"></span>
+                </div>
+
+                <div class="form-group text-center mt-4">
+                    <button type="submit" class="btn btn-primary me-2">Save</button>
                     <a asp-page="./Index" class="btn btn-secondary">Cancel</a>
                 </div>
             </form>
 
             @if (!string.IsNullOrEmpty(Model.ErrorMessage))
             {
-                <div class="alert alert-danger mt-3">
-                    <i class="fas fa-exclamation-circle"></i> @Model.ErrorMessage
-                </div>
+                    <div class="alert alert-danger mt-3">
+                        <i class="fas fa-exclamation-circle"></i> @Model.ErrorMessage
+                    </div>
             }
         </div>
     </div>
 </div>
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+        <partial name="_ValidationScriptsPartial" />
 }

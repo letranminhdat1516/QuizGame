@@ -12,19 +12,63 @@
             <form method="post">
                 <div class="form-group">
                     <label asp-for="Question.QuizId" class="control-label"></label>
-                    <input asp-for="Question.QuizId" class="form-control" type="number" />
+                    <select asp-for="Question.QuizId" class="form-control" asp-items="Model.QuizList">
+                        <option value="">-- Select Quiz --</option>
+                    </select>
                     <span asp-validation-for="Question.QuizId" class="text-danger"></span>
                 </div>
+
                 <div class="form-group">
                     <label asp-for="Question.QuestionText" class="control-label"></label>
-                    <input asp-for="Question.QuestionText" class="form-control" />
+                    <input asp-for="Question.QuestionText" class="form-control" required />
                     <span asp-validation-for="Question.QuestionText" class="text-danger"></span>
                 </div>
+
                 <div class="form-group">
                     <label asp-for="Question.CorrectAnswer" class="control-label"></label>
-                    <input asp-for="Question.CorrectAnswer" class="form-control" />
+                    <input asp-for="Question.CorrectAnswer" class="form-control" required />
                     <span asp-validation-for="Question.CorrectAnswer" class="text-danger"></span>
                 </div>
+
+                <div class="form-group">
+                    <label asp-for="Question.Option1" class="control-label"></label>
+                    <input asp-for="Question.Option1" class="form-control" required />
+                    <span asp-validation-for="Question.Option1" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Question.Option2" class="control-label"></label>
+                    <input asp-for="Question.Option2" class="form-control" required />
+                    <span asp-validation-for="Question.Option2" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Question.Option3" class="control-label"></label>
+                    <input asp-for="Question.Option3" class="form-control" required />
+                    <span asp-validation-for="Question.Option3" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Question.Option4" class="control-label"></label>
+                    <input asp-for="Question.Option4" class="form-control" required />
+                    <span asp-validation-for="Question.Option4" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Question.TimeLimit" class="control-label"></label>
+                    <input asp-for="Question.TimeLimit" class="form-control" type="number" min="5" max="120" required />
+                    <span asp-validation-for="Question.TimeLimit" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Question.Status" class="control-label"></label>
+                    <select asp-for="Question.Status" class="form-control">
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                    </select>
+                    <span asp-validation-for="Question.Status" class="text-danger"></span>
+                </div>
+
                 <div class="form-group mt-3">
                     <button type="submit" class="btn btn-primary">Create</button>
                     <a asp-page="./QuestionIndex" class="btn btn-secondary">Cancel</a>

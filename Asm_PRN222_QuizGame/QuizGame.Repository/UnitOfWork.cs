@@ -1,4 +1,5 @@
-﻿using QuizGame.Repository.Contact;
+﻿using Microsoft.EntityFrameworkCore;
+using QuizGame.Repository.Contact;
 using QuizGame.Repository.Models;
 using System;
 using System.Collections.Generic;
@@ -64,6 +65,15 @@ namespace QuizGame.Repository
                 }
             }
             disposed = true;
+        }
+
+        public void DetachEntity(object entity)
+        {
+            // Detach the entity if it's being tracked
+            if (_dbContext.Entry(entity).State != EntityState.Detached)
+            {
+                _dbContext.Entry(entity).State = EntityState.Detached;
+            }
         }
     }
 }

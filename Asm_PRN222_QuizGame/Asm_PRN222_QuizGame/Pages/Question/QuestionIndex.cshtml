@@ -16,7 +16,7 @@
 
                 <form method="get" class="d-flex">
                     <input type="text" name="searchTerm" value="@Model.QuestionList.SearchTerm"
-                           class="form-control me-2" placeholder="Search Question..." style="width: 250px;" />
+                           class="form-control me-2" placeholder="Search Question by QuestionText" style="width: 250px;" />
                     <button type="submit" class="btn btn-primary">
                         <i class="fas fa-search"></i> Search
                     </button>
@@ -30,13 +30,14 @@
                 </div>
             }
 
-            <div class="table-responsive mt-4">
+            <div class="table-responsive mt-4" style="overflow-x: auto;">
                 <table class="table table-hover table-bordered">
                     <thead class="table-light">
                         <tr class="text-center">
-                            <th>Quiz ID</th>
+                            <th>Quiz Name</th>
                             <th>Question Text</th>
-                            <th>Correct Answer</th>
+                            <th>Time Limit</th>
+                            <th>Status</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -44,7 +45,7 @@
                         @if (!Model.Questions.Any())
                         {
                             <tr>
-                                <td colspan="4" class="text-center text-muted">No questions available.</td>
+                                <td colspan="10" class="text-center text-muted">No questions available.</td>
                             </tr>
                         }
                         else
@@ -52,9 +53,23 @@
                             @foreach (var item in Model.Questions)
                             {
                                 <tr class="text-center">
-                                    <td>@item.QuizId</td>
+                                    <!-- Display Quiz Name based on the QuizId -->
+                                    <td>
+                                        @{
+                                            var quiz = Model.Quizzes.FirstOrDefault(q => q.Value == item.QuizId.ToString());
+                                        }
+                                        @if (quiz != null)
+                                        {
+                                            @quiz.Text
+                                        }
+                                        else
+                                        {
+                                            @:No Quiz
+                                        }
+                                    </td>
                                     <td>@item.QuestionText</td>
-                                    <td>@item.CorrectAnswer</td>
+                                    <td>@item.TimeLimit</td>
+                                    <td>@item.Status</td>
                                     <td>
                                         <a asp-page="./EditQuestion" asp-route-id="@item.QuestionId" class="btn btn-warning btn-sm">
                                             <i class="fas fa-edit"></i> Edit
