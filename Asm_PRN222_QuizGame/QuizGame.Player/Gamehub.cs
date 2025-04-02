@@ -30,13 +30,18 @@ namespace QuizGame.Player
                 _connectedPlayers[gamePin] = new HashSet<string>();
             }
         }
-
+        public async Task NotifyPlayerJoined(string pinCode, string playerName)
+        {
+            await Clients.Group(pinCode).SendAsync("ReceivePlayerJoinedNotification", playerName);
+        }
         public async Task PlayerJoined(string gamePin, string playerName)
         {
-            if (_connectedPlayers.ContainsKey(gamePin))
+            if (!_connectedPlayers.ContainsKey(gamePin))
             {
-                _connectedPlayers[gamePin].Add(playerName);
+                _connectedPlayers[gamePin] = new HashSet<string>(); ;
             }
+            _connectedPlayers[gamePin].Add(playerName);
+
 
             await Clients.Group(gamePin).SendAsync("PlayerJoined", playerName);
         }
@@ -60,8 +65,6 @@ namespace QuizGame.Player
 
         public async Task JoinTeam(string gamePin, string playerName, int teamId)
         {
-            await _playerService.JoinTeam(gamePin, playerName, teamId);
-
             await Clients.Group(gamePin).SendAsync("PlayerJoinedTeam", playerName, teamId);
         }
 

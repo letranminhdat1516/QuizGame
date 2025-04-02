@@ -10,7 +10,12 @@
 @using Microsoft.AspNetCore.SignalR.Client
 
 <h3>Join Game</h3>
-
+@if (!string.IsNullOrEmpty(noti))
+{
+	<div class="alert alert-info">
+		@noti
+	</div>
+}
 <EditForm Model="@joinGameRequest" OnValidSubmit="HandleJoinGame">
 	<DataAnnotationsValidator />
 	<ValidationSummary />
@@ -32,6 +37,7 @@
 	private JoinGameRequest joinGameRequest = new JoinGameRequest();
 	private HubConnection? hubConnection;
 	private bool isConnected = false;
+	private string noti;
 
 	protected override async Task OnInitializedAsync()
 	{
@@ -39,21 +45,35 @@
 			.WithUrl(Navigation.ToAbsoluteUri("/gamehub"))
 			.Build();
 
-		// Lắng nghe sự kiện nhận câu hỏi từ Hub
-		hubConnection.On<string>("ReceiveQuestion", (questionText) =>
+		// hubConnection.On<string>("ReceivePlayerJoinedNotification", (playerName) =>
+		// 	{
+		// 		Handle the notification when a player joins the game
+		// 		InvokeAsync(() =>
+		// 		{
+		// 			Show a notification or update UI with the player's name who joined
+		// 			Console.WriteLine($"{playerName} has joined the game!");
+		// 		});
+		// 	});
+		try
 		{
-			// Xử lý câu hỏi nhận được
-			Console.WriteLine($"New question: {questionText}");
-		});
-		await hubConnection.StartAsync();
-		isConnected = true;
+			await hubConnection.StartAsync();
+			isConnected = true;
+		}
+		catch (Exception ex)
+		{
+			Console.WriteLine($"Error starting SignalR connection: {ex.Message}");
+		}
 	}
 	private async Task HandleJoinGame()
 	{
 		try
 		{
 			// Gọi service để player tham gia game
-		//	await PlayerService.JoinGame(joinGameRequest.PinCode, joinGameRequest.PlayerName, );
+			noti = await PlayerService.JoinGame(joinGameRequest.PinCode, joinGameRequest.PlayerName);
+			if (!string.IsNullOrEmpty(noti))
+			{
+				return;
+			}
 			await SessionStorage.SetAsync("GamePin", joinGameRequest.PinCode);
 			await SessionStorage.SetAsync("PlayerName", joinGameRequest.PlayerName);
 

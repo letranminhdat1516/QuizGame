@@ -11,8 +11,9 @@ namespace QuizGame.Service.Interface
     public interface IPlayerService
     {
         Task<Game> GetGameByPinCode(string pinCode);
-        Task<QuizGame.Repository.Models.Player> JoinGame(string pinCode, string playerName);
+        Task<string> JoinGame(string pinCode, string playerName);
         Task<List<TeamModel>> GetTeamsForGame(string pinCode);
+        Task<List<PlayerModel>> GetPlayerInTearm(int teamId);
         Task JoinTeam(string pinCode, string playerName, int teamId);
         Task<Team> CreateTeam(string pinCode, string teamName);
         Task<List<QuestionModel>> GetQuestionsForGame(int gameId);

@@ -57,10 +57,11 @@ public class PlayerService : IPlayerService
     }
 
     // Join game
-    public async Task<QuizGame.Repository.Models.Player> JoinGame(string pinCode, string playerName)
+    public async Task<string> JoinGame(string pinCode, string playerName)
     {
         var game = await GetGameByPinCode(pinCode);
-        if (game == null) throw new Exception("Game not found");
+        string notication = null;
+        if (game == null) return notication = "Game not found" ;
 
         // Check if player name is already taken in this game
         var playerRepository = _unitOfWork.GetRepository<QuizGame.Repository.Models.Player>();
@@ -69,7 +70,7 @@ public class PlayerService : IPlayerService
 
         if (existingPlayer != null)
         {
-            throw new ArgumentException("Player name already taken. Please choose another name.");
+           return notication = "Player name already taken. Please choose another name.";
         }
 
         // Create player without assigning to a team yet
@@ -84,11 +85,9 @@ public class PlayerService : IPlayerService
 
         await playerRepository.AddAsync(player);
         await _unitOfWork.SaveAsync();
-
         // Send notification via SignalR
-        await _hubContext.Clients.Group(pinCode).SendAsync("PlayerJoined", playerName);
-
-        return player;
+       await _hubContext.Clients.Group(pinCode).SendAsync("PlayerJoined", playerName);
+        return notication;
     }
 
     // Join a team
@@ -101,16 +100,14 @@ public class PlayerService : IPlayerService
         var player = await playerRepository.AsQueryable()
             .FirstOrDefaultAsync(p => p.GameId == game.GameId && p.PlayerName == playerName);
 
-        if (player == null)
-            throw new ArgumentException("Player not found");
+        if (player == null)throw new ArgumentException("Player not found");
 
         // Verify the team exists and belongs to this game
         var teamRepository = _unitOfWork.GetRepository<Team>();
         var team = await teamRepository.AsQueryable()
             .FirstOrDefaultAsync(t => t.TeamId == teamId && t.GameId == game.GameId);
 
-        if (team == null)
-            throw new ArgumentException("Team not found or not part of this game");
+        if (team == null)throw new ArgumentException("Team not found or not part of this game");
 
         // Update player's team
         player.TeamId = teamId;
@@ -226,5 +223,27 @@ public class PlayerService : IPlayerService
         var question = await questionRepository.GetByIdAsync(questionId);
 
         return answer == question.CorrectAnswer;
+    }
+
+    public async Task<List<PlayerModel>> GetPlayerInTearm(int teamId)
+    {
+        var playerRepository = _unitOfWork.GetRepository<Player>();
+
+        var playerInTeam = await playerRepository.AsQueryable()
+            .Where(p => p.TeamId == teamId)
+            .ToListAsync();
+
+        var result = new List<PlayerModel>();
+        foreach (var p in playerInTeam)
+        {
+            result.Add(new PlayerModel
+            {
+                PlayerId = p.PlayerId,
+                PlayerName = p.PlayerName
+
+            });
+        }
+
+        return result;
     }
 }

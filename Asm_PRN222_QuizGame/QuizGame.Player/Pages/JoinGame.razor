@@ -8,8 +8,22 @@
 @inject IPlayerService PlayerService
 @inject ProtectedSessionStorage SessionStorage
 
-<h3>Join a Team</h3>
+<h3>Game Team</h3>
+<!-- Hiển thị danh sách người chơi đã tham gia -->
+@* <ul> *@
+@*     @foreach (var player in players) *@
+@*     { *@
+@*         <li>@player</li> *@
+@*     } *@
+@* </ul> *@
 
+<!-- Thông báo khi người chơi tham gia -->
+@if (!string.IsNullOrEmpty(notifyMessage))
+{
+    <div class="alert alert-info">
+        @notifyMessage
+    </div>
+}
 <div class="container">
     <div class="row mb-4">
         <div class="col">
@@ -60,6 +74,8 @@
     private int selectedTeamId = 0;
     private string newTeamName = string.Empty;
     private HubConnection? hubConnection;
+    private string notifyMessage;
+    private List<string> players = new List<string>();
 
     protected override async Task OnInitializedAsync()
     {
@@ -89,14 +105,24 @@
                 StateHasChanged();
             });
         });
-
+        hubConnection.On<string>("ReceivePlayerJoinedNotification", (playerName) =>
+       {
+           InvokeAsync(() =>
+           {
+               // Cập nhật danh sách người chơi tham gia game
+               players.Add(playerName);
+               // Hiển thị thông báo
+               notifyMessage = $"{playerName} has joined the game";
+               StateHasChanged();
+           });
+       });
         await hubConnection.StartAsync();
         await hubConnection.SendAsync("JoinGameGroup", gamePin);
 
         //Load teams
         await LoadTeams();
     }
-
+   
     private async Task LoadTeams()
     {
         try
