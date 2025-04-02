@@ -5,32 +5,73 @@
 }
 
 <div class="container mt-4">
-    <h2 class="text-center text-primary fw-bold">Game Details</h2>
+    <h2 class="text-center text-primary fw-bold mb-5">Game Details</h2>
 
     <div class="card shadow-lg p-4 border-0 rounded-4 mt-4">
         <div class="card-body">
             @if (Model.Game != null)
             {
-                <h4>Game Name: @Model.Game.GameName</h4>
-                <div class="table-responsive mt-4">
-                    <table class="table table-hover table-bordered">
-                        <thead class="table-light">
-                            <tr class="text-center">
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
+                <!-- Game Name Section -->
+                <div class="mb-4">
+                    <h5 class="fw-bold" style="color: #333; font-size: 1.3rem;">Game Name:</h5>
+                    <p class="text-dark" style="font-size: 1.25rem;">@Model.Game.GameName</p>
                 </div>
 
-                <div class="mt-3">
-                    <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
+                <!-- Game Details Rows -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <p class="mb-1" style="font-size: 1.1rem; color:#333;"><strong>Game Pin:</strong> @Model.Game.GamePin</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mb-1" style="font-size: 1.1rem; color:#333;"><strong>Host ID:</strong> @Model.Game.HostId</p>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <p class="mb-1" style="font-size: 1.1rem; color: #333"><strong>Status:</strong> @Model.Game.Status</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mb-1" style="font-size: 1.1rem; color: #333;"><strong>Created Date:</strong> @Model.Game.StartTime?.ToString("yyyy-MM-dd")</p>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <p class="mb-1" style="font-size: 1.1rem; color:#333;"><strong>Updated Date:</strong> @Model.Game.EndTime?.ToString("yyyy-MM-dd")</p>
+                    </div>
+                </div>
+
+                <!-- Quiz Information Section -->
+                <div class="mt-4">
+                    <h5 class="fw-bold" style="color: #333;">Quiz Information:</h5>
+                    @if (Model.Quizzes != null && Model.Quizzes.Any())
+                    {
+                        var quiz = Model.Quizzes.FirstOrDefault(q => q.Value == Model.Game.QuizId.ToString());
+                        if (quiz != null)
+                        {
+                            <p class="mb-1" style="font-size: 1.1rem; color: #333;"><strong>Quiz Name:</strong> @quiz.Text</p>
+                        }
+                        else
+                        {
+                            <p class="mb-1" style="font-size: 1.1rem; color: #333;">No associated quiz</p>
+                        }
+                    }
+                    else
+                    {
+                        <p class="mb-1" style="font-size: 1.1rem; color: #333;">No quizzes available</p>
+                    }
+                </div>
+
+                <!-- Back to List Button -->
+                <div class="mt-2 text-center">
+                    <a asp-page="./Index" class="btn btn-primary">Back to List</a>
                 </div>
             }
 
             @if (!string.IsNullOrEmpty(Model.ErrorMessage))
             {
-                <div class="alert alert-danger mt-3">
+                <div class="alert alert-danger mt-4">
                     <i class="fas fa-exclamation-circle"></i> @Model.ErrorMessage
                 </div>
             }

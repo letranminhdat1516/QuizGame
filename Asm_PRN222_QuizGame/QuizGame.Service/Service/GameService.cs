@@ -247,15 +247,26 @@ namespace QuizGame.Service.Service
             try
             {
                 var gameRepository = _uow.GetRepository<Game>();
-                var game_Temp = _mapper.Map<Game>(game);
-                await gameRepository.UpdateAsync(game_Temp);
+                var gameEntity = _mapper.Map<Game>(game);
+
+                // Detach the previously tracked entity if it exists, using UnitOfWork
+                var existingGame = await gameRepository.GetByIdAsync(game.GameId);
+                if (existingGame != null)
+                {
+                    _uow.DetachEntity(existingGame); // Detach entity through UnitOfWork
+                }
+
+                // Proceed with updating the game
+                await gameRepository.UpdateAsync(gameEntity);
                 await _uow.SaveAsync();
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error updating question: {ex.Message}", ex);
+                throw new Exception($"Error updating game: {ex.Message}", ex);
             }
         }
+
+
 
         public async Task RemoveGame(int id)
         {
@@ -282,6 +293,16 @@ namespace QuizGame.Service.Service
             }
 
             return await query.CountAsync();
+        }
+
+        public async Task<GameModel> GetGameByName(string gameName)
+        {
+
+            var game = await _uow.GetRepository<Game>()
+                .AsQueryable()
+                .FirstOrDefaultAsync(g => g.GameName == gameName);
+
+            return _mapper.Map<GameModel>(game);
         }
 
     }

@@ -52,10 +52,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Game/JoinGame.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZVxKb2luR2FtZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -78,10 +74,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Question/EditQuestion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlc3Rpb25cRWRpdFF1ZXN0aW9uLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Question/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVlc3Rpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/SPRING2025/PRN222/AssigmentMain/QuizGame/Asm_PRN222_QuizGame/Asm_PRN222_QuizGame/Pages/Question/QuestionIndex.cshtml]

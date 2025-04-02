@@ -6,19 +6,23 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Asm_PRN222_QuizGame.Admin.Pages.Game
 {
     public class IndexModel : PageModel
     {
         private readonly IGameService _gameService;
+        private readonly IQuizService _quizService; // Inject Quiz Service
 
-        public IndexModel(IGameService gameService)
+        public IndexModel(IGameService gameService, IQuizService quizService)
         {
             _gameService = gameService;
+            _quizService = quizService; // Initialize the quiz service
         }
 
         public IList<GameModel> Games { get; set; } = new List<GameModel>();
+        public List<SelectListItem> Quizzes { get; set; } = new List<SelectListItem>(); // Store Quiz data
 
         public GameListModel GameList { get; set; } = new GameListModel();
 
@@ -42,8 +46,12 @@ namespace Asm_PRN222_QuizGame.Admin.Pages.Game
 
             try
             {
+                // Fetch games
                 Games = (await _gameService.GetGames(GameList.SearchTerm, GameList.PageNumber, GameList.PageSize)).ToList();
                 GameList.TotalItems = await _gameService.GetTotalGamesCount(GameList.SearchTerm);
+
+                // Fetch quizzes
+                await LoadQuizzes();
 
                 if (!Games.Any() && !string.IsNullOrEmpty(GameList.SearchTerm))
                 {
@@ -58,6 +66,17 @@ namespace Asm_PRN222_QuizGame.Admin.Pages.Game
             }
 
             return Page();
+        }
+
+        private async Task LoadQuizzes()
+        {
+            // Fetch all quizzes and populate the dropdown list
+            var quizList = await _quizService.GetQuizs("", 1, int.MaxValue);
+            Quizzes = quizList.Select(q => new SelectListItem
+            {
+                Value = q.QuizId.ToString(),
+                Text = q.QuizName
+            }).ToList();
         }
     }
 }
