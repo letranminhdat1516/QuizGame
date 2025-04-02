@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuizGame.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+830d160a92c72d5db6c516858dc693f3820945da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b609100305d961b49414db19a249d885a59619e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuizGame.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuizGame.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

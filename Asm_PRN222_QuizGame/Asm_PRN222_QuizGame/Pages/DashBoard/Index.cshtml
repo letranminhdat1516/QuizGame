@@ -6,24 +6,44 @@
 
 <h2 class="text-center text-primary fw-bold">Dashboard Statistics</h2>
 
+<style>
+    .chart-container {
+        height: 300px; /* Giảm chiều cao để phù hợp với màn hình laptop */
+    }
+</style>
+
 <div class="container mt-4">
-    <canvas id="quizChart"></canvas>
+    <div class="row">
+        <div class="col-md-6">
+            <h5 class="text-center">Top 5 Teams with Highest Scores</h5>
+            <div class="chart-container">
+                <canvas id="topTeamsChart"></canvas>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h5 class="text-center">Quiz Statistics</h5>
+            <div class="chart-container">
+                <canvas id="quizChart"></canvas>
+            </div>
+        </div>
+    </div>
 </div>
 
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var ctx = document.getElementById('quizChart').getContext('2d'); 
-            var quizChart = new Chart(ctx, {
+            // Chart 1: Top 5 Teams with Highest Scores
+            var ctx1 = document.getElementById('topTeamsChart').getContext('2d');
+            new Chart(ctx1, {
                 type: 'bar',
                 data: {
-                    labels: ['Quizzes', 'Questions', 'Team Score'],
+                    labels: @Json.Serialize(Model.TopTeams.Keys),
                     datasets: [{
-                        label: 'Count',
-                        data: [@Model.QuizCount, @Model.QuestionCount, @Model.ScoreCount],
-                        backgroundColor: ['#28a745', '#ffc107', '#008000'], 
-                        borderColor: ['#1e7e34', '#d39e00', '#ffffff'],
+                        label: 'Score',
+                        data: @Json.Serialize(Model.TopTeams.Values),
+                        backgroundColor: ['#ff5733', '#33ff57', '#3357ff', '#f39c12', '#8e44ad'],
+                        borderColor: '#ffffff',
                         borderWidth: 1
                     }]
                 },
@@ -31,9 +51,30 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     scales: {
-                        y: {
-                            beginAtZero: true
-                        }
+                        y: { beginAtZero: true }
+                    }
+                }
+            });
+
+            // Chart 2: Quiz Statistics
+            var ctx2 = document.getElementById('quizChart').getContext('2d');
+            new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: ['Quizzes', 'Questions', 'Games'],
+                    datasets: [{
+                        label: 'Count',
+                        data: [@Model.QuizCount, @Model.QuestionCount, @Model.GameCount],
+                        backgroundColor: ['#28a745', '#ffc107', '#007bff'],
+                        borderColor: ['#1e7e34', '#d39e00', '#0056b3'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: { beginAtZero: true }
                     }
                 }
             });
