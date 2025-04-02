@@ -3,15 +3,20 @@
 using System;
 using System.Collections.Generic;
 
-namespace QuizGame.Repository.Models;
-
-public partial class Quiz
+namespace QuizGame.Repository.Models
 {
-    public int QuizId { get; set; }
+    public partial class Quiz
+    {
+        public Quiz()
+        {
+            Games = new HashSet<Game>();
+            Questions = new HashSet<Question>();
+        }
 
-    public string QuizName { get; set; }
+        public int QuizId { get; set; }
+        public string QuizName { get; set; }
 
-    public virtual ICollection<Game> Games { get; set; } = new List<Game>();
-
-    public virtual ICollection<Question> Questions { get; set; } = new List<Question>();
+        public virtual ICollection<Game> Games { get; set; }
+        public virtual ICollection<Question> Questions { get; set; }
+    }
 }

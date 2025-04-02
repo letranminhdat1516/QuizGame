@@ -1,0 +1,142 @@
+﻿@page "/gameresults"
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@using Microsoft.AspNetCore.SignalR.Client
+@using QuizGame.Service.BusinessModel
+@using QuizGame.Service.Interface
+@inject NavigationManager Navigation
+@inject ProtectedSessionStorage SessionStorage
+
+<div class="container">
+    <div class="row mb-4">
+        <div class="col text-center">
+            <h2>Game Results</h2>
+            <div class="alert alert-success">
+                <h3>Winner: @winnerTeam</h3>
+                <p>Congratulations!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Final Standings</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Team</th>
+                                    <th>Members</th>
+                                    <th>Total Score</th>
+                                    <th>Avg Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var team in teamScores)
+                                {
+                                    <tr class="@(team.TeamName == winnerTeam ? "table-success" : "")">
+                                        <td>@team.Rank</td>
+                                        <td>@team.TeamName</td>
+                                        <td>@team.MemberCount</td>
+                                        <td>@team.TotalScore</td>
+                                        <td>@team.AverageScore</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Player Scores</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Player</th>
+                                    <th>Team</th>
+                                    <th>Score</th>
+                                    <th>Accuracy</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var player in playerScores)
+                                {
+                                    <tr>
+                                        <td>@player.Rank</td>
+                                        <td>@player.PlayerName</td>
+                                        <td>@player.TeamName</td>
+                                        <td>@player.Score</td>
+                                        <td>@player.AccuracyPercentage%</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col text-center">
+            <button @onclick="PlayAgain" class="btn btn-primary">Play Again</button>
+            <button @onclick="ExitGame" class="btn btn-secondary ms-2">Exit</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string winnerTeam = string.Empty;
+    private List<TeamScoreModel> teamScores = new List<TeamScoreModel>();
+    private List<PlayerScoreModel> playerScores = new List<PlayerScoreModel>();
+
+    protected override void OnInitialized()
+    {
+        // Get winner from query string
+        var uri = Navigation.ToAbsoluteUri(Navigation.Uri);
+        if (Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(uri.Query).TryGetValue("winner", out var winner))
+        {
+            winnerTeam = winner;
+        }
+
+        // Sample data for demonstration
+        teamScores = new List<TeamScoreModel>
+        {
+            new TeamScoreModel { Rank = 1, TeamName = winnerTeam, MemberCount = 3, TotalScore = 1200 },
+            new TeamScoreModel { Rank = 2, TeamName = "Team Blue", MemberCount = 2, TotalScore = 900 },
+            new TeamScoreModel { Rank = 3, TeamName = "Team Red", MemberCount = 3, TotalScore = 750 }
+        };
+
+        playerScores = new List<PlayerScoreModel>
+        {
+            new PlayerScoreModel { Rank = 1, PlayerName = "Player1", TeamName = winnerTeam, Score = 450, CorrectAnswers = 9, TotalQuestions = 10 },
+            new PlayerScoreModel { Rank = 2, PlayerName = "Player2", TeamName = "Team Blue", Score = 400, CorrectAnswers = 8, TotalQuestions = 10 },
+            new PlayerScoreModel { Rank = 3, PlayerName = "Player3", TeamName = winnerTeam, Score = 380, CorrectAnswers = 8, TotalQuestions = 10 },
+            new PlayerScoreModel { Rank = 4, PlayerName = "Player4", TeamName = "Team Red", Score = 300, CorrectAnswers = 6, TotalQuestions = 10 }
+        };
+    }
+
+    private void PlayAgain()
+    {
+        Navigation.NavigateTo("/joingame");
+    }
+
+    private void ExitGame()
+    {
+        Navigation.NavigateTo("/");
+    }
+}

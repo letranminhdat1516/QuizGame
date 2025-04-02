@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Asm_PRN222_QuizGame.Admin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c46459de18300cc986f2b9c2e0c9696b65825209")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70450a58219ba8a43eae06abeb37c9741d96c762")]
 [assembly: System.Reflection.AssemblyProductAttribute("Asm_PRN222_QuizGame.Admin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Asm_PRN222_QuizGame.Admin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
