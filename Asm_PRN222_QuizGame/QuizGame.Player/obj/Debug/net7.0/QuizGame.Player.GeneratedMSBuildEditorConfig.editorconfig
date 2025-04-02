@@ -30,12 +30,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZVBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/GameResults.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZVJlc3VsdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/JoinGame.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9pbkdhbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/JoinToGame.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9pblRvR2FtZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/PlayGame.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheUdhbWUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/FPTU/Sesmeter 7/PRN222/Assignment/QuizGame/Asm_PRN222_QuizGame/QuizGame.Player/Pages/Waitingroom.razor]

@@ -1,82 +1,165 @@
-﻿@page "/joingame"
+﻿@page "/joingame/team"
 @using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@using Microsoft.AspNetCore.SignalR.Client
+@using QuizGame.Repository.Models
 @using QuizGame.Service.BusinessModel
 @using QuizGame.Service.Interface
-@inject IPlayerService PlayerService
 @inject NavigationManager Navigation
-@inject IHttpContextAccessor HttpContextAccessor
+@inject IPlayerService PlayerService
 @inject ProtectedSessionStorage SessionStorage
-@using Microsoft.AspNetCore.Components
-@using Microsoft.AspNetCore.SignalR.Client
 
-<h3>Join Game</h3>
+<h3>Join a Team</h3>
 
-<EditForm Model="@joinGameRequest" OnValidSubmit="HandleJoinGame">
-	<DataAnnotationsValidator />
-	<ValidationSummary />
+<div class="container">
+    <div class="row mb-4">
+        <div class="col">
+            <h4>Available Teams</h4>
+            <div class="list-group">
+                @foreach (var team in teams)
+                {
+                    <button @onclick="() => SelectTeam(team.TeamId)"
+                    class="list-group-item list-group-item-action @(selectedTeamId == team.TeamId ? "active" : "")">
+                        @team.TeamName <span class="badge bg-primary">@team.MemberCount members</span>
+                    </button>
+                }
+            </div>
+        </div>
+    </div>
 
-	<div class="form-group">
-		<label for="pinCode">Enter Game Pin</label>
-		<InputText id="pinCode" class="form-control" @bind-Value="joinGameRequest.PinCode" />
-	</div>
+    <div class="row mb-4">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Create a New Team</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="teamName">Team Name</label>
+                        <input type="text" class="form-control" id="teamName" @bind="newTeamName" />
+                    </div>
+                    <button @onclick="CreateNewTeam" class="btn btn-success mt-2">Create Team</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<div class="form-group mb-2">
-		<label for="playerName">Enter Player Name</label>
-		<InputText id="playerName" class="form-control" @bind-Value="joinGameRequest.PlayerName" />
-	</div>
-
-	<button type="submit" class="btn btn-primary">Join Game</button>
-</EditForm>
+    <div class="row">
+        <div class="col text-center">
+            <button @onclick="JoinSelectedTeam" class="btn btn-primary" disabled="@(selectedTeamId == 0)">
+                Join Selected Team
+            </button>
+            <button @onclick="GoBack" class="btn btn-secondary ml-2">Back</button>
+        </div>
+    </div>
+</div>
 
 @code {
-	private JoinGameRequest joinGameRequest = new JoinGameRequest();
-	private HubConnection? hubConnection;
-	private bool isConnected = false;
+    private string playerName = string.Empty;
+    private string gamePin = string.Empty;
+    private List<TeamModel> teams = new List<TeamModel>();
+    private int selectedTeamId = 0;
+    private string newTeamName = string.Empty;
+    private HubConnection? hubConnection;
 
-	protected override async Task OnInitializedAsync()
-	{
-		hubConnection = new HubConnectionBuilder()
-			.WithUrl(Navigation.ToAbsoluteUri("/gamehub"))
-			.Build();
+    protected override async Task OnInitializedAsync()
+    {
+        //Get player name and game pin from session
+        var nameResult = await SessionStorage.GetAsync<string>("PlayerName");
+        playerName = nameResult.Success ? nameResult.Value : string.Empty;
 
-		// Lắng nghe sự kiện nhận câu hỏi từ Hub
-		hubConnection.On<string>("ReceiveQuestion", (questionText) =>
-		{
-			// Xử lý câu hỏi nhận được
-			Console.WriteLine($"New question: {questionText}");
-		});
-		await hubConnection.StartAsync();
-		isConnected = true;
-	}
-	private async Task HandleJoinGame()
-	{
-		try
-		{
-			// Gọi service để player tham gia game
-			await PlayerService.JoinGame(joinGameRequest.PinCode, joinGameRequest.PlayerName);
-			await SessionStorage.SetAsync("GamePin", joinGameRequest.PinCode);
-			await SessionStorage.SetAsync("PlayerName", joinGameRequest.PlayerName);
+        var pinResult = await SessionStorage.GetAsync<string>("GamePin");
+        gamePin = pinResult.Success ? pinResult.Value : string.Empty;
 
-			if (hubConnection is not null && isConnected)
-			{
-				await hubConnection.SendAsync("JoinGameGroup", joinGameRequest.PinCode);
-				// Gửi thông báo người chơi tham gia game
-				await hubConnection.SendAsync("NotifyPlayerJoined", joinGameRequest.PinCode, joinGameRequest.PlayerName);
-			}
-			Navigation.NavigateTo("/waitingroom");  // Điều hướng tới trang game
-		}
-		catch (Exception ex)
-		{
-			// Handle lỗi
-			Console.WriteLine(ex.Message);
-		}
-	}
-	public async ValueTask DisposeAsync()
-	{
-		if (hubConnection is not null)
-		{
-			await hubConnection.StopAsync();
-			await hubConnection.DisposeAsync();
-		}
-	}
+        if (string.IsNullOrEmpty(playerName) || string.IsNullOrEmpty(gamePin))
+        {
+            Navigation.NavigateTo("/joingame");
+            return;
+        }
+
+        //Connect to SignalR hub
+        hubConnection = new HubConnectionBuilder()
+            .WithUrl(Navigation.ToAbsoluteUri("/gamehub"))
+            .Build();
+
+        hubConnection.On<Repository.Models.TeamModel>("TeamCreated", (team) =>
+        {
+            InvokeAsync(() =>
+            {
+                teams.Add(team);
+                StateHasChanged();
+            });
+        });
+
+        await hubConnection.StartAsync();
+        await hubConnection.SendAsync("JoinGameGroup", gamePin);
+
+        //Load teams
+        await LoadTeams();
+    }
+
+    private async Task LoadTeams()
+    {
+        try
+        {
+            teams = await PlayerService.GetTeamsForGame(gamePin);
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading teams: {ex.Message}");
+        }
+    }
+
+    private void SelectTeam(int teamId)
+    {
+        selectedTeamId = teamId;
+    }
+
+    private async Task CreateNewTeam()
+    {
+        if (string.IsNullOrEmpty(newTeamName))
+            return;
+
+        try
+        {
+            await PlayerService.CreateTeam(gamePin, newTeamName);
+            newTeamName = string.Empty;
+            await LoadTeams();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error creating team: {ex.Message}");
+        }
+    }
+
+    private async Task JoinSelectedTeam()
+    {
+        if (selectedTeamId == 0)
+            return;
+
+        try
+        {
+            await PlayerService.JoinTeam(gamePin, playerName, selectedTeamId);
+            await SessionStorage.SetAsync("TeamId", selectedTeamId);
+            Navigation.NavigateTo("/waitingroom");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error joining team: {ex.Message}");
+        }
+    }
+
+    private void GoBack()
+    {
+        Navigation.NavigateTo("/waitingroom");
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (hubConnection is not null)
+        {
+            await hubConnection.StopAsync();
+            await hubConnection.DisposeAsync();
+        }
+    }
 }
