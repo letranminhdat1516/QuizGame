@@ -10,10 +10,14 @@ namespace QuizGame.Service.Interface
 {
     public interface IPlayerService
     {
-        Task<Game> GetGameByPinCode(string pinCode);  // Lấy game từ mã PIN
-        Task<QuestionModel> GetNextQuestionForGame(int gameId);  // Lấy câu hỏi tiếp theo cho game
-        Task JoinGame(string pinCode, string playerName);
-        Task StartGame(int gameId);
+        Task<Game> GetGameByPinCode(string pinCode);
+        Task<QuizGame.Repository.Models.Player> JoinGame(string pinCode, string playerName);
+        Task<List<TeamModel>> GetTeamsForGame(string pinCode);
+        Task JoinTeam(string pinCode, string playerName, int teamId);
+        Task<Team> CreateTeam(string pinCode, string teamName);
+        Task<List<QuestionModel>> GetQuestionsForGame(int gameId);
+        Task StartGame(string pinCode);
+        Task<bool> SubmitAnswer(string pinCode, string playerName, int questionId, string answer);
     }
 
 }

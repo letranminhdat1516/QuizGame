@@ -1,0 +1,302 @@
+﻿@page "/playgame"
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@using Microsoft.AspNetCore.SignalR.Client
+@using QuizGame.Service.BusinessModel
+@using QuizGame.Service.Interface
+@inject NavigationManager Navigation
+@inject IPlayerService PlayerService
+@inject ProtectedSessionStorage SessionStorage
+@implements IAsyncDisposable
+
+<div class="container">
+    <div class="row mb-4">
+        <div class="col text-center">
+            <h3>@(currentQuestion?.QuestionText ?? "Waiting for question...")</h3>
+
+            @if (currentQuestion != null)
+            {
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar"
+                         style="width: @(timeRemaining * 100 / currentQuestion.TimeLimit)%"
+                         aria-valuenow="@timeRemaining" aria-valuemin="0"
+                         aria-valuemax="@currentQuestion.TimeLimit">
+                        @timeRemaining seconds
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    @if (currentQuestion != null && !hasAnswered)
+    {
+        <div class="row mb-4">
+            <div class="col">
+                <div class="d-grid gap-2">
+                    @foreach (var option in GetOptions(currentQuestion))
+                    {
+                        <button @onclick="() => SubmitAnswer(option)"
+                                class="btn btn-lg btn-outline-primary p-4">
+                            @option
+                        </button>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+    else if (hasAnswered)
+    {
+        <div class="row mb-4">
+            <div class="col text-center">
+                <div class="alert alert-info">
+                    <h4>Answer submitted!</h4>
+                    <p>Waiting for other players...</p>
+                </div>
+            </div>
+        </div>
+    }
+
+    @if (showResults)
+    {
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Results</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6>Correct Answer: @lastCorrectAnswer</h6>
+
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Player</th>
+                                        <th>Team</th>
+                                        <th>Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var score in playerScores.OrderByDescending(s => s.Score))
+                                    {
+                                        <tr class="@(score.PlayerName == playerName ? "table-primary" : "")">
+                                            <td>@score.PlayerName</td>
+                                            <td>@score.TeamName</td>
+                                            <td>@score.Score</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private string playerName = string.Empty;
+    private string gamePin = string.Empty;
+    private int teamId = 0;
+    private HubConnection? hubConnection;
+    private QuestionModel? currentQuestion;
+    private int timeRemaining = 0;
+    private bool hasAnswered = false;
+    private bool showResults = false;
+    private string lastCorrectAnswer = string.Empty;
+    private List<PlayerScoreModel> playerScores = new List<PlayerScoreModel>();
+    private System.Threading.Timer? countdownTimer;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Get player info from session
+        var nameResult = await SessionStorage.GetAsync<string>("PlayerName");
+        playerName = nameResult.Success ? nameResult.Value : "Player";
+
+        var pinResult = await SessionStorage.GetAsync<string>("GamePin");
+        gamePin = pinResult.Success ? pinResult.Value : string.Empty;
+
+        var teamIdResult = await SessionStorage.GetAsync<int>("TeamId");
+        teamId = teamIdResult.Success ? teamIdResult.Value : 0;
+
+        if (string.IsNullOrEmpty(gamePin))
+        {
+            Navigation.NavigateTo("/joingame");
+            return;
+        }
+
+        // Initialize SignalR connection
+        hubConnection = new HubConnectionBuilder()
+            .WithUrl(Navigation.ToAbsoluteUri("/gamehub"))
+            .Build();
+
+        // Set up event handlers
+        hubConnection.On<QuestionModel>("ReceiveQuestion", (question) =>
+        {
+            InvokeAsync(() =>
+            {
+                // Reset state for new question
+                currentQuestion = question;
+                timeRemaining = question.TimeLimit;
+                hasAnswered = false;
+                showResults = false;
+
+                // Start countdown timer
+                StartCountdown();
+
+                StateHasChanged();
+            });
+        });
+
+        hubConnection.On("AnswerReceived", () =>
+        {
+            InvokeAsync(() =>
+            {
+                hasAnswered = true;
+                StateHasChanged();
+            });
+        });
+
+        hubConnection.On<int>("QuestionEnded", (questionId) =>
+        {
+            InvokeAsync(() =>
+            {
+                // Stop the timer if it's running
+                StopCountdown();
+
+                // Get the correct answer for display
+                if (currentQuestion != null && currentQuestion.QuestionId == questionId)
+                {
+                    lastCorrectAnswer = currentQuestion.CorrectAnswer;
+                }
+
+                showResults = true;
+                StateHasChanged();
+            });
+        });
+
+        hubConnection.On<List<PlayerScoreModel>>("UpdateScores", (scores) =>
+        {
+            InvokeAsync(() =>
+            {
+                playerScores = scores;
+                StateHasChanged();
+            });
+        });
+
+        hubConnection.On<string>("GameEnded", (winnerTeam) =>
+        {
+            InvokeAsync(() =>
+            {
+                Navigation.NavigateTo($"/gameresults?winner={winnerTeam}");
+            });
+        });
+
+        try
+        {
+            await hubConnection.StartAsync();
+            await hubConnection.SendAsync("JoinGameGroup", gamePin);
+            await hubConnection.SendAsync("PlayerReady", gamePin, playerName);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error connecting to SignalR: {ex.Message}");
+        }
+    }
+
+    private void StartCountdown()
+    {
+        StopCountdown();
+
+        countdownTimer = new System.Threading.Timer(async _ =>
+        {
+            await InvokeAsync(() =>
+            {
+                if (timeRemaining > 0)
+                {
+                    timeRemaining--;
+                    StateHasChanged();
+                }
+                else
+                {
+                    StopCountdown();
+                    // Time's up for this question
+                    if (!hasAnswered && currentQuestion != null)
+                    {
+                        // Auto-submit a blank answer or notify that time is up
+                        SubmitAnswer(string.Empty);
+                    }
+                }
+            });
+        }, null, 0, 1000);
+    }
+
+    private void StopCountdown()
+    {
+        countdownTimer?.Dispose();
+        countdownTimer = null;
+    }
+
+    private async Task SubmitAnswer(string answer)
+    {
+        if (currentQuestion == null || hasAnswered)
+            return;
+
+        hasAnswered = true;
+
+        try
+        {
+            var isCorrect = await PlayerService.SubmitAnswer(gamePin, playerName, currentQuestion.QuestionId, answer);
+
+            // Notify SignalR that this player has answered
+            if (hubConnection != null)
+            {
+                await hubConnection.SendAsync("SubmitAnswer", gamePin, playerName, currentQuestion.QuestionId, answer);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error submitting answer: {ex.Message}");
+            hasAnswered = false;
+        }
+    }
+
+    private List<string> GetOptions(QuestionModel question)
+    {
+        var options = new List<string>();
+
+        if (!string.IsNullOrEmpty(question.Option1))
+            options.Add(question.Option1);
+        if (!string.IsNullOrEmpty(question.Option2))
+            options.Add(question.Option2);
+        if (!string.IsNullOrEmpty(question.Option3))
+            options.Add(question.Option3);
+        if (!string.IsNullOrEmpty(question.Option4))
+            options.Add(question.Option4);
+
+        // If no options were defined, use default ones
+        if (!options.Any())
+        {
+            options = new List<string>
+            {
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+            };
+        }
+
+        return options;
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        StopCountdown();
+
+        if (hubConnection is not null)
+        {
+            await hubConnection.StopAsync();
+            await hubConnection.DisposeAsync();
+        }
+    }
+}

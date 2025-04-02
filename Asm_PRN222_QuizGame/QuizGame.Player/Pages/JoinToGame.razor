@@ -1,0 +1,82 @@
+﻿@page "/joingame"
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@using QuizGame.Service.BusinessModel
+@using QuizGame.Service.Interface
+@inject IPlayerService PlayerService
+@inject NavigationManager Navigation
+@inject IHttpContextAccessor HttpContextAccessor
+@inject ProtectedSessionStorage SessionStorage
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.SignalR.Client
+
+<h3>Join Game</h3>
+
+<EditForm Model="@joinGameRequest" OnValidSubmit="HandleJoinGame">
+	<DataAnnotationsValidator />
+	<ValidationSummary />
+
+	<div class="form-group">
+		<label for="pinCode">Enter Game Pin</label>
+		<InputText id="pinCode" class="form-control" @bind-Value="joinGameRequest.PinCode" />
+	</div>
+
+	<div class="form-group mb-2">
+		<label for="playerName">Enter Player Name</label>
+		<InputText id="playerName" class="form-control" @bind-Value="joinGameRequest.PlayerName" />
+	</div>
+
+	<button type="submit" class="btn btn-primary">Join Game</button>
+</EditForm>
+
+@code {
+	private JoinGameRequest joinGameRequest = new JoinGameRequest();
+	private HubConnection? hubConnection;
+	private bool isConnected = false;
+
+	protected override async Task OnInitializedAsync()
+	{
+		hubConnection = new HubConnectionBuilder()
+			.WithUrl(Navigation.ToAbsoluteUri("/gamehub"))
+			.Build();
+
+		// Lắng nghe sự kiện nhận câu hỏi từ Hub
+		hubConnection.On<string>("ReceiveQuestion", (questionText) =>
+		{
+			// Xử lý câu hỏi nhận được
+			Console.WriteLine($"New question: {questionText}");
+		});
+		await hubConnection.StartAsync();
+		isConnected = true;
+	}
+	private async Task HandleJoinGame()
+	{
+		try
+		{
+			// Gọi service để player tham gia game
+		//	await PlayerService.JoinGame(joinGameRequest.PinCode, joinGameRequest.PlayerName, );
+			await SessionStorage.SetAsync("GamePin", joinGameRequest.PinCode);
+			await SessionStorage.SetAsync("PlayerName", joinGameRequest.PlayerName);
+
+			if (hubConnection is not null && isConnected)
+			{
+				await hubConnection.SendAsync("JoinGameGroup", joinGameRequest.PinCode);
+				// Gửi thông báo người chơi tham gia game
+				await hubConnection.SendAsync("NotifyPlayerJoined", joinGameRequest.PinCode, joinGameRequest.PlayerName);
+			}
+			Navigation.NavigateTo("/joingame/team");  // Điều hướng tới trang game
+		}
+		catch (Exception ex)
+		{
+			// Handle lỗi
+			Console.WriteLine(ex.Message);
+		}
+	}
+	public async ValueTask DisposeAsync()
+	{
+		if (hubConnection is not null)
+		{
+			await hubConnection.StopAsync();
+			await hubConnection.DisposeAsync();
+		}
+	}
+}
