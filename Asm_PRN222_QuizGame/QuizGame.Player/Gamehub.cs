@@ -23,12 +23,13 @@ namespace QuizGame.Player
         public async Task JoinGameGroup(string gamePin)
         {
             await Groups.AddToGroupAsync(Context.ConnectionId, gamePin);
+            Console.WriteLine($"Client {Context.ConnectionId} added to group {gamePin}");
 
             // Initialize the player set if it doesn't exist
-            if (!_connectedPlayers.ContainsKey(gamePin))
-            {
-                _connectedPlayers[gamePin] = new HashSet<string>();
-            }
+            //if (!_connectedPlayers.ContainsKey(gamePin))
+            //{
+            //    _connectedPlayers[gamePin] = new HashSet<string>();
+            //}
         }
         public async Task NotifyPlayerJoined(string pinCode, string playerName)
         {

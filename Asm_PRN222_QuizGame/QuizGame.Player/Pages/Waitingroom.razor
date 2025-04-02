@@ -133,16 +133,19 @@
                 }
             });
         });
-
+        int test = 1;
         hubConnection.On<string, int>("PlayerJoinedTeam", (name, teamId) =>
         {
+            Console.WriteLine($"Received PlayerJoinedTeam: {name}, {teamId}");
             InvokeAsync(async () =>
             {
+                test = 0;
                 notifyMessage = $"{name} has joined the game";
                 await LoadTeams();
+                await LoadPlayerInGame();
             });
         });
-
+        int tm = test;
         hubConnection.On<Repository.Models.TeamModel>("TeamCreated", (team) =>
         {
             InvokeAsync(() =>
@@ -163,6 +166,7 @@
         try
         {
             await hubConnection.StartAsync();
+            Console.WriteLine("SignalR connection established.");
             isConnected = true;
             await hubConnection.SendAsync("JoinGameGroup", gamePin);
         }
