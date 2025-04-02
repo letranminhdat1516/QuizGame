@@ -1,3 +1,16 @@
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.deps.json
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.pdb
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.csproj.AssemblyReference.cache
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.AssemblyInfoInputs.cache
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.AssemblyInfo.cs
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.csproj.CoreCompileInputs.cache
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.sourcelink.json
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\refint\QuizGame.Repository.dll
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\QuizGame.Repository.pdb
+D:\FPTU\Sesmeter 7\PRN222\Assignment\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\obj\Debug\net7.0\ref\QuizGame.Repository.dll
 D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.deps.json
 D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.dll
 D:\SPRING2025\PRN222\AssigmentMain\QuizGame\Asm_PRN222_QuizGame\QuizGame.Repository\bin\Debug\net7.0\QuizGame.Repository.pdb

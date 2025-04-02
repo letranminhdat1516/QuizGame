@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Asm_PRN222_QuizGame.Admin.aupaj2r1u9.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"aupaj2r1u9"},{"Name":"integrity","Value":"sha256-Usz6cMFqaMRlHV1be2yYDUyF4N7fjroRjQKSNbiTuQ0="},{"Name":"label","Value":"_content/Asm_PRN222_QuizGame.Admin/Asm_PRN222_QuizGame.Admin.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1143"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Usz6cMFqaMRlHV1be2yYDUyF4N7fjroRjQKSNbiTuQ0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Apr 2025 17:33:45 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1143"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Usz6cMFqaMRlHV1be2yYDUyF4N7fjroRjQKSNbiTuQ0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Apr 2025 17:54:26 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Asm_PRN222_QuizGame.Admin/Asm_PRN222_QuizGame.Admin.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Asm_PRN222_QuizGame.Admin.aupaj2r1u9.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Usz6cMFqaMRlHV1be2yYDUyF4N7fjroRjQKSNbiTuQ0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1143"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Usz6cMFqaMRlHV1be2yYDUyF4N7fjroRjQKSNbiTuQ0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Apr 2025 17:33:45 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1143"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Usz6cMFqaMRlHV1be2yYDUyF4N7fjroRjQKSNbiTuQ0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 02 Apr 2025 17:54:26 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Asm_PRN222_QuizGame.Admin/css/site.c2tiyv64ts.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>

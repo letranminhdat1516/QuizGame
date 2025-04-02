@@ -61,7 +61,7 @@ public class PlayerService : IPlayerService
     {
         var game = await GetGameByPinCode(pinCode);
         string notication = null;
-        if (game == null) return notication = "Game not found" ;
+        if (game == null) return notication = "Invalid PIN or game already started";
 
         // Check if player name is already taken in this game
         var playerRepository = _unitOfWork.GetRepository<QuizGame.Repository.Models.Player>();
