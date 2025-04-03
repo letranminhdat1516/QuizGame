@@ -61,8 +61,35 @@ namespace QuizGame.Service.Service
             try
             {
                 var questionRepository = _unitOfWork.GetRepository<Question>();
-                var question_Temp = await questionRepository.GetByIdAsync(id);
-                return _mapper.Map<QuestionModel>(question_Temp);
+                var quizRepository = _unitOfWork.GetRepository<Quiz>();
+
+                var question = await questionRepository.AsQueryable()
+                    .Where(q => q.QuestionId == id)
+                    .Join(quizRepository.AsQueryable(),
+                          question => question.QuizId,
+                          quiz => quiz.QuizId,
+                          (question, quiz) => new QuestionModel
+                          {
+                              QuestionId = question.QuestionId,
+                              QuizId = question.QuizId,
+                              QuizName = quiz.QuizName,
+                              QuestionText = question.QuestionText,
+                              CorrectAnswer = question.CorrectAnswer,   
+                              Option1 = question.Option1,
+                              Option2 = question.Option2,
+                              Option3 = question.Option3,
+                              Option4 = question.Option4,
+                              TimeLimit = question.TimeLimit,
+                              Status = question.Status,
+                          })
+                    .FirstOrDefaultAsync();
+
+                if (question == null)
+                {
+                    throw new Exception($"Question with ID {id} not found.");
+                }
+
+                return question;
             }
             catch (Exception ex)
             {
@@ -70,24 +97,24 @@ namespace QuizGame.Service.Service
             }
         }
 
+
         public async Task<IEnumerable<QuestionModel>> GetQuestions(string search, int pageNumber, int pageSize)
         {
             try
             {
                 var questionRepository = _unitOfWork.GetRepository<Question>();
-
                 var query = questionRepository.AsQueryable();
-
 
                 if (!string.IsNullOrEmpty(search))
                 {
-                    query = query.Where(q => q.QuestionText.Contains(search));
+                    query = query.Where(q =>  EF.Functions.Like(q.QuestionText, $"%{search}%") ||
+                                      EF.Functions.Like(q.Quiz.QuizName, $"%{search}%"));
                 }
 
-                // Sắp xếp theo ID để đảm bảo kết quả đúng thứ tự
+                // Order by QuestionId
                 query = query.OrderBy(q => q.QuestionId);
 
-                // Áp dụng phân trang
+                // Pagination
                 int skip = (pageNumber - 1) * pageSize;
                 query = query.Skip(skip).Take(pageSize);
 
@@ -99,6 +126,9 @@ namespace QuizGame.Service.Service
                 throw new Exception($"Error retrieving questions: {ex.Message}", ex);
             }
         }
+
+
+
 
         public async Task<List<Question>> GetQuestionsWithQuizId(int? quizId)
         {
@@ -167,8 +197,15 @@ namespace QuizGame.Service.Service
             try
             {
                 var questionRepository = _unitOfWork.GetRepository<Question>();
-                var quetion_temp = _mapper.Map<Question>(question);
-                await questionRepository.UpdateAsync(quetion_temp);
+                var existingQuestion = await questionRepository.GetByIdAsync(question.QuestionId);
+                if (existingQuestion == null)
+                {
+                    throw new Exception($"Question with ID {question.QuestionId} not found.");
+                }
+
+                _mapper.Map(question, existingQuestion);
+
+                await questionRepository.UpdateAsync(existingQuestion);
                 await _unitOfWork.SaveAsync();
             }
             catch (Exception ex)
@@ -176,6 +213,7 @@ namespace QuizGame.Service.Service
                 throw new Exception($"Error updating question: {ex.Message}", ex);
             }
         }
+
 
         public async Task<int> GetTotalQuestionsCount(string search)
         {

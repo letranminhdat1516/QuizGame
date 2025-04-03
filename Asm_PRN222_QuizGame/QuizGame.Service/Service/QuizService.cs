@@ -43,14 +43,34 @@ namespace QuizGame.Service.Service
             try
             {
                 var quizRepository = _unitOfWork.GetRepository<Quiz>();
+                var questionRepository = _unitOfWork.GetRepository<Question>();
+
                 var quiz_Temp = await quizRepository.GetByIdAsync(id);
-                return _mapper.Map<QuizModel>(quiz_Temp);
+                if (quiz_Temp == null)
+                    return null;
+
+                var questions = await questionRepository.AsQueryable()
+                    .Where(q => q.QuizId == id)
+                    .Select(q => new QuestionModel
+                    {
+                        QuestionId = q.QuestionId,
+                        QuestionText = q.QuestionText,
+                        CorrectAnswer = q.CorrectAnswer
+                    })
+                    .ToListAsync();
+
+                var quizModel = _mapper.Map<QuizModel>(quiz_Temp);
+                quizModel.Questions = questions; // ✅ Gán danh sách câu hỏi vào model
+
+                return quizModel;
             }
             catch (Exception ex)
             {
                 throw new Exception($"Error retrieving Quiz: {ex.Message}", ex);
             }
         }
+
+
 
         public async Task<IEnumerable<QuizModel>> GetQuizs(string search, int pageNumber, int pageSize)
         {
@@ -60,10 +80,9 @@ namespace QuizGame.Service.Service
 
                 var query = quizRepository.AsQueryable();
 
-
                 if (!string.IsNullOrEmpty(search))
                 {
-                    query = query.Where(q => q.QuizName.Contains(search));
+                    query = query.Where(q => EF.Functions.Like(q.QuizName, $"%{search}%"));
                 }
 
                 // Sắp xếp theo ID để đảm bảo kết quả đúng thứ tự
@@ -81,6 +100,7 @@ namespace QuizGame.Service.Service
                 throw new Exception($"Error retrieving Quizs: {ex.Message}", ex);
             }
         }
+
 
         public async Task RemoveQuiz(int id)
         {
@@ -111,17 +131,19 @@ namespace QuizGame.Service.Service
             }
         }
 
-        public async Task<int> GetTotalQuizCount(string search)
+        public async Task<int> GetTotalQuizCount(string searchTerm)
         {
             var quizRepository = _unitOfWork.GetRepository<Quiz>();
             var query = quizRepository.AsQueryable();
 
-            if (!string.IsNullOrEmpty(search))
+            if (!string.IsNullOrEmpty(searchTerm))
             {
-                query = query.Where(q => q.QuizName.Contains(search));
+                query = query.Where(q => q.QuizName.Contains(searchTerm));
             }
 
             return await query.CountAsync();
+        
+
         }
     }
 }

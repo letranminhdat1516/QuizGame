@@ -12,6 +12,7 @@ namespace QuizGame.Service.BusinessModel
 
         public int TeamScoreId { get; set; }
 
+        public string? TeamName { get; set; }
         public int? TeamId { get; set; }
 
         public int? QuestionInGameId { get; set; }

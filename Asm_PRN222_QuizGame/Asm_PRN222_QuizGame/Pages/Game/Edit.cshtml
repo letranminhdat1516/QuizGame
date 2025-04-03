@@ -13,15 +13,15 @@
                 <input type="hidden" asp-for="Game.GameId" />
 
                 <div class="form-group mb-3">
-                    <label asp-for="Game.GameName" class="control-label">Game Name</label>
-                    <input asp-for="Game.GameName" class="form-control" />
-                    <span asp-validation-for="Game.GameName" class="text-danger"></span>
+                    <label asp-for="Game.GameId" class="control-label">Game ID</label>
+                    <input asp-for="Game.GameId" class="form-control" type="number" />
+                    <span asp-validation-for="Game.HostId" class="text-danger"></span>
                 </div>
 
                 <div class="form-group mb-3">
-                    <label asp-for="Game.HostId" class="control-label">Host ID</label>
-                    <input asp-for="Game.HostId" class="form-control" type="number" />
-                    <span asp-validation-for="Game.HostId" class="text-danger"></span>
+                    <label asp-for="Game.GameName" class="control-label">Game Name</label>
+                    <input asp-for="Game.GameName" class="form-control" />
+                    <span asp-validation-for="Game.GameName" class="text-danger"></span>
                 </div>
 
                 <div class="form-group mb-3">

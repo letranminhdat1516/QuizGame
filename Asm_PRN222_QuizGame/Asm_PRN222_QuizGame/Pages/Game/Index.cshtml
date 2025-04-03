@@ -34,9 +34,9 @@
                 <table class="table table-hover table-bordered">
                     <thead class="table-light">
                         <tr class="text-center">
+                            <th>GameId</th>
                             <th>Game Name</th>
-                            <th>Game Pin</th>
-                            <th>Host ID</th>
+                            <th>Game Pin</th>                           
                             <th>Status</th>
                             <th>Start Date</th>
                             <th>End Date</th>
@@ -56,9 +56,9 @@
                             @foreach (var item in Model.Games)
                             {
                                 <tr class="text-center">
+                                    <td>@item.GameId.ToString()</td>
                                     <td>@item.GameName</td>
-                                    <td>@item.GamePin</td>
-                                    <td>@item.HostId.ToString()</td>
+                                    <td>@item.GamePin</td>                                 
                                     <td>@item.Status</td>
                                     <td>@item.StartTime?.ToString("yyyy-MM-dd")</td>
                                     <td>@item.EndTime?.ToString("yyyy-MM-dd")</td>
@@ -82,6 +82,10 @@
                                         </a>
                                         <a asp-page="./Detail" asp-route-id="@item.GameId" class="btn btn-info btn-sm">
                                             <i class="fas fa-info-circle"></i> Details
+                                        </a>
+
+                                        <a asp-page="./Delete" asp-route-id="@item.GameId" class="btn btn-danger btn-sm">
+                                            <i class="fas fa-info-circle"></i> Delete
                                         </a>
                                     </td>
                                 </tr>

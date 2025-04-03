@@ -19,6 +19,12 @@
                 </div>
 
                 <div class="form-group">
+                    <label asp-for="Question.QuizName" class="control-label"></label>
+                    <input asp-for="Question.QuizName" class="form-control" required />
+                    <span asp-validation-for="Question.QuizName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
                     <label asp-for="Question.QuestionText" class="control-label"></label>
                     <input asp-for="Question.QuestionText" class="form-control" required />
                     <span asp-validation-for="Question.QuestionText" class="text-danger"></span>

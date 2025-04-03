@@ -44,12 +44,12 @@ namespace Asm_PRN222_QuizGame.Admin.Pages.DashBoard
             QuestionCount = questions.Count();
             GameCount = games.Count();
 
-            // Lấy Top 5 Teams có điểm cao nhất
-            TopTeams = scores
-       .Where(s => s.TeamId.HasValue) // Lọc bỏ các giá trị null
-       .OrderByDescending(s => s.Score.GetValueOrDefault()) // Sắp xếp theo điểm
-       .Take(5)
-       .ToDictionary(s => s.TeamId.Value.ToString(), s => s.Score.GetValueOrDefault()); // Chuyển kiểu dữ liệu phù hợp
+       //     // Lấy Top 5 Teams có điểm cao nhất
+       //     TopTeams = scores
+       //.Where(s => s.TeamId.HasValue) // Lọc bỏ các giá trị null
+       //.OrderByDescending(s => s.Score.GetValueOrDefault()) // Sắp xếp theo điểm
+       //.Take(5)
+       //.ToDictionary(s => s.TeamId.Value.ToString(), s => s.Score.GetValueOrDefault()); // Chuyển kiểu dữ liệu phù hợp
 
         }
     }

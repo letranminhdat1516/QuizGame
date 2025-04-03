@@ -10,6 +10,9 @@ namespace QuizGame.Service.BusinessModel
         public int? QuizId { get; set; }
 
         [Required, StringLength(255)]
+        public string QuizName { get; set; }    
+
+        [Required, StringLength(255)]
         public string QuestionText { get; set; }
 
         [Required, StringLength(255)]
@@ -28,7 +31,7 @@ namespace QuizGame.Service.BusinessModel
         public string Option4 { get; set; }
 
         [Range(5, 120)]
-        public int TimeLimit { get; set; } = 30;
+        public int? TimeLimit { get; set; } = 30;
 
         [Required]
         public string Status { get; set; }

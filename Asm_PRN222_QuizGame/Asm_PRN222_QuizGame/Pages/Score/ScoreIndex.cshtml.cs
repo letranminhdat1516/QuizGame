@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using QuizGame.Service.Interface;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc;
 using QuizGame.Service.BusinessModel;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using QuizGame.Service.Interface;
+
 
 namespace Asm_PRN222_QuizGame.Admin.Pages.Score
 {
@@ -16,6 +15,7 @@ namespace Asm_PRN222_QuizGame.Admin.Pages.Score
             _scoreService = scoreService;
         }
 
+        // Đảm bảo Scores là thuộc tính của ScoreIndexModel, không phải ScoreListModel
         public IList<ScoreModel> Scores { get; set; } = new List<ScoreModel>();
 
         public ScoreListModel ScoreList { get; set; } = new ScoreListModel();
@@ -51,11 +51,12 @@ namespace Asm_PRN222_QuizGame.Admin.Pages.Score
             catch (Exception ex)
             {
                 TempData["ErrorMessage"] = $"Error loading scores: {ex.Message}";
-                Scores = new List<ScoreModel>(); // Đảm bảo Scores không bị null
-                ScoreList.TotalItems = 0; // Đặt lại tổng số mục để tránh lỗi phân trang
+                Scores = new List<ScoreModel>();
+                ScoreList.TotalItems = 0;
             }
 
             return Page();
         }
+
     }
 }

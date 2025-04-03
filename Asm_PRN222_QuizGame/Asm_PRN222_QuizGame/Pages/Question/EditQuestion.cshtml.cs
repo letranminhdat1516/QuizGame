@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using QuizGame.Service.Interface;
 using QuizGame.Service.BusinessModel;
+using System.Threading.Tasks;
 
 namespace Asm_PRN222_QuizGame.Admin.Pages.Question
 {
@@ -18,6 +19,7 @@ namespace Asm_PRN222_QuizGame.Admin.Pages.Question
         public QuestionModel Question { get; set; }
 
         public string ErrorMessage { get; set; }
+        public string SuccessMessage { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -52,7 +54,9 @@ namespace Asm_PRN222_QuizGame.Admin.Pages.Question
             try
             {
                 await _questionService.UpdateQuestion(Question);
-                return RedirectToPage("./QuestionIndex");
+                SuccessMessage = "Question updated successfully!";
+                return Page(); // Hiển thị thông báo thành công trên cùng trang
+                // Hoặc: return RedirectToPage("./QuestionIndex"); để chuyển hướng về danh sách
             }
             catch (Exception ex)
             {

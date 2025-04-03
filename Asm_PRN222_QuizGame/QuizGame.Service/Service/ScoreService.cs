@@ -28,12 +28,27 @@ namespace QuizGame.Service.Service
             try
             {
                 var scoreRepository = _unitOfWork.GetRepository<TeamScore>();
-                var score = await scoreRepository.GetByIdAsync(id);
-                if (score == null)
+                var teamRepository = _unitOfWork.GetRepository<Team>(); // Lấy repo Team
+
+                var query = from score in scoreRepository.AsQueryable()
+                            join team in teamRepository.AsQueryable() on score.TeamId equals team.TeamId
+                            where score.TeamScoreId == id
+                            select new ScoreModel
+                            {
+                                TeamScoreId = score.TeamScoreId,
+                                Score = score.Score,
+                                Rank = score.Rank,
+                                TeamId = score.TeamId,
+                                TeamName = team.TeamName // Thêm TeamName vào ScoreModel
+                            };
+
+                var result = await query.FirstOrDefaultAsync();
+                if (result == null)
                 {
                     throw new Exception($"Score with ID {id} not found.");
                 }
-                return _mapper.Map<ScoreModel>(score);
+
+                return result;
             }
             catch (Exception ex)
             {
@@ -41,26 +56,33 @@ namespace QuizGame.Service.Service
             }
         }
 
+
+
         public async Task<IEnumerable<ScoreModel>> GetScores(string search, int pageNumber, int pageSize)
         {
             try
             {
                 var scoreRepository = _unitOfWork.GetRepository<TeamScore>();
-                var query = scoreRepository.AsQueryable();
+                var teamRepository = _unitOfWork.GetRepository<Team>();  // Repository cho bảng Team
+                var query = from score in scoreRepository.AsQueryable()
+                            join team in teamRepository.AsQueryable() on score.TeamId equals team.TeamId  // Join với bảng Team để lấy tên đội
+                            select new ScoreModel
+                            {
+                                TeamScoreId = score.TeamScoreId,
+                                Score = score.Score,
+                                Rank = score.Rank,
+                                TeamId = score.TeamId,
+                                TeamName = team.TeamName  // Thêm TeamName vào ScoreModel
+                            };
 
                 if (!string.IsNullOrEmpty(search))
                 {
-                    // Tìm kiếm dựa trên TeamId hoặc QuestionInGameId
                     query = query.Where(s => s.Score.ToString().Contains(search) ||
-                                             s.Rank.ToString().Contains(search));
+                                             s.TeamName.Contains(search));  // Tìm kiếm theo TeamName
                 }
 
-                query = query.OrderBy(s => s.TeamScoreId);
-                int skip = (pageNumber - 1) * pageSize;
-                query = query.Skip(skip).Take(pageSize);
-
-                var scores = await query.ToListAsync();
-                return _mapper.Map<IEnumerable<ScoreModel>>(scores);
+                var scores = await query.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToListAsync();
+                return scores;
             }
             catch (Exception ex)
             {
@@ -88,6 +110,10 @@ namespace QuizGame.Service.Service
                 throw new Exception($"Error counting scores: {ex.Message}", ex);
             }
         }
+
+
+
+
 
         public async Task AddScore(ScoreModel score)
         {

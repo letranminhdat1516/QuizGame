@@ -1,8 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using QuizGame.Service.Interface;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc;
 using QuizGame.Service.BusinessModel;
-
+using QuizGame.Service.Interface;
 namespace Asm_PRN222_QuizGame.Admin.Pages.Score
 {
     public class DetailsScoreModel : PageModel
@@ -15,7 +14,6 @@ namespace Asm_PRN222_QuizGame.Admin.Pages.Score
         }
 
         public ScoreModel Score { get; set; }
-
         public string ErrorMessage { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)

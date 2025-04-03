@@ -16,16 +16,11 @@
                 </div>
             }
             <form method="post">
+
                 <div class="form-group mb-3">
                     <label asp-for="Game.GameName" class="control-label"></label>
                     <input asp-for="Game.GameName" class="form-control" />
                     <span asp-validation-for="Game.GameName" class="text-danger"></span>
-                </div>
-
-                <div class="form-group mb-3">
-                    <label asp-for="Game.HostId" class="control-label"></label>
-                    <input asp-for="Game.HostId" class="form-control" type="number" />
-                    <span asp-validation-for="Game.HostId" class="text-danger"></span>
                 </div>
 
                 <div class="form-group mb-3">

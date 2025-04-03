@@ -21,6 +21,7 @@
                         <i class="fas fa-search"></i> Search
                     </button>
                 </form>
+
             </div>
 
             @if (TempData["ErrorMessage"] != null)
@@ -35,6 +36,7 @@
                     <thead class="table-light">
                         <tr class="text-center">
                             <th>Quiz Name</th>
+                            <th>Question ID</th>
                             <th>Question Text</th>
                             <th>Time Limit</th>
                             <th>Status</th>
@@ -67,6 +69,7 @@
                                             @:No Quiz
                                         }
                                     </td>
+                                    <td>@item.QuestionId</td>
                                     <td>@item.QuestionText</td>
                                     <td>@item.TimeLimit</td>
                                     <td>@item.Status</td>

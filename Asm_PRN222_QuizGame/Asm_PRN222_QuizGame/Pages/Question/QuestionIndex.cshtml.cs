@@ -46,9 +46,11 @@ namespace Asm_PRN222_QuizGame.Admin.Pages.Question
             {
                 // Fetch questions
                 Questions = (await _questionService.GetQuestions(searchTerm, pageNumber, pageSize)).ToList();
+
+                // Fetch total number of questions for pagination
                 QuestionList.TotalItems = await _questionService.GetTotalQuestionsCount(searchTerm);
 
-                // Fetch quizzes for dropdown list
+                // Fetch quizzes for dropdown list (if needed)
                 await LoadQuizzes();
             }
             catch (Exception ex)
@@ -60,6 +62,7 @@ namespace Asm_PRN222_QuizGame.Admin.Pages.Question
 
             return Page();
         }
+
 
         private async Task LoadQuizzes()
         {

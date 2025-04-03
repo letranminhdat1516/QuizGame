@@ -48,5 +48,6 @@ namespace Asm_PRN222_QuizGame.Admin.Pages.Quiz
 
             return Page();
         }
+
     }
 }

@@ -1,7 +1,7 @@
 ﻿@page
 @model Asm_PRN222_QuizGame.Admin.Pages.Quiz.DetailsModel
 @{
-    ViewData["Title"] = "Quiz Details";
+    ViewData["Title"] = "Delete Quiz";
 }
 
 <div class="container mt-4">
@@ -11,44 +11,59 @@
         <div class="card-body">
             @if (Model.Quiz != null)
             {
-                <h4>@Model.Quiz.QuizName</h4>
-                <h5>Questions</h5>
               
+                @if (Model.Quiz != null)
+                {
+                    <dl class="row">
+                        <dt class="col-sm-2">Quiz ID</dt>
+                        <dd class="col-sm-10">@Model.Quiz.QuizId</dd>
 
-                <div class="table-responsive mt-4">
-                    <table class="table table-hover table-bordered">
-                        <thead class="table-light">
-                            <tr class="text-center">
-                                <th>Question ID</th>
-                                <th>Question Text</th>
-                                <th>Correct Answer</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @if (!Model.Questions.Any())
+                        <dt class="col-sm-2">Quiz Name</dt>
+                        <dd class="col-sm-10">@Model.Quiz.QuizName</dd>
+
+                        <dt class="col-sm-2">Questions</dt>
+                     
+                        <dd class="col-sm-10">
+                            @if (Model.Quiz.Questions.Any())
                             {
-                                <tr>
-                                    <td colspan="4" class="text-center text-muted">No questions available.</td>
-                                </tr>
+                                <ul>
+                                    @foreach (var question in Model.Quiz.Questions)
+                                    {
+                                        <li>
+                                            <strong>Question ID:</strong> @question.QuestionId <br />
+                                            <strong>Text:</strong> @question.QuestionText <br />
+                                            <strong>Correct Answer:</strong> @question.CorrectAnswer
+                                        </li>
+                                    }
+                                </ul>
                             }
                             else
                             {
-                                @foreach (var item in Model.Questions)
-                                {
-                                    <tr class="text-center">
-                                        <td>@item.QuestionId</td>
-                                        <td>@item.QuestionText</td>
-                                        <td>@item.CorrectAnswer</td>
-                                    </tr>
-                                }
+                                <p>No questions found.</p>
                             }
-                        </tbody>
-                    </table>
-                </div>
+                        </dd>
+                    </dl>
+
+                }
+                else
+                {
+                    <p class="text-center text-muted">Quiz not found.</p>
+                }
+
 
                 <div class="mt-3">
+                    <a asp-page="./EditQuiz" asp-route-id="@Model.Quiz.QuizId" class="btn btn-warning">
+                        <i class="fas fa-edit"></i> Edit
+                    </a>
+                    <a asp-page="./DeleteQuiz" asp-route-id="@Model.Quiz.QuizId" class="btn btn-danger">
+                        <i class="fas fa-trash"></i> Delete
+                    </a>
                     <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
                 </div>
+            }
+            else
+            {
+                <p class="text-center text-muted">Quiz not found.</p>
             }
 
             @if (!string.IsNullOrEmpty(Model.ErrorMessage))

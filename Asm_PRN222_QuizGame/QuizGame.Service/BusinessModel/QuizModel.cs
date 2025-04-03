@@ -10,5 +10,8 @@ namespace QuizGame.Service.BusinessModel
     {
         public int QuizId { get; set; }
         public string QuizName { get; set; }
+
+        public List<QuestionModel> Questions { get; set; } = new List<QuestionModel>();
+
     }
 }
