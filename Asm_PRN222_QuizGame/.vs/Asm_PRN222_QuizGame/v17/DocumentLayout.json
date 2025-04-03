@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\nhatn\\Desktop\\NAMMMM (1)\\NAMMMM\\NAMMMM\\QuizGame\\Asm_PRN222_QuizGame\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C910947D-CBA7-41A5-B280-0840AE710299}|QuizGame.Repository\\QuizGame.Repository.csproj|c:\\users\\nhatn\\desktop\\nammmm (1)\\nammmm\\nammmm\\quizgame\\asm_prn222_quizgame\\quizgame.repository\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C910947D-CBA7-41A5-B280-0840AE710299}|QuizGame.Repository\\QuizGame.Repository.csproj|solutionrelative:quizgame.repository\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\nhatn\\Desktop\\NAMMMM (1)\\NAMMMM\\NAMMMM\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\Models\\Game.cs",
+              "RelativeDocumentMoniker": "QuizGame.Repository\\Models\\Game.cs",
+              "ToolTip": "C:\\Users\\nhatn\\Desktop\\NAMMMM (1)\\NAMMMM\\NAMMMM\\QuizGame\\Asm_PRN222_QuizGame\\QuizGame.Repository\\Models\\Game.cs",
+              "RelativeToolTip": "QuizGame.Repository\\Models\\Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T18:14:47.729Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

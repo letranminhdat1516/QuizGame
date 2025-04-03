@@ -15,8 +15,8 @@ namespace QuizGame.Repository.Models
             Teams = new HashSet<Team>();
         }
 
-        public int GameId { get; set; }
-        public string GameName { get; set; }
+        public int   GameId { get; set; }
+        public string   GameName { get; set; }
         public int? HostId { get; set; }
         public string GamePin { get; set; }
         public string Status { get; set; }
